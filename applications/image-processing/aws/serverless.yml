@@ -1,0 +1,86 @@
+service: image-processing
+
+provider:
+  name: aws
+  region: us-east-1
+  runtime: python3.6
+  stage: dev
+
+  iamRoleStatements:
+    - Effect: Allow
+      Action:
+        - s3:*
+      Resource:
+       Fn::Join:
+         - ""
+         - - "arn:aws:s3:::"
+           - ${self:provider.environment.BUCKET}
+           - "/*"
+
+  environment:
+    BUCKET: faas-iisc
+    FOLDER: image-processing
+    IMAGE: image.jpg
+
+functions:
+  fetch:
+    handler: fetch.fetchHandler
+    timeout: 30
+    events:
+      - http:
+          path: fetch
+          method: get
+
+  flip:
+    handler: flip.flipHandler
+    timeout: 30
+    events:
+      - http:
+          path: flip
+          method: post 
+
+  rotate:
+    handler: rotate.rotateHandler
+    timeout: 30
+    events:
+      - http:
+          path: rotate
+          method: post
+
+  filter:
+    handler: filter.filterHandler
+    timeout: 30
+    events:
+      - http:
+          path: filter
+          method: post
+
+  grayscale:
+    handler: grayscale.grayscaleHandler
+    timeout: 30
+    events:
+      - http:
+          path: grayscale
+          method: post
+
+  resize:
+    handler: resize.resizeHandler
+    timeout: 30
+    events:
+      - http:
+          path: resize
+          method: post
+
+  store:
+    handler: store.storeHandler
+    timeout: 30
+    events:
+      - http:
+          path: store
+          method: post
+
+plugins:
+  - serverless-python-requirements
+custom:
+  pythonRequirements:
+    dockerizePip: true

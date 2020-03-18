@@ -1,0 +1,94 @@
+service: micro-functions
+
+provider:
+  name: aws
+  region: us-east-1
+  runtime: python3.6
+  stage: dev
+
+  # iamRoleStatements:
+  #   - Effect: Allow
+  #     Action:
+  #       - s3:*
+      # Resource:
+      #  Fn::Join:
+      #    - ""
+      #    - - "arn:aws:s3:::"
+      #      - ${self:provider.environment.BUCKET}
+      #      - "/*"
+
+functions:
+  input:
+    handler: input.inputHandler
+    timeout: 30
+    events:
+      - http:
+          path: input
+          method: get
+
+  aggregate:
+    handler: aggregate.aggregateHandler
+    timeout: 30
+    events:
+      - http:
+          path: aggregate
+          method: get
+
+  inc:
+    handler: inc.incHandler
+    timeout: 30
+    events:
+      - http:
+          path: inc
+          method: get
+
+  square:
+    handler: square.squareHandler
+    timeout: 30
+    events:
+      - http:
+          path: square
+          method: get
+  half:
+    handler: half.halfHandler
+    timeout: 30
+    events:
+      - http:
+          path: half
+          method: get
+  double:
+    handler: double.doubleHandler
+    timeout: 30
+    events:
+      - http:
+          path: double
+          method: get
+  reminder:
+    handler: reminder.reminderHandler
+    timeout: 30
+    events:
+      - http:
+          path: reminder
+          method: get
+
+  divideby5:
+    handler: divideby5.divideby5Handler
+    timeout: 30
+    events:
+      - http:
+          path: divideby5
+          method: get
+
+  divideby2:
+    handler: divideby2.divideby2Handler
+    timeout: 30
+    events:
+      - http:
+          path: divideby2
+          method: get
+
+# plugins:
+#   - serverless-python-requirements
+# custom:
+#   pythonRequirements:
+#     dockerizePip: true
