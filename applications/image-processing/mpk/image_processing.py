@@ -183,6 +183,7 @@ def main(params):
 
     for idx, thread in enumerate(threads):
         thread.start ()
+    for idx, thread in enumerate(threads):
         thread.join ()
 
     result = {}
@@ -193,7 +194,4 @@ def main(params):
 
 if __name__ == "__main__":
     out = main({'activation1':{}})
-    # out = main({'activation1':{},'activation3':{},'activation4':{}, 'activation2': {},
-    #          'activation31':{},'activation33':{},'activation34':{}, 'activation32': {},
-    #          'activation45':{},'activation46':{},'activation47':{}, 'activation48': {}})
     print(out)

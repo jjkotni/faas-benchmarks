@@ -1,6 +1,6 @@
 import json
 
-def aggregateHandler(event, context):
+def aggregateHandler(params):
     print("Successfully executed all parallel  functions!")
 
     response = {
