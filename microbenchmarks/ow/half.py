@@ -1,6 +1,6 @@
 import json
 
-def halfHandler(event):
+def main(event):
     input = event['body']['number']
     output = int(input/2)
 

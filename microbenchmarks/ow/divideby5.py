@@ -1,6 +1,6 @@
 import json
 
-def divideby5Handler(event):
+def main(event):
     input = event['body']['number']
     output = input%5
 

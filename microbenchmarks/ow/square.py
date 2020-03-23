@@ -1,6 +1,6 @@
 import json
 
-def squareHandler(event):
+def main(event):
     input = event['body']['number']
     output = input*input
 

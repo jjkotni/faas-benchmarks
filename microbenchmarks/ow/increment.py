@@ -1,6 +1,6 @@
 import json
 
-def incHandler(event):
+def main(event):
     input = event['body']['number']
     output = input+1
 

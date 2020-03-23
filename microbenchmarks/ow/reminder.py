@@ -1,6 +1,6 @@
 import json
 
-def reminderHandler(event):
+def main(event):
     input = event['body']['number']
     output = input%2
 

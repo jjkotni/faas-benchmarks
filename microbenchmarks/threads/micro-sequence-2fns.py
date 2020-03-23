@@ -1,9 +1,19 @@
 import threading
 import time
+from random import randint
 from mpkmemalloc import *
 
-incOut    = {}
+inOut     = {}
 squareOut = {}
+
+def inputHandler(event):
+    number = randint(1,50)
+    response = {
+        "statusCode": 200,
+        "body": {"number":number}
+    }
+
+    return response
 
 def squareHandler(event):
     input = event['body']['number']
@@ -16,49 +26,38 @@ def squareHandler(event):
 
     return response
 
-def incHandler(event):
-    input = event['body']['number']
-    output = input+1
+def inWorker(event):
+    result = inputHandler(event)
 
-    response = {
-        "statusCode": 200,
-        "body": {"number":output}
-    }
-
-    return response
+    ######################################################
+    global inOut
+    inOut = result
+    ######################################################
 
 def squareWorker():
     ######################################################
-    global incOut
+    global inOut
     ######################################################
 
-    result = squareHandler(incOut)
+    result = squareHandler(inOut)
 
     ######################################################
     global squareOut
     squareOut = result
     ######################################################
 
-def incWorker(event):
-    result = incHandler(event)
-
-    ######################################################
-    global incOut
-    incOut = result
-    ######################################################
-
 def main(event):
     #All marked sections are overheads due to our system
-    increment = threading.Thread(target=incWorker, args=[event])
+    input     = threading.Thread(target=inWorker, args=[event])
     square    = threading.Thread(target=squareWorker)
 
-    increment.start()
-    increment.join()
+    input.start()
+    input.join()
 
     square.start()
     square.join()
 
-   return squareOut
+    return squareOut
 
 # if __name__=="__main__":
-#     main({'body':{'number':40}})
+#     print(main({}))

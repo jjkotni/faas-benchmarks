@@ -1,6 +1,6 @@
 import json
 
-def doubleHandler(event):
+def main(event):
     input = event['body']['number']
     output = 2*input
 

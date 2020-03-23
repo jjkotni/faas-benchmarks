@@ -1,11 +1,13 @@
 import json
 
-def aggregateHandler(params):
-    print("Successfully executed all parallel  functions!")
+def main(events):
+    aggregate = 0
+    for event in events:
+        aggregate += event['body']['number']
 
     response = {
-        "statusCode": 200
+        "statusCode": 200,
+        "body":{"number":aggregate}
     }
 
     return response
-
