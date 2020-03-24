@@ -30,18 +30,18 @@ done
 rm tmp_actions
 
 #Create sequences
-if grep -q 'baseline-micro-sequence-2fns' "$FILE_NAME"; then
-    echo "$ACTION_NAME action already defined, updating it..."
-    wsk -i action create baseline-micro-sequence-2fns --sequence input,square
-else
-    echo "Creating action $ACTION_NAME..."
-    wsk -i action update baseline-micro-sequence-2fns --sequence input,square
-fi
+# if grep -q 'baseline-micro-sequence-2fns' "$FILE_NAME"; then
+#     echo "$ACTION_NAME action already defined, updating it..."
+#     wsk -i action create baseline-micro-sequence-2fns --sequence input,square
+# else
+#     echo "Creating action $ACTION_NAME..."
+#     wsk -i action update baseline-micro-sequence-2fns --sequence input,square
+# fi
 
-if grep -q 'baseline-micro-sequence-2fns' "$FILE_NAME"; then
-    echo "$ACTION_NAME action already defined, updating it..."
-    wsk -i action create baseline-micro-sequence-5fns --sequence input,increment,square,half,reminder
-else
-    echo "Creating action $ACTION_NAME..."
-    wsk -i action update baseline-micro-sequence-5fns --sequence input,increment,square,half,reminder
-fi
+# if grep -q 'baseline-micro-sequence-2fns' "$FILE_NAME"; then
+#     echo "$ACTION_NAME action already defined, updating it..."
+#     wsk -i action create baseline-micro-sequence-5fns --sequence input,increment,square,half,reminder
+# else
+#     echo "Creating action $ACTION_NAME..."
+#     wsk -i action update baseline-micro-sequence-5fns --sequence input,increment,square,half,reminder
+# fi

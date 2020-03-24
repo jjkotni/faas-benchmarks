@@ -1,0 +1,88 @@
+{
+    "composition": {
+        "type": "sequence",
+        "components": [
+            {
+                "type": "action",
+                "name": "/_/input",
+                "path": "[0]"
+            },
+            {
+                "type": "parallel",
+                "components": [
+                    {
+                        "type": "action",
+                        "name": "/_/increment",
+                        "path": "[1][0]"
+                    },
+                    {
+                        "type": "action",
+                        "name": "/_/square",
+                        "path": "[1][1]"
+                    },
+                    {
+                        "type": "action",
+                        "name": "/_/half",
+                        "path": "[1][2]"
+                    },
+                    {
+                        "type": "action",
+                        "name": "/_/reminder",
+                        "path": "[1][3]"
+                    },
+                    {
+                        "type": "action",
+                        "name": "/_/double",
+                        "path": "[1][4]"
+                    }
+                ],
+                "path": "[1]"
+            },
+            {
+                "type": "action",
+                "name": "/_/baseline-aggregate",
+                "path": "[2]"
+            }
+        ],
+        "path": ""
+    },
+    "ast": {
+        "type": "sequence",
+        "components": [
+            {
+                "type": "action",
+                "name": "/_/input"
+            },
+            {
+                "type": "parallel",
+                "components": [
+                    {
+                        "type": "action",
+                        "name": "/_/increment"
+                    },
+                    {
+                        "type": "action",
+                        "name": "/_/square"
+                    },
+                    {
+                        "type": "action",
+                        "name": "/_/half"
+                    },
+                    {
+                        "type": "action",
+                        "name": "/_/reminder"
+                    },
+                    {
+                        "type": "action",
+                        "name": "/_/double"
+                    }
+                ]
+            },
+            {
+                "type": "action",
+                "name": "/_/baseline-aggregate"
+            }
+        ]
+    },
+    "version": "0.12.0"
+}

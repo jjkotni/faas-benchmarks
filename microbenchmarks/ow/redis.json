@@ -1,0 +1,10 @@
+{
+    "$composer": {
+        "redis": {
+            "uri": "redis://guest:openwhisk@172.17.0.1:6379/"
+        },
+        "openwhisk": {
+            "ignore_certs": true
+        }
+    }
+}

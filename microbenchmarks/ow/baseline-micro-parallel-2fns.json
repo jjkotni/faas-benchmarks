@@ -1,0 +1,61 @@
+{
+    "composition": {
+        "type": "sequence",
+        "components": [
+            {
+                "type": "action",
+                "name": "/_/input",
+                "path": "[0]"
+            },
+            {
+                "type": "parallel",
+                "components": [
+                    {
+                        "type": "action",
+                        "name": "/_/increment",
+                        "path": "[1][0]"
+                    },
+                    {
+                        "type": "action",
+                        "name": "/_/square",
+                        "path": "[1][1]"
+                    }
+                ],
+                "path": "[1]"
+            },
+            {
+                "type": "action",
+                "name": "/_/baseline-aggregate",
+                "path": "[2]"
+            }
+        ],
+        "path": ""
+    },
+    "ast": {
+        "type": "sequence",
+        "components": [
+            {
+                "type": "action",
+                "name": "/_/input"
+            },
+            {
+                "type": "parallel",
+                "components": [
+                    {
+                        "type": "action",
+                        "name": "/_/increment"
+                    },
+                    {
+                        "type": "action",
+                        "name": "/_/square"
+                    }
+                ]
+            },
+            {
+                "type": "action",
+                "name": "/_/baseline-aggregate"
+            }
+        ]
+    },
+    "version": "0.12.0"
+}
