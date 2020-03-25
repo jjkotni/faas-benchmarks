@@ -6,7 +6,7 @@ def aggregateHandler(events, context):
         aggregate += event['body']['number']
 
     response = {
-        "statusCode": 200
+        "statusCode": 200,
         "body":{"number":aggregate}
     }
 
