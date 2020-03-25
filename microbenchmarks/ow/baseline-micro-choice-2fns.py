@@ -21,8 +21,6 @@ def main():
     return composer.sequence('input', composer.when(
         composer.action('choice-2fns',  { 'action': lambda args: { 'value': args['body']['number']%2 } }),
         composer.action('choice-increment', { 'action': lambda args: {'value': 2*args['body']['number']}}),
-        composer.action('choice-double',  { 'action': lambda args: {'value': 1+args['body']['number']}}),
-        # composer.action('choice-increment', { 'action': lambda args: { 'value': args['value']+1 }}),
-        # composer.action('choice-double',  { 'action': lambda args: { 'value': args['value']*2 } }),
+        composer.action('choice-double',  { 'action': lambda args: {'value': 1+args['body']['number']}})
         ))
 

@@ -120,6 +120,7 @@ def main(event):
     pymem_setup_allocators(0)
     ######################################################
 
+    time.time()
     input     = threading.Thread(target=inWorker, args = [event])
     increment = threading.Thread(target=incWorker)
     square    = threading.Thread(target=squareWorker)
@@ -144,4 +145,4 @@ def main(event):
     return aggOut
 
 # if __name__=="__main__":
-#     main()
+#     main({})

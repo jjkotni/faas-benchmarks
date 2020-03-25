@@ -1,0 +1,6 @@
+{
+    "timeout": 600000,
+    "memory": 256,
+    "concurrency": 1,
+    "logs": 10
+}
