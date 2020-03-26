@@ -1,6 +1,7 @@
+#!/usr/bin/python
 import json
 
-def aggregateHandler(events, context):
+def handler(events, context):
     aggregate = 0
     for event in events:
         aggregate += event['body']['number']

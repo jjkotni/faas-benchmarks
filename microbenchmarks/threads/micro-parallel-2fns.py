@@ -9,15 +9,18 @@ squareOut = {}
 aggOut    = {}
 
 def inputHandler(event):
+    print("Start Time: ", str(1000*time.time()))
     number = randint(1,50)
     response = {
         "statusCode": 200,
         "body": {"number":number}
     }
 
+    print("End Time: ", str(1000*time.time()))
     return response
 
 def incHandler(event):
+    print("Start Time: ", str(1000*time.time()))
     input = event['body']['number']
     output = input+1
 
@@ -26,9 +29,11 @@ def incHandler(event):
         "body": {"number":output}
     }
 
+    print("End Time: ", str(1000*time.time()))
     return response
 
 def squareHandler(event):
+    print("Start Time: ", str(1000*time.time()))
     input = event['body']['number']
     output = input*input
 
@@ -37,9 +42,11 @@ def squareHandler(event):
         "body": {"number":output}
     }
 
+    print("End Time: ", str(1000*time.time()))
     return response
 
 def aggregateHandler(events):
+    print("Start Time: ", str(1000*time.time()))
     aggregate = 0
     for event in events:
         aggregate += event['body']['number']
@@ -49,6 +56,7 @@ def aggregateHandler(events):
         "body":{"number":aggregate}
     }
 
+    print("End Time: ", str(1000*time.time()))
     return response
 
 def inWorker(event):
