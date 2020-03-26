@@ -14,7 +14,7 @@ FILE_NAME=tmp_actions
 
 for BENCHMARK in "${BENCHMARKS[@]}"
 do
-    ACTION_NAME=batch-${BENCHMARK%".py"}
+    ACTION_NAME=native-batch-${BENCHMARK%".py"}
 
 	if grep -q $ACTION_NAME "$FILE_NAME"; then
 	    echo "$ACTION_NAME action already defined, updating it..."
