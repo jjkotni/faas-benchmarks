@@ -1,7 +1,6 @@
 import threading
 import time
 from random import randint
-from mpkmemalloc import *
 
 inOut     = {}
 squareOut = {}
