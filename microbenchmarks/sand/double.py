@@ -1,7 +1,7 @@
 #!/usr/bin/python
 import json
 
-def handler(event, context):
+def handle(event, context):
     input = event['body']['number']
     output = 2*input
 

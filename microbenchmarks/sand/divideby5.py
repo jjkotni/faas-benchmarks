@@ -1,7 +1,7 @@
 #!/usr/bin/python
 import json
 
-def handler(event, context):
+def handle(event, context):
     input = event['body']['number']
     output = input%5
 

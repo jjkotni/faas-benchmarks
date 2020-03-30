@@ -2,7 +2,7 @@
 import json
 from random import randint
 
-def handler(event, context):
+def handle(event, context):
     number = randint(1,50)
     response = {
         "statusCode": 200,
