@@ -1,0 +1,65 @@
+service: audit-trail
+
+provider:
+  name: aws
+  region: us-east-1
+  runtime: python3.6
+  stage: dev
+
+  # iamRoleStatements:
+  #   - Effect: Allow
+  #     Action:
+  #       - s3:*
+  #     Resource:
+  #      Fn::Join:
+  #        - ""
+  #        - - "arn:aws:s3:::"
+  #          - ${self:provider.environment.BUCKET}
+  #          - "/*"
+
+  environment:
+    BUCKET: faas-iisc
+    FOLDER: audit-trail
+    PORTFOLIOS: portfolios.json
+
+functions:
+  fetchPortfolioData:
+    handler: portfoliodata.fetchPortfolioData
+    timeout: 29
+    events:
+      - http:
+          path: fetchPortfolioData
+          method: get
+
+  fetchMarketData:
+    handler: marketdata.marketData
+    timeout: 29
+    events:
+      - http:
+          path: fetchMarketData
+          method: get
+
+  checkMarginAccountBalance:
+    handler: marginBalance.checkMarginAccountBalance
+    timeout: 29
+    events:
+      - http:
+          path: checkMarginAccountBalance
+          method: get
+
+
+plugins:
+  - serverless-python-requirements
+custom:
+  pythonRequirements:
+    dockerizePip: true
+    noDeploy:
+      - boto3
+      - botocore
+      - docutils
+      - jmespath
+      - pip
+      - python-dateutil
+      - s3transfer
+      - setuptools
+      - six
