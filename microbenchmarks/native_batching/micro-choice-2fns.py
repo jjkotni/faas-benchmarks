@@ -1,4 +1,5 @@
 import threading
+import multiprocessing as mp
 import time
 from random import randint
 
@@ -7,18 +8,15 @@ divideOut = {}
 choiceOut = {}
 
 def inputHandler(event):
-    print("Start Time: ", str(1000*time.time()))
     number = randint(1,50)
     response = {
         "statusCode": 200,
         "body": {"number":number}
     }
 
-    print("End Time: ", str(1000*time.time()))
     return response
 
 def incHandler(event):
-    print("Start Time: ", str(1000*time.time()))
     input = event['body']['number']
     output = input+1
 
@@ -27,11 +25,31 @@ def incHandler(event):
         "body": {"number":output}
     }
 
-    print("End Time: ", str(1000*time.time()))
+    return response
+
+def squareHandler(event):
+    input = event['body']['number']
+    output = input*input
+
+    response = {
+        "statusCode": 200,
+        "body": {"number":output}
+    }
+
+    return response
+
+def halfHandler(event):
+    input = event['body']['number']
+    output = int(input/2)
+
+    response = {
+        "statusCode": 200,
+        "body": {"number":output}
+    }
+
     return response
 
 def doubleHandler(event):
-    print("Start Time: ", str(1000*time.time()))
     input = event['body']['number']
     output = 2*input
 
@@ -40,11 +58,20 @@ def doubleHandler(event):
         "body": {"number":output}
     }
 
-    print("End Time: ", str(1000*time.time()))
+    return response
+
+def divideby5Handler(event):
+    input = event['body']['number']
+    output = input%5
+
+    response = {
+        "statusCode": 200,
+        "body": {"number":output}
+    }
+
     return response
 
 def divideby2Handler(event):
-    print("Start Time: ", str(1000*time.time()))
     input = event['body']['number']
     output = input%2
 
@@ -53,10 +80,12 @@ def divideby2Handler(event):
         "body": {"number":output}
     }
 
-    print("End Time: ", str(1000*time.time()))
     return response
 
 def inWorker(event):
+    ######################################################
+    ######################################################
+
     result = inputHandler(event)
 
     ######################################################
@@ -100,8 +129,7 @@ def doubleWorker():
     choiceOut = result
     ######################################################
 
-def main(event):
-    #All marked sections are overheads due to our system
+def functionWorker(event):
     input     = threading.Thread(target=inWorker, args = [event])
     divideby2 = threading.Thread(target=divideby2Worker)
 
@@ -126,5 +154,33 @@ def main(event):
 
     return choiceOut
 
-# if __name__=="__main__":
-#     main({})
+def processWrapper(activationId, event, responseQueue):
+    response = functionWorker(event)
+
+    ######################################################
+    responseQueue.put({activationId:response})
+    ######################################################
+
+def main(events):
+    processes = []
+    responseQueue = mp.Queue()
+
+    for activationId, event in events.items():
+        processes.append(mp.Process(target=processWrapper, args=[activationId, event, responseQueue]))
+
+    for idx, process in enumerate(processes):
+        process.start()
+
+    for idx, process in enumerate(processes):
+        process.join()
+
+    result = {}
+    for x in range(len(events)):
+        result.update(responseQueue.get())
+
+    return(result)
+
+# if __name__ == '__main__':
+#     out = main({'activation1':{},'activation3':{},'activation4':{}, 'activation2': {},
+#              'activation31':{},'activation33':{},'activation34':{}, 'activation32': {},
+#              'activation45':{},'activation46':{},'activation47':{}, 'activation48': {}})

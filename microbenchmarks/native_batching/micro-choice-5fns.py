@@ -1,28 +1,22 @@
 import threading
+import multiprocessing as mp
 import time
 from random import randint
 
 inOut     = {}
-incOut    = {}
-squareOut = {}
-halfOut   = {}
-remOut    = {}
-aggOut    = {}
-doubleOut = {}
+divideOut = {}
+choiceOut = {}
 
 def inputHandler(event):
-    print("Start Time: ", str(1000*time.time()))
     number = randint(1,50)
     response = {
         "statusCode": 200,
         "body": {"number":number}
     }
 
-    print("End Time: ", str(1000*time.time()))
     return response
 
 def incHandler(event):
-    print("Start Time: ", str(1000*time.time()))
     input = event['body']['number']
     output = input+1
 
@@ -31,11 +25,9 @@ def incHandler(event):
         "body": {"number":output}
     }
 
-    print("End Time: ", str(1000*time.time()))
     return response
 
 def squareHandler(event):
-    print("Start Time: ", str(1000*time.time()))
     input = event['body']['number']
     output = input*input
 
@@ -44,11 +36,9 @@ def squareHandler(event):
         "body": {"number":output}
     }
 
-    print("End Time: ", str(1000*time.time()))
     return response
 
 def halfHandler(event):
-    print("Start Time: ", str(1000*time.time()))
     input = event['body']['number']
     output = int(input/2)
 
@@ -57,24 +47,9 @@ def halfHandler(event):
         "body": {"number":output}
     }
 
-    print("End Time: ", str(1000*time.time()))
-    return response
-
-def reminderHandler(event):
-    print("Start Time: ", str(1000*time.time()))
-    input = event['body']['number']
-    output = input%2
-
-    response = {
-        "statusCode": 200,
-        "body": {"number":output}
-    }
-
-    print("End Time: ", str(1000*time.time()))
     return response
 
 def doubleHandler(event):
-    print("Start Time: ", str(1000*time.time()))
     input = event['body']['number']
     output = 2*input
 
@@ -83,24 +58,34 @@ def doubleHandler(event):
         "body": {"number":output}
     }
 
-    print("End Time: ", str(1000*time.time()))
     return response
 
-def aggregateHandler(events):
-    print("Start Time: ", str(1000*time.time()))
-    aggregate = 0
-    for event in events:
-        aggregate += event['body']['number']
+def divideby5Handler(event):
+    input = event['body']['number']
+    output = input%5
 
     response = {
         "statusCode": 200,
-        "body":{"number":aggregate}
+        "body": {"number":output}
     }
 
-    print("End Time: ", str(1000*time.time()))
+    return response
+
+def divideby2Handler(event):
+    input = event['body']['number']
+    output = input%2
+
+    response = {
+        "statusCode": 200,
+        "body": {"number":output}
+    }
+
     return response
 
 def inWorker(event):
+    ######################################################
+    ######################################################
+
     result = inputHandler(event)
 
     ######################################################
@@ -108,117 +93,133 @@ def inWorker(event):
     inOut = result
     ######################################################
 
-def incWorker():
+def divideby5Worker():
     ######################################################
     global inOut
     ######################################################
 
-    result = incHandler(inOut)
+    result = divideby5Handler(inOut)
 
     ######################################################
-    global incOut
-    incOut = result
+    global divideOut
+    divideOut = result
+    ######################################################
+
+def incWorker():
+    ######################################################
+    global divideOut
+    ######################################################
+
+    result = incHandler(divideOut)
+
+    ######################################################
+    global choiceOut
+    choiceOut = result
     ######################################################
 
 def squareWorker():
     ######################################################
-    global inOut
+    global divideOut
     ######################################################
 
-    result = squareHandler(inOut)
+    result = squareHandler(divideOut)
 
     ######################################################
-    global squareOut
-    squareOut = result
+    global choiceOut
+    choiceOut = result
     ######################################################
 
 def halfWorker():
     ######################################################
-    global inOut
+    global divideOut
     ######################################################
 
-    result = halfHandler(inOut)
+    result = halfHandler(divideOut)
 
     ######################################################
-    global halfOut
-    halfOut = result
+    global choiceOut
+    choiceOut = result
     ######################################################
 
-def remWorker():
+def divideby2Worker():
     ######################################################
-    global inOut
+    global divideOut
     ######################################################
 
-    result = reminderHandler(inOut)
+    result = divideby2Handler(divideOut)
 
     ######################################################
-    global remOut
-    remOut = result
+    global choiceOut
+    choiceOut = result
     ######################################################
 
 def doubleWorker():
     ######################################################
-    global inOut
+    global divideOut
     ######################################################
 
-    result = doubleHandler(inOut)
+    result = doubleHandler(divideOut)
 
     ######################################################
-    global doubleOut
-    doubleOut = result
+    global choiceOut
+    choiceOut = result
     ######################################################
 
-def aggregateWorker():
-    ######################################################
-    global incOut, squareOut, remOut, halfOut, doubleOut
-    ######################################################
-
-    result = aggregateHandler([incOut, squareOut,
-                            remOut, halfOut, doubleOut])
-
-    ######################################################
-    global aggOut
-    aggOut = result
-    ######################################################
-
-def main(event):
-    #All marked sections are overheads due to our system
+def functionWorker(event):
     input     = threading.Thread(target=inWorker, args = [event])
-    increment = threading.Thread(target=incWorker)
-    square    = threading.Thread(target=squareWorker)
-    half      = threading.Thread(target=halfWorker)
-    reminder  = threading.Thread(target=remWorker)
-    double    = threading.Thread(target=doubleWorker)
-    aggregate = threading.Thread(target=aggregateWorker)
+    divideby5 = threading.Thread(target=divideby5Worker)
 
     input.start()
     input.join()
 
-    #Parallel Functions
-    increment.start()
-    square.start()
-    half.start()
-    reminder.start()
-    double.start()
+    divideby5.start()
+    divideby5.join()
 
-    reminder.join()
-    half.join()
-    square.join()
-    increment.join()
-    double.join()
+    choices = {
+        0: squareWorker,
+        1: incWorker,
+        2: divideby2Worker,
+        3: doubleWorker,
+        4: halfWorker
+    }
 
-    aggregate.start()
-    aggregate.join()
+    reminder     = divideOut['body']['number']
+    choiceWorker = choices.get(reminder)
 
-    # print(inOut)
-    # print(incOut)
-    # print(squareOut)
-    # print(remOut)
-    # print(halfOut)
-    # print(doubleOut)
-    # print(aggOut)
+    choice    = threading.Thread(target=choiceWorker)
 
-    return aggOut
+    choice.start()
+    choice.join()
 
-if __name__=="__main__":
-    main({})
+    return choiceOut
+
+def processWrapper(activationId, event, responseQueue):
+    response = functionWorker(event)
+
+    ######################################################
+    responseQueue.put({activationId:response})
+    ######################################################
+
+def main(events):
+    processes = []
+    responseQueue = mp.Queue()
+
+    for activationId, event in events.items():
+        processes.append(mp.Process(target=processWrapper, args=[activationId, event, responseQueue]))
+
+    for idx, process in enumerate(processes):
+        process.start()
+
+    for idx, process in enumerate(processes):
+        process.join()
+
+    result = {}
+    for x in range(len(events)):
+        result.update(responseQueue.get())
+
+    return(result)
+
+# if __name__ == '__main__':
+#     out = main({'activation1':{},'activation3':{},'activation4':{}, 'activation2': {},
+#              'activation31':{},'activation33':{},'activation34':{}, 'activation32': {},
+#              'activation45':{},'activation46':{},'activation47':{}, 'activation48': {}})

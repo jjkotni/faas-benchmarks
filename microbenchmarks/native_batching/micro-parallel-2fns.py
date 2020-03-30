@@ -1,4 +1,5 @@
 import threading
+import multiprocessing as mp
 import time
 from random import randint
 
@@ -8,18 +9,15 @@ squareOut = {}
 aggOut    = {}
 
 def inputHandler(event):
-    print("Start Time: ", str(1000*time.time()))
     number = randint(1,50)
     response = {
         "statusCode": 200,
         "body": {"number":number}
     }
 
-    print("End Time: ", str(1000*time.time()))
     return response
 
 def incHandler(event):
-    print("Start Time: ", str(1000*time.time()))
     input = event['body']['number']
     output = input+1
 
@@ -28,11 +26,9 @@ def incHandler(event):
         "body": {"number":output}
     }
 
-    print("End Time: ", str(1000*time.time()))
     return response
 
 def squareHandler(event):
-    print("Start Time: ", str(1000*time.time()))
     input = event['body']['number']
     output = input*input
 
@@ -41,11 +37,9 @@ def squareHandler(event):
         "body": {"number":output}
     }
 
-    print("End Time: ", str(1000*time.time()))
     return response
 
 def aggregateHandler(events):
-    print("Start Time: ", str(1000*time.time()))
     aggregate = 0
     for event in events:
         aggregate += event['body']['number']
@@ -55,10 +49,12 @@ def aggregateHandler(events):
         "body":{"number":aggregate}
     }
 
-    print("End Time: ", str(1000*time.time()))
     return response
 
 def inWorker(event):
+    ######################################################
+    ######################################################
+
     result = inputHandler(event)
 
     ######################################################
@@ -102,8 +98,7 @@ def aggregateWorker():
     aggOut = result
     ######################################################
 
-def main(event):
-    #All marked sections are overheads due to our system
+def functionWorker(event):
     input     = threading.Thread(target=inWorker, args = [event])
     increment = threading.Thread(target=incWorker)
     square    = threading.Thread(target=squareWorker)
@@ -124,5 +119,33 @@ def main(event):
 
     return aggOut
 
-# if __name__=="__main__":
-#     main({})
+def processWrapper(activationId, event, responseQueue):
+    response = functionWorker(event)
+
+    ######################################################
+    responseQueue.put({activationId:response})
+    ######################################################
+
+def main(events):
+    processes = []
+    responseQueue = mp.Queue()
+
+    for activationId, event in events.items():
+        processes.append(mp.Process(target=processWrapper, args=[activationId, event, responseQueue]))
+
+    for idx, process in enumerate(processes):
+        process.start()
+
+    for idx, process in enumerate(processes):
+        process.join()
+
+    result = {}
+    for x in range(len(events)):
+        result.update(responseQueue.get())
+
+    return(result)
+
+# if __name__ == '__main__':
+#     out = main({'activation1':{},'activation3':{},'activation4':{}, 'activation2': {},
+#              'activation31':{},'activation33':{},'activation34':{}, 'activation32': {},
+#              'activation45':{},'activation46':{},'activation47':{}, 'activation48': {}})
