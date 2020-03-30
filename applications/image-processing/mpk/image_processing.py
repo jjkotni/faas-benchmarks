@@ -192,6 +192,6 @@ def main(params):
 
     return result
 
-if __name__ == "__main__":
-    out = main({'activation1':{}})
-    print(out)
+# if __name__ == "__main__":
+#     out = main({'activation1':{}})
+#     print(out)
