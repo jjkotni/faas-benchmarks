@@ -12,7 +12,7 @@ renderOut  = {}
 
 def resizeWorker(event):
     ######################################################
-    tname = threading.currentthread().getname()
+    tname = threading.currentThread().getName()
     pkey_thread_mapper(tname)
     tname = chr(ord(tname[0])+1)+tname[1:]
     ######################################################
@@ -27,7 +27,7 @@ def resizeWorker(event):
 
 def predictWorker():
     ######################################################
-    tname = threading.currentthread().getname()
+    tname = threading.currentThread().getName()
     pkey_thread_mapper(tname)
     tname = chr(ord(tname[0])+1)+tname[1:]
     global resizeOut
@@ -43,7 +43,7 @@ def predictWorker():
 
 def renderWorker():
     ######################################################
-    tname = threading.currentthread().getname()
+    tname = threading.currentThread().getName()
     pkey_thread_mapper(tname)
     tname = chr(ord(tname[0])+1)+tname[1:]
     global predictOut
