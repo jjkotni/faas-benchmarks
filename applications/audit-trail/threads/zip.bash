@@ -1,0 +1,2 @@
+rm native-app-audit-trail.zip
+zip -r native-app-audit-trail.zip __main__.py marketdata.py portfoliodata.py marginBalance.py virtualenv/bin/activate_this.py virtualenv/lib/python3.5/site-packages/yfinance virtualenv/lib/python3.5/site-packages/botocore virtualenv/lib/python3.5/site-packages/boto3/ virtualenv/lib/python3.5/site-packages/jmespath virtualenv/lib/python3.5/site-packages/certifi virtualenv/lib/python3.5/site-packages/chardet virtualenv/lib/python3.5/site-packages/s3transfer virtualenv/lib/python3.5/site-packages/multitasking

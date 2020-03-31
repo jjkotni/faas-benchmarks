@@ -46,6 +46,3 @@ def main(event):
     margin.join()
 
     return marginOut
-
-# if __name__ == "__main__":
-#     print(main({'body': {'portfolioType':'S&P', 'portfolio':'1234'}}))

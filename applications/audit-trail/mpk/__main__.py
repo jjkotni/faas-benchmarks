@@ -12,7 +12,7 @@ marginOut    = {}
 
 def marginWorker():
     ######################################################
-    tname = threading.currentthread().getname()
+    tname = threading.currentThread().getName()
     pkey_thread_mapper(tname)
     tname = chr(ord(tname[0])+1)+tname[1:]
     global marketOut, portfolioOut
@@ -29,7 +29,7 @@ def marginWorker():
 
 def marketWorker(event):
     ######################################################
-    tname = threading.currentthread().getname()
+    tname = threading.currentThread().getName()
     pkey_thread_mapper(tname)
     tname = chr(ord(tname[0])+1)+tname[1:]
     ######################################################
@@ -44,7 +44,7 @@ def marketWorker(event):
 
 def portfolioWorker(event):
     ######################################################
-    tname = threading.currentthread().getname()
+    tname = threading.currentThread().getName()
     pkey_thread_mapper(tname)
     tname = chr(ord(tname[0])+1)+tname[1:]
     ######################################################

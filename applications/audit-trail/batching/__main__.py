@@ -1,6 +1,7 @@
 import os
 import threading
 from mpkmemalloc import *
+import multiprocessing as mp
 
 from marginBalance import checkMarginAccountBalance
 from marketdata import marketData
@@ -12,7 +13,7 @@ marginOut    = {}
 
 def marginWorker():
     ######################################################
-    tname = threading.currentthread().getname()
+    tname = threading.currentThread().getName()
     pkey_thread_mapper(tname)
     tname = chr(ord(tname[0])+1)+tname[1:]
     global marketOut, portfolioOut
@@ -29,7 +30,7 @@ def marginWorker():
 
 def marketWorker(event):
     ######################################################
-    tname = threading.currentthread().getname()
+    tname = threading.currentThread().getName()
     pkey_thread_mapper(tname)
     tname = chr(ord(tname[0])+1)+tname[1:]
     ######################################################
@@ -44,7 +45,7 @@ def marketWorker(event):
 
 def portfolioWorker(event):
     ######################################################
-    tname = threading.currentthread().getname()
+    tname = threading.currentThread().getName()
     pkey_thread_mapper(tname)
     tname = chr(ord(tname[0])+1)+tname[1:]
     ######################################################
@@ -105,5 +106,5 @@ def main(events):
 
     return(result)
 
-# if __name__ == "__main__":
-#     print(main({'activation1':{'body': {'portfolioType':'S&P', 'portfolio':'1234'}}}))
+if __name__ == "__main__":
+    print(main({'activation1':{'body': {'portfolioType':'S&P', 'portfolio':'1234'}}}))
