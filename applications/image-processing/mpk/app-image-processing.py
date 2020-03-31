@@ -15,13 +15,14 @@ remOut    = {}
 aggOut    = {}
 doubleOut = {}
 
-
 FILE_DIR = '/tmp'
-BUCKET = os.environ['BUCKET']
-FOLDER = os.environ['FOLDER']
-IMAGE  = os.environ['IMAGE']
+BUCKET = 'faas-iisc'
+FOLDER = 'image-processing'
+IMAGE  = 'image.jpg'
 
 def fetchHandler(event):
+    print("Started fetch Handler")
+
     boto3.Session(
         ).resource('s3'
         ).Bucket(BUCKET
@@ -29,14 +30,17 @@ def fetchHandler(event):
             os.path.join(FOLDER,   IMAGE),
             os.path.join(FILE_DIR, IMAGE))
 
-    img = open(os.path.join(FILE_DIR, IMAGE), 'rb')
-    img_encode = base64.b64encode(img.read()).decode("utf-8")
+    # print("Downloaded file")
+    # img = open(os.path.join(FILE_DIR, IMAGE), 'rb')
+    # print("Fetched image")
+    # img_encode = base64.b64encode(img.read()).decode("utf-8")
 
     response = {
         "statusCode": 200,
-        "body": {"image": img_encode}
+        "body": {"image": os.path.join(FILE_DIR, IMAGE)}
     }
 
+    print("Finished fetch Handler")
     return response
 
 def filter(image):
@@ -73,6 +77,7 @@ def flip(image):
     return path_list
 
 def getImage(body):
+    # img = open(os.path.join(FILE_DIR, IMAGE), 'rb')
     imageString = base64.decodestring(body['image'].encode("utf-8"))
     imageFile = open(os.path.join(FILE_DIR, IMAGE), "wb")
     imageFile.write(imageString)
@@ -81,8 +86,11 @@ def getImage(body):
     return image
 
 def imageProcessingHandler(processingFn, event):
+    print("Image processing Handler")
     image  = getImage(event['body'])
+    print("Fetched image")
     images = processingFn(image)
+    print("Processed iamges")
 
     processed = []
     for modImage in images:
@@ -281,7 +289,7 @@ def main(event):
 
     input     = threading.Thread(target=fetchWorker, args = [event])
     increment = threading.Thread(target=filterWorker)
-    square    = threading.Thread(target=flipWorker)
+    # square    = threading.Thread(target=flipWorker)
     # half      = threading.Thread(target=halfWorker)
     # reminder  = threading.Thread(target=remWorker)
     # double    = threading.Thread(target=doubleWorker)
@@ -292,14 +300,14 @@ def main(event):
 
     #Parallel Functions
     increment.start()
-    square.start()
+    # square.start()
     # half.start()
     # reminder.start()
     # double.start()
 
 #     reminder.join()
 #     half.join()
-    square.join()
+    # square.join()
     increment.join()
     # double.join()
 
@@ -311,5 +319,5 @@ def main(event):
     ######################################################
     return aggOut
 
-# if __name__=="__main__":
-#     main()
+if __name__=="__main__":
+    main({})

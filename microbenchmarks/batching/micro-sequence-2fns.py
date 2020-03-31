@@ -1,10 +1,20 @@
 import threading
+from random import randint
 import time
 from mpkmemalloc import *
 import multiprocessing as mp
 
-incOut    = {}
+inOut     = {}
 squareOut = {}
+
+def inputHandler(event):
+    number = randint(1,50)
+    response = {
+        "statusCode": 200,
+        "body": {"number":number}
+    }
+
+    return response
 
 def squareHandler(event):
     input = event['body']['number']
@@ -17,26 +27,30 @@ def squareHandler(event):
 
     return response
 
-def incHandler(event):
-    input = event['body']['number']
-    output = input+1
+def inWorker(event):
+    ######################################################
+    tname = threading.currentThread().getName()
+    pkey_thread_mapper(tname)
+    tname = chr(ord(tname[0])+1)+tname[1:]
+    ######################################################
 
-    response = {
-        "statusCode": 200,
-        "body": {"number":output}
-    }
+    result = inputHandler(event)
 
-    return response
+    ######################################################
+    global inOut
+    inOut = result
+    pymem_reset(tname)
+    ######################################################
 
 def squareWorker():
     ######################################################
     tname = threading.currentThread().getName()
     pkey_thread_mapper(tname)
     tname = chr(ord(tname[0])+1)+tname[1:]
-    global incOut
+    global inOut
     ######################################################
 
-    result = squareHandler(incOut)
+    result = squareHandler(inOut)
 
     ######################################################
     global squareOut
@@ -44,27 +58,12 @@ def squareWorker():
     pymem_reset(tname)
     ######################################################
 
-def incWorker(event):
-    ######################################################
-    tname = threading.currentThread().getName()
-    pkey_thread_mapper(tname)
-    tname = chr(ord(tname[0])+1)+tname[1:]
-    ######################################################
-
-    result = incHandler(event)
-
-    ######################################################
-    global incOut
-    incOut = result
-    pymem_reset(tname)
-    ######################################################
-
 def functionWorker(event):
-    increment = threading.Thread(target=incWorker, args=[event])
+    input     = threading.Thread(target=inWorker, args=[event])
     square    = threading.Thread(target=squareWorker)
 
-    increment.start()
-    increment.join()
+    input.start()
+    input.join()
 
     square.start()
     square.join()
