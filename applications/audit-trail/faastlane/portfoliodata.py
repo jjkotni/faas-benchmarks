@@ -1,7 +1,7 @@
 import os
 import json
 
-def fetchPortfolioData(event, context):
+def fetchPortfolioData(event):
     portfolio = event['body']['portfolio']
     portfolios = json.loads(open('data/portfolios.json', 'r').read())
     portfolioData = portfolios[portfolio]

@@ -1,6 +1,6 @@
 import yfinance as yf
 
-def main(event):
+def marketData(event):
     portfolioType = event['body']['portfolioType']
 
     tickersForPortfolioTypes = {'S&P': ['GOOG', 'AMZN', 'MSFT']}
@@ -17,6 +17,6 @@ def main(event):
     return {'statusCode':200,
             'body': {'marketData':prices}}
 
-# if __name__=="__main__":
-#     event = {'body':{'portfolioType':'S&P'}}
-#     print(marketData(event))
+if __name__=="__main__":
+    event = {'body':{'portfolioType':'S&P'}}
+    print(marketData(event))

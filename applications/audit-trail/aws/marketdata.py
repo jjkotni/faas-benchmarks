@@ -17,6 +17,6 @@ def marketData(event, context):
     return {'statusCode':200,
             'body': {'marketData':prices}}
 
-# if __name__=="__main__":
-#     event = {'body':{'portfolioType':'S&P'}}
-#     print(marketData(event))
+if __name__=="__main__":
+    event = {'body':{'portfolioType':'S&P'}}
+    print(marketData(event))

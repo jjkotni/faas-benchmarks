@@ -1,0 +1,7 @@
+{
+	"1234" : {
+		"security"  : ["GOOG","MSFT"],
+		"quantity"  : [10, 20],
+		"marginBalance" : 3600
+	}
+}
