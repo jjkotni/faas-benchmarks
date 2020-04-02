@@ -1,4 +1,6 @@
 service: prediction-pipeline
+package:
+    individually: true
 
 provider:
   name: aws
@@ -27,6 +29,9 @@ provider:
 functions:
   resize:
     handler: resize.resizeHandler
+    package:
+        include:
+            - data/image.jpg
     timeout: 30
     events:
       - http:
@@ -36,6 +41,9 @@ functions:
 
   predict:
     handler: predict.predictHandler
+    package:
+        include:
+            - data/
     timeout: 30
     events:
       - http:

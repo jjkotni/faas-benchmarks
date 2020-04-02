@@ -28,7 +28,7 @@ def _deactivate(args):
 _deactivate(["nondestructive"])
 aliases["deactivate"] = _deactivate
 
-$VIRTUAL_ENV = r"/home/kjj/faas-benchmarks/applications/prediction-pipeline/mpk/virtualenv"
+$VIRTUAL_ENV = r"/home/kjj/faas-benchmarks/applications/prediction-pipeline/batching/virtualenv"
 
 $_OLD_VIRTUAL_PATH = $PATH
 $PATH = $PATH[:]

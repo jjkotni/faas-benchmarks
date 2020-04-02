@@ -1,4 +1,4 @@
-#!/home/kjj/faas-benchmarks/applications/prediction-pipeline/mpk/virtualenv/bin/python3.5
+#!/home/kjj/faas-benchmarks/applications/prediction-pipeline/batching/virtualenv/bin/python3.5
 
 import sys
 import json

@@ -9,9 +9,12 @@ PORTFOLIOS = 'portfolios.json'
 def fetchPortfolioData(event):
     portfolio = event['body']['portfolio']
 
-    response   = boto3.resource('s3').Object(BUCKET,os.path.join(FOLDER, PORTFOLIOS)).get()
+    s3 = boto3.client('s3', aws_access_key_id="AKIAJW2FQCBYG7JUWGPQ",
+                      aws_secret_access_key="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",
+                      region_name="us-east-1")
 
-    portfolios = json.loads(response['Body'].read().decode('utf-8'))
+    portfolios_string = s3.get_object(Bucket = BUCKET, Key = os.path.join(FOLDER, PORTFOLIOS))['Body'].read()
+    portfolios = json.loads(portfolios_string.decode('utf-8'))
 
     portfolioData = portfolios[portfolio]
 

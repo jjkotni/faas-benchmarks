@@ -1,4 +1,4 @@
-#!/home/kjj/faas-benchmarks/applications/prediction-pipeline/mpk/virtualenv/bin/python3.5
+#!/home/kjj/faas-benchmarks/applications/prediction-pipeline/batching/virtualenv/bin/python3.5
 
 # $Id: rst2html4.py 7994 2016-12-10 17:41:45Z milde $
 # Author: David Goodger <goodger@python.org>

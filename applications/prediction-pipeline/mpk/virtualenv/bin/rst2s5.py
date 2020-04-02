@@ -1,4 +1,4 @@
-#!/home/kjj/faas-benchmarks/applications/prediction-pipeline/mpk/virtualenv/bin/python3.5
+#!/home/kjj/faas-benchmarks/applications/prediction-pipeline/batching/virtualenv/bin/python3.5
 
 # $Id: rst2s5.py 4564 2006-05-21 20:44:42Z wiemann $
 # Author: Chris Liechti <cliechti@gmx.net>

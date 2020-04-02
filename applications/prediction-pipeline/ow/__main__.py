@@ -1,26 +1,22 @@
 import os
 import json
-
 import boto3
-import tensorflow as tf
-import numpy as np
 import pickle
-
-BUCKET = 'faas-iisc'
-FOLDER = 'prediction-pipeline'
-RESIZE_IMAGE = 'resize-image.pickle'
-MODEL = 'mobilenet_v2_1.0_224_frozen.pb'
+import numpy as np
+import tensorflow as tf
 
 def main(event):
-    s3 = boto3.client('s3', aws_access_key_id="AKIAIDWPIMU4IJPMXVZA",
-                      aws_secret_access_key="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",
-                      region_name="us-east-1")
-
+    #Use S3 to communicate big messages
+    #######################################################################################################################
+    BUCKET = 'faas-iisc'
+    FOLDER = 'prediction-pipeline'
+    RESIZE_IMAGE = 'resize-image.pickle'
+    s3 = boto3.client('s3', aws_access_key_id="AKIAJW2FQCBYG7JUWGPQ",
+                      aws_secret_access_key="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", region_name="us-east-1")
     resize_pickle = s3.get_object(Bucket = BUCKET, Key = os.path.join(FOLDER, RESIZE_IMAGE))['Body'].read()
     img = pickle.loads(resize_pickle)
-
-    model_byte_string = s3.get_object(Bucket = BUCKET, Key = os.path.join(FOLDER, MODEL))['Body'].read()
-    gd = tf.GraphDef.FromString(model_byte_string)
+    #######################################################################################################################
+    gd = tf.GraphDef.FromString(open('data/mobilenet_v2_1.0_224_frozen.pb', 'rb').read())
 
     inp, predictions = tf.import_graph_def(gd,  return_elements = ['input:0', 'MobilenetV2/Predictions/Reshape_1:0'])
 

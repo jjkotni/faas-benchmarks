@@ -1,4 +1,4 @@
-#!/home/kjj/faas-benchmarks/applications/prediction-pipeline/mpk/virtualenv/bin/python
+#!/home/kjj/faas-benchmarks/applications/prediction-pipeline/batching/virtualenv/bin/python
 
 import sys
 import getopt

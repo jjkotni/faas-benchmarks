@@ -1,4 +1,4 @@
-#!/home/kjj/faas-benchmarks/applications/prediction-pipeline/mpk/virtualenv/bin/python3.5
+#!/home/kjj/faas-benchmarks/applications/prediction-pipeline/batching/virtualenv/bin/python3.5
 
 # $Id: rst2xetex.py 7847 2015-03-17 17:30:47Z milde $
 # Author: Guenter Milde

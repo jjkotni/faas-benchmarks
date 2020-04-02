@@ -1,0 +1,52 @@
+{
+    "composition": {
+        "type": "sequence",
+        "components": [
+            {
+                "type": "parallel",
+                "components": [
+                    {
+                        "type": "action",
+                        "name": "/_/portfoliodata",
+                        "path": "[0][0]"
+                    },
+                    {
+                        "type": "action",
+                        "name": "/_/marketdata",
+                        "path": "[0][1]"
+                    }
+                ],
+                "path": "[0]"
+            },
+            {
+                "type": "action",
+                "name": "/_/marginbalance",
+                "path": "[1]"
+            }
+        ],
+        "path": ""
+    },
+    "ast": {
+        "type": "sequence",
+        "components": [
+            {
+                "type": "parallel",
+                "components": [
+                    {
+                        "type": "action",
+                        "name": "/_/portfoliodata"
+                    },
+                    {
+                        "type": "action",
+                        "name": "/_/marketdata"
+                    }
+                ]
+            },
+            {
+                "type": "action",
+                "name": "/_/marginbalance"
+            }
+        ]
+    },
+    "version": "0.12.0"
+}
