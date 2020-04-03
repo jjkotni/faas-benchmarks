@@ -1,9 +1,8 @@
 def main(events):
-    print(events)
     marketData = {}
     portfolioData = {}
 
-    for event in events:
+    for event in events['value']:
         body = event['body']
         if 'marketData' in body:
             marketData = body['marketData']
