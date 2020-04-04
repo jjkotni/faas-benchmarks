@@ -1,4 +1,4 @@
-#!/home/kjj/faas-benchmarks/applications/audit-trail/threads/virtualenv/bin/python
+#!/home/kjj/faas-benchmarks/applications/audit-trail/faastlane/virtualenv/bin/python
 
 import sys
 import getopt

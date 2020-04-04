@@ -133,8 +133,8 @@ def main(event):
     increment.start()
     square.start()
 
-    square.join()
     increment.join()
+    square.join()
 
     aggregate.start()
     aggregate.join()

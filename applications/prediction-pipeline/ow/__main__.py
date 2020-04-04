@@ -11,8 +11,8 @@ def main(event):
     BUCKET = 'faas-iisc'
     FOLDER = 'prediction-pipeline'
     RESIZE_IMAGE = 'resize-image.pickle'
-    s3 = boto3.client('s3', aws_access_key_id="AKIA3FFYAI3OUV5UWTKJ",
-                      aws_secret_access_key="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", region_name="us-east-1")
+    s3 = boto3.client('s3', aws_access_key_id="AKIA3FFYAI3ORS6ANNHL",
+                      aws_secret_access_key="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", region_name="us-east-1")
     resize_pickle = s3.get_object(Bucket = BUCKET, Key = os.path.join(FOLDER, RESIZE_IMAGE))['Body'].read()
     img = pickle.loads(resize_pickle)
     #######################################################################################################################

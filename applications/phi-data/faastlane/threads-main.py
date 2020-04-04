@@ -8,9 +8,9 @@ import hashlib
 import logging
 import boto3
 
-from identifyphi import identifyphiHandler
-from anonymize import anonymizeHandler
-from deidentify import deidentifyHandler
+from identifyphi import main as identifyphiHandler
+from anonymize import main as anonymizeHandler
+from deidentify import main as deidentifyHandler
 
 identifyphiOut = {}
 choiceOut = {}

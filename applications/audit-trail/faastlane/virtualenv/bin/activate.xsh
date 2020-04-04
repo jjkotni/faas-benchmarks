@@ -28,7 +28,7 @@ def _deactivate(args):
 _deactivate(["nondestructive"])
 aliases["deactivate"] = _deactivate
 
-$VIRTUAL_ENV = r"/home/kjj/faas-benchmarks/applications/audit-trail/threads/virtualenv"
+$VIRTUAL_ENV = r"/home/kjj/faas-benchmarks/applications/audit-trail/faastlane/virtualenv"
 
 $_OLD_VIRTUAL_PATH = $PATH
 $PATH = $PATH[:]

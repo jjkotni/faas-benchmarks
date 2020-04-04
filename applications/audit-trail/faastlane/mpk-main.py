@@ -68,9 +68,8 @@ def main(event):
     margin     = threading.Thread(target=marginWorker)
 
     market.start()
-    portfolio.start()
-
     market.join()
+    portfolio.start()
     portfolio.join()
 
     margin.start()

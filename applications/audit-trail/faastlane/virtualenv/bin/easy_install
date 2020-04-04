@@ -1,4 +1,4 @@
-#!/home/kjj/faas-benchmarks/applications/audit-trail/threads/virtualenv/bin/python3.5
+#!/home/kjj/faas-benchmarks/applications/audit-trail/faastlane/virtualenv/bin/python3.5
 # -*- coding: utf-8 -*-
 import re
 import sys

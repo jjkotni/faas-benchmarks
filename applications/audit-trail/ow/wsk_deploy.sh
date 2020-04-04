@@ -4,4 +4,4 @@ wsk -i action update marketdata marketdata.zip --docker openwhisk/python3aiactio
 
 #Deploy the composed action
 compose baseline-app-audit-trail.js > baseline-app-audit-trail.json
-deploy baseline-app-audit-trail baseline-app-audit-trail.json -i -w -A limits=limits.json
+deploy baseline-app-audit-trail baseline-app-audit-trail.json -t 1800000 -i -w

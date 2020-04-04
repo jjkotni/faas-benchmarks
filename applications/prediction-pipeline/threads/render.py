@@ -1,7 +1,9 @@
 import json
+import time
 import numpy as np
 
 def renderHandler(event):
+    print("Start Time: ", str(1000*time.time()))
     body = json.loads(event['body'])
     x = np.array(body['predictions'])
 
@@ -13,4 +15,5 @@ def renderHandler(event):
         "body": json.dumps({'render': text})
     }
 
+    print("End Time: ", str(1000*time.time()))
     return response

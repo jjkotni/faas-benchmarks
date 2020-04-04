@@ -46,7 +46,7 @@ deactivate () {
 # unset irrelevant variables
 deactivate nondestructive
 
-VIRTUAL_ENV="/home/kjj/faas-benchmarks/applications/audit-trail/threads/virtualenv"
+VIRTUAL_ENV="/home/kjj/faas-benchmarks/applications/audit-trail/faastlane/virtualenv"
 export VIRTUAL_ENV
 
 _OLD_VIRTUAL_PATH="$PATH"

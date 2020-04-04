@@ -13,8 +13,8 @@ def main(event):
     #Baseline allows 1MB messages to be shared, use S3 to communicate messages
     #######################################################################################################################
     serialized_resize = pickle.dumps(resize_img)
-    s3 = boto3.client('s3', aws_access_key_id="AKIA3FFYAI3OUV5UWTKJ",
-                      aws_secret_access_key="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",
+    s3 = boto3.client('s3', aws_access_key_id="AKIA3FFYAI3ORS6ANNHL",
+                      aws_secret_access_key="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",
                       region_name="us-east-1")
 
     BUCKET = 'faas-iisc'

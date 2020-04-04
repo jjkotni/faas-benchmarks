@@ -3,8 +3,8 @@ import logging
 
 def extract_entities_from_message(message):
     client = boto3.client(service_name='comprehendmedical',
-                          aws_access_key_id="AKIA3FFYAI3OUV5UWTKJ",
-                          aws_secret_access_key="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",
+                          aws_access_key_id="AKIA3FFYAI3ORS6ANNHL",
+                          aws_secret_access_key="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",
                           region_name="us-east-1")
 
     return client.detect_phi(Text=message)

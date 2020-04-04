@@ -1,4 +1,6 @@
+import time
 def checkMarginAccountBalance(events):
+    print("Start Time: ", str(1000*time.time()))
     marketData = {}
     portfolioData = {}
 
@@ -23,5 +25,6 @@ def checkMarginAccountBalance(events):
     if marginAccountBalance >= 0.25*portfolioMarketValue:
         result = True
 
+    print("End Time: ", str(1000*time.time()))
     return {'statusCode': 200,
             'body': {'maintenaceMarginSatisfied': result}}

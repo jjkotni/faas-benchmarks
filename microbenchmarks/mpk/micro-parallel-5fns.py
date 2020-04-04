@@ -216,6 +216,18 @@ def main(event):
     input.start()
     input.join()
 
+    #Stupidity!
+    # increment.start()
+    # increment.join()
+    # square.start()
+    # square.join()
+    # half.start()
+    # half.join()
+    # reminder.start()
+    # reminder.join()
+    # double.start()
+    # double.join()
+
     #Parallel Functions
     increment.start()
     square.start()
