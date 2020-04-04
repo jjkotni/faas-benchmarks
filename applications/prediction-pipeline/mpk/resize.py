@@ -4,7 +4,7 @@ import time
 from PIL import Image
 
 def resizeHandler(event):
-    print("Start Time: ", str(1000*time.time()))
+    startTime = 1000*time.time()
     image = Image.open("data/image.jpg")
     img = np.array(image.resize((224, 224))).astype(np.float) / 128 - 1
     resize_img = img.reshape(1, 224,224, 3)
@@ -18,5 +18,7 @@ def resizeHandler(event):
         }
     }
 
-    print("End Time: ", str(1000*time.time()))
+    priorWorkflowDuration = event['duration'] if 'duration' in event else 0
+    #Obscure code, doing this to time.time() as late in the function as possible for end time
+    response['duration'] = priorWorkflowDuration - (startTime-1000*time.time())
     return response

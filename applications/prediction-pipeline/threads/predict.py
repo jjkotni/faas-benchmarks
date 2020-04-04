@@ -5,7 +5,7 @@ import numpy as np
 import tensorflow as tf
 
 def predictHandler(event):
-    print("Start Time: ", str(1000*time.time()))
+    startTime = 1000*time.time()
     img = np.array(json.loads(event['body']['image']))
 
     gd = tf.GraphDef.FromString(open('data/mobilenet_v2_1.0_224_frozen.pb', 'rb').read())
@@ -20,5 +20,7 @@ def predictHandler(event):
         "body": json.dumps({'predictions': x.tolist()})
     }
 
-    print("End Time: ", str(1000*time.time()))
+    priorWorkflowDuration = event['duration'] if 'duration' in event else 0
+    #Obscure code, doing this to time.time() as late in the function as possible for end time
+    response['duration'] = priorWorkflowDuration - (startTime-1000*time.time())
     return response

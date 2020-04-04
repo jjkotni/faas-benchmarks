@@ -2,7 +2,7 @@ import yfinance as yf
 import time
 
 def marketData(event):
-    print("Start Time: ", str(1000*time.time()))
+    startTime = 1000*time.time()
     portfolioType = event['body']['portfolioType']
 
     tickersForPortfolioTypes = {'S&P': ['GOOG', 'AMZN', 'MSFT']}
@@ -16,9 +16,13 @@ def marketData(event):
         price = data['Close'].unique()[0]
         prices[ticker] = price
 
-    print("End Time: ", str(1000*time.time()))
-    return {'statusCode':200,
-            'body': {'marketData':prices}}
+    response = {'statusCode':200,
+                'body': {'marketData':prices}}
+
+    priorWorkflowDuration = event['duration'] if 'duration' in event else 0
+    #Obscure code, doing this to time.time() as late in the function as possible for end time
+    response['duration'] = priorWorkflowDuration - (startTime-1000*time.time())
+    return response
 
 # if __name__=="__main__":
 #     event = {'body':{'portfolioType':'S&P'}}
