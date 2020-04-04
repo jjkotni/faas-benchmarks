@@ -2,10 +2,10 @@ import json
 import numpy as np
 from PIL import Image
 import pickle
-import boto3
 import os
 
 def handle(event, context):
+    startTime = 1000*time.time()
     image = Image.open("data/image.jpg")
     img = np.array(image.resize((224, 224))).astype(np.float) / 128 - 1
     resize_img = img.reshape(1, 224,224, 3)
@@ -22,5 +22,7 @@ def handle(event, context):
             "image": resized
         }
     }
-    response = {"statusCode": 200}
+    priorWorkflowDuration = event['duration'] if 'duration' in event else 0
+    #Obscure code, doing this to time.time() as late in the function as possible for end time
+    response['duration'] = priorWorkflowDuration - (startTime-1000*time.time())
     return response
