@@ -8,18 +8,19 @@ divideOut = {}
 choiceOut = {}
 
 def inputHandler(event):
-    print("Start Time: ", str(1000*time.time()))
+    startTime = 1000*time.time()
     number = randint(1,50)
     response = {
         "statusCode": 200,
         "body": {"number":number}
     }
 
-    print("End Time: ", str(1000*time.time()))
+    priorDuration = event['duration'] if 'duration' in event else 0
+    response['duration']=priorDuration -(startTime-1000*time.time())
     return response
 
 def incHandler(event):
-    print("Start Time: ", str(1000*time.time()))
+    startTime = 1000*time.time()
     input = event['body']['number']
     output = input+1
 
@@ -28,11 +29,12 @@ def incHandler(event):
         "body": {"number":output}
     }
 
-    print("End Time: ", str(1000*time.time()))
+    priorDuration = event['duration'] if 'duration' in event else 0
+    response['duration']=priorDuration -(startTime-1000*time.time())
     return response
 
 def squareHandler(event):
-    print("Start Time: ", str(1000*time.time()))
+    startTime = 1000*time.time()
     input = event['body']['number']
     output = input*input
 
@@ -41,11 +43,12 @@ def squareHandler(event):
         "body": {"number":output}
     }
 
-    print("End Time: ", str(1000*time.time()))
+    priorDuration = event['duration'] if 'duration' in event else 0
+    response['duration']=priorDuration -(startTime-1000*time.time())
     return response
 
 def halfHandler(event):
-    print("Start Time: ", str(1000*time.time()))
+    startTime = 1000*time.time()
     input = event['body']['number']
     output = int(input/2)
 
@@ -54,11 +57,12 @@ def halfHandler(event):
         "body": {"number":output}
     }
 
-    print("End Time: ", str(1000*time.time()))
+    priorDuration = event['duration'] if 'duration' in event else 0
+    response['duration']=priorDuration -(startTime-1000*time.time())
     return response
 
 def doubleHandler(event):
-    print("Start Time: ", str(1000*time.time()))
+    startTime = 1000*time.time()
     input = event['body']['number']
     output = 2*input
 
@@ -67,11 +71,12 @@ def doubleHandler(event):
         "body": {"number":output}
     }
 
-    print("End Time: ", str(1000*time.time()))
+    priorDuration = event['duration'] if 'duration' in event else 0
+    response['duration']=priorDuration -(startTime-1000*time.time())
     return response
 
 def divideby5Handler(event):
-    print("Start Time: ", str(1000*time.time()))
+    startTime = 1000*time.time()
     input = event['body']['number']
     output = input%5
 
@@ -80,11 +85,12 @@ def divideby5Handler(event):
         "body": {"number":output}
     }
 
-    print("End Time: ", str(1000*time.time()))
+    priorDuration = event['duration'] if 'duration' in event else 0
+    response['duration']=priorDuration -(startTime-1000*time.time())
     return response
 
 def divideby2Handler(event):
-    print("Start Time: ", str(1000*time.time()))
+    startTime = 1000*time.time()
     input = event['body']['number']
     output = input%2
 
@@ -93,7 +99,8 @@ def divideby2Handler(event):
         "body": {"number":output}
     }
 
-    print("End Time: ", str(1000*time.time()))
+    priorDuration = event['duration'] if 'duration' in event else 0
+    response['duration']=priorDuration -(startTime-1000*time.time())
     return response
 
 def inWorker(event):
@@ -244,4 +251,4 @@ def main(event):
     return choiceOut
 
 # if __name__=="__main__":
-#     main()
+#     print(main({}))

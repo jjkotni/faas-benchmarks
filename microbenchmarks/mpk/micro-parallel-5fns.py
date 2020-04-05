@@ -12,15 +12,19 @@ aggOut    = {}
 doubleOut = {}
 
 def inputHandler(event):
+    startTime = 1000*time.time()
     number = randint(1,50)
     response = {
         "statusCode": 200,
         "body": {"number":number}
     }
 
+    priorDuration = event['duration'] if 'duration' in event else 0
+    response['duration']=priorDuration -(startTime-1000*time.time())
     return response
 
 def incHandler(event):
+    startTime = 1000*time.time()
     input = event['body']['number']
     output = input+1
 
@@ -29,9 +33,12 @@ def incHandler(event):
         "body": {"number":output}
     }
 
+    priorDuration = event['duration'] if 'duration' in event else 0
+    response['duration']=priorDuration -(startTime-1000*time.time())
     return response
 
 def squareHandler(event):
+    startTime = 1000*time.time()
     input = event['body']['number']
     output = input*input
 
@@ -40,9 +47,12 @@ def squareHandler(event):
         "body": {"number":output}
     }
 
+    priorDuration = event['duration'] if 'duration' in event else 0
+    response['duration']=priorDuration -(startTime-1000*time.time())
     return response
 
 def halfHandler(event):
+    startTime = 1000*time.time()
     input = event['body']['number']
     output = int(input/2)
 
@@ -51,9 +61,12 @@ def halfHandler(event):
         "body": {"number":output}
     }
 
+    priorDuration = event['duration'] if 'duration' in event else 0
+    response['duration']=priorDuration -(startTime-1000*time.time())
     return response
 
 def reminderHandler(event):
+    startTime = 1000*time.time()
     input = event['body']['number']
     output = input%2
 
@@ -62,9 +75,12 @@ def reminderHandler(event):
         "body": {"number":output}
     }
 
+    priorDuration = event['duration'] if 'duration' in event else 0
+    response['duration']=priorDuration -(startTime-1000*time.time())
     return response
 
 def doubleHandler(event):
+    startTime = 1000*time.time()
     input = event['body']['number']
     output = 2*input
 
@@ -73,11 +89,17 @@ def doubleHandler(event):
         "body": {"number":output}
     }
 
+    priorDuration = event['duration'] if 'duration' in event else 0
+    response['duration']=priorDuration -(startTime-1000*time.time())
     return response
 
 def aggregateHandler(events):
+    startTime = 1000*time.time()
     aggregate = 0
+    durations = []
     for event in events:
+        if 'duration' in event:
+            durations.append(event['duration'])
         aggregate += event['body']['number']
 
     response = {
@@ -85,6 +107,8 @@ def aggregateHandler(events):
         "body":{"number":aggregate}
     }
 
+    priorDuration = max(durations) if len(durations) else 0
+    response['duration']=priorDuration -(startTime-1000*time.time())
     return response
 
 def inWorker(event):
@@ -249,5 +273,5 @@ def main(event):
     ######################################################
     return aggOut
 
-if __name__=="__main__":
-    main({})
+# if __name__=="__main__":
+#     print(main({}))

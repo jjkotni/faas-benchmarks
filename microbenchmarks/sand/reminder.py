@@ -1,7 +1,9 @@
 #!/usr/bin/python
 import json
+import time
 
 def handle(event, context):
+    startTime = 1000*time.time()
     input = event['body']['number']
     output = input%2
 
@@ -10,6 +12,8 @@ def handle(event, context):
         "body": {"number":output}
     }
 
+    priorDuration = event['duration'] if 'duration' in event else 0
+    response['duration']=priorDuration -(startTime-1000*time.time())
     return response
 
 # if __name__ == "__main__":

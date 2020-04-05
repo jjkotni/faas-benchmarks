@@ -6,18 +6,19 @@ inOut     = {}
 squareOut = {}
 
 def inputHandler(event):
-    print("Start Time: ", str(1000*time.time()))
+    startTime = 1000*time.time()
     number = randint(1,50)
     response = {
         "statusCode": 200,
         "body": {"number":number}
     }
 
-    print("End Time: ", str(1000*time.time()))
+    priorDuration = event['duration'] if 'duration' in event else 0
+    response['duration']=priorDuration -(startTime-1000*time.time())
     return response
 
 def squareHandler(event):
-    print("Start Time: ", str(1000*time.time()))
+    startTime = 1000*time.time()
     input = event['body']['number']
     output = input*input
 
@@ -26,7 +27,8 @@ def squareHandler(event):
         "body": {"number":output}
     }
 
-    print("End Time: ", str(1000*time.time()))
+    priorDuration = event['duration'] if 'duration' in event else 0
+    response['duration']=priorDuration -(startTime-1000*time.time())
     return response
 
 def inWorker(event):
