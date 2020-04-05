@@ -5,6 +5,8 @@ import time
 
 def handle(event, context):
     startTime = 1000*time.time()
+    print(startTime)
+    context.put('workflowStartTime', str(startTime), True)
     number = randint(1,50)
     response = {
         "statusCode": 200,

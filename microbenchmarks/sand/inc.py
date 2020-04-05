@@ -13,5 +13,9 @@ def handle(event, context):
     }
 
     priorDuration = event['duration'] if 'duration' in event else 0
-    response['duration']=priorDuration -(startTime-1000*time.time())
+    workflowStartTime = context.get('workflowStartTime', True)
+    workflowStartTime = float(workflowStartTime) if workflowStartTime != "" else startTime
+    endTime = 1000*time.time()
+    response['duration']     = priorDuration + endTime - startTime
+    response['totalRunTime'] = endTime - workflowStartTime
     return response
