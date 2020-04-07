@@ -8,6 +8,16 @@ squareOut = {}
 halfOut   = {}
 remOut    = {}
 
+def timestamp(response, event, startTime, endTime):
+    stampBegin = 1000*time.time()
+    prior = event['duration'] if 'duration' in event else 0
+    response['duration']     = prior + endTime - startTime
+    response['workflowEndTime'] = endTime
+    response['workflowStartTime'] = event['workflowStartTime'] if 'workflowStartTime' in event else startTime
+    priorCost = event['timeStampCost'] if 'timeStampCost' in event else 0
+    response['timeStampCost'] = priorCost - (stampBegin-1000*time.time())
+    return response
+
 def inputHandler(event):
     startTime = 1000*time.time()
     number = randint(1,50)
@@ -16,9 +26,8 @@ def inputHandler(event):
         "body": {"number":number}
     }
 
-    priorDuration = event['duration'] if 'duration' in event else 0
-    response['duration']=priorDuration -(startTime-1000*time.time())
-    return response
+    endTime = 1000*time.time()
+    return timestamp(response, event, startTime, endTime)
 
 def incHandler(event):
     startTime = 1000*time.time()
@@ -30,9 +39,8 @@ def incHandler(event):
         "body": {"number":output}
     }
 
-    priorDuration = event['duration'] if 'duration' in event else 0
-    response['duration']=priorDuration -(startTime-1000*time.time())
-    return response
+    endTime = 1000*time.time()
+    return timestamp(response, event, startTime, endTime)
 
 def squareHandler(event):
     startTime = 1000*time.time()
@@ -44,9 +52,8 @@ def squareHandler(event):
         "body": {"number":output}
     }
 
-    priorDuration = event['duration'] if 'duration' in event else 0
-    response['duration']=priorDuration -(startTime-1000*time.time())
-    return response
+    endTime = 1000*time.time()
+    return timestamp(response, event, startTime, endTime)
 
 def halfHandler(event):
     startTime = 1000*time.time()
@@ -58,9 +65,8 @@ def halfHandler(event):
         "body": {"number":output}
     }
 
-    priorDuration = event['duration'] if 'duration' in event else 0
-    response['duration']=priorDuration -(startTime-1000*time.time())
-    return response
+    endTime = 1000*time.time()
+    return timestamp(response, event, startTime, endTime)
 
 def reminderHandler(event):
     startTime = 1000*time.time()
@@ -72,9 +78,8 @@ def reminderHandler(event):
         "body": {"number":output}
     }
 
-    priorDuration = event['duration'] if 'duration' in event else 0
-    response['duration']=priorDuration -(startTime-1000*time.time())
-    return response
+    endTime = 1000*time.time()
+    return timestamp(response, event, startTime, endTime)
 
 def inWorker(event):
     result = inputHandler(event)

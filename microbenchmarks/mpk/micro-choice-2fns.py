@@ -7,6 +7,16 @@ inOut     = {}
 divideOut = {}
 choiceOut = {}
 
+def timestamp(response, event, startTime, endTime):
+    stampBegin = 1000*time.time()
+    prior = event['duration'] if 'duration' in event else 0
+    response['duration']     = prior + endTime - startTime
+    response['workflowEndTime'] = endTime
+    response['workflowStartTime'] = event['workflowStartTime'] if 'workflowStartTime' in event else startTime
+    priorCost = event['timeStampCost'] if 'timeStampCost' in event else 0
+    response['timeStampCost'] = priorCost - (stampBegin-1000*time.time())
+    return response
+
 def inputHandler(event):
     startTime = 1000*time.time()
     number = randint(1,50)
@@ -15,9 +25,8 @@ def inputHandler(event):
         "body": {"number":number}
     }
 
-    priorDuration = event['duration'] if 'duration' in event else 0
-    response['duration']=priorDuration -(startTime-1000*time.time())
-    return response
+    endTime = 1000*time.time()
+    return timestamp(response, event, startTime, endTime)
 
 def incHandler(event):
     startTime = 1000*time.time()
@@ -29,37 +38,8 @@ def incHandler(event):
         "body": {"number":output}
     }
 
-    priorDuration = event['duration'] if 'duration' in event else 0
-    response['duration']=priorDuration -(startTime-1000*time.time())
-    return response
-
-def squareHandler(event):
-    startTime = 1000*time.time()
-    input = event['body']['number']
-    output = input*input
-
-    response = {
-        "statusCode": 200,
-        "body": {"number":output}
-    }
-
-    priorDuration = event['duration'] if 'duration' in event else 0
-    response['duration']=priorDuration -(startTime-1000*time.time())
-    return response
-
-def halfHandler(event):
-    startTime = 1000*time.time()
-    input = event['body']['number']
-    output = int(input/2)
-
-    response = {
-        "statusCode": 200,
-        "body": {"number":output}
-    }
-
-    priorDuration = event['duration'] if 'duration' in event else 0
-    response['duration']=priorDuration -(startTime-1000*time.time())
-    return response
+    endTime = 1000*time.time()
+    return timestamp(response, event, startTime, endTime)
 
 def doubleHandler(event):
     startTime = 1000*time.time()
@@ -71,23 +51,8 @@ def doubleHandler(event):
         "body": {"number":output}
     }
 
-    priorDuration = event['duration'] if 'duration' in event else 0
-    response['duration']=priorDuration -(startTime-1000*time.time())
-    return response
-
-def divideby5Handler(event):
-    startTime = 1000*time.time()
-    input = event['body']['number']
-    output = input%5
-
-    response = {
-        "statusCode": 200,
-        "body": {"number":output}
-    }
-
-    priorDuration = event['duration'] if 'duration' in event else 0
-    response['duration']=priorDuration -(startTime-1000*time.time())
-    return response
+    endTime = 1000*time.time()
+    return timestamp(response, event, startTime, endTime)
 
 def divideby2Handler(event):
     startTime = 1000*time.time()
@@ -99,9 +64,8 @@ def divideby2Handler(event):
         "body": {"number":output}
     }
 
-    priorDuration = event['duration'] if 'duration' in event else 0
-    response['duration']=priorDuration -(startTime-1000*time.time())
-    return response
+    endTime = 1000*time.time()
+    return timestamp(response, event, startTime, endTime)
 
 def inWorker(event):
     ######################################################
