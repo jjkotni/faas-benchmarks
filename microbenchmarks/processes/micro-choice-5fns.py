@@ -110,7 +110,7 @@ def inWorker(input_dict, output_arr):
     inputHandler(input_dict, output_arr)
 
 def divideby5Worker(input_arr, output_arr):
-    divideby5Handler(input_arr, output_arr) 
+    divideby5Handler(input_arr, output_arr)
 
 def incWorker(input_arr, output_arr):
     incHandler(input_arr, output_arr)
@@ -122,10 +122,10 @@ def halfWorker(input_arr, output_arr):
     halfHandler(input_arr, output_arr)
 
 def doubleWorker(input_arr, output_arr):
-    doubleHandler(input_arr, output_arr) 
+    doubleHandler(input_arr, output_arr)
 
 def divideby2Worker(input_arr, output_arr):
-    divideby2Handler(input_arr, output_arr) 
+    divideby2Handler(input_arr, output_arr)
 
 
 ###############################################################################
@@ -178,4 +178,6 @@ def main(event):
     return output
 
 if __name__=="__main__":
-    print(main({}))
+    output = main({})
+    mtime = output['workflowEndTime']-output['workflowStartTime']-output['timeStampCost']-output['duration']
+    print("Interaction Time: {}".format(mtime))

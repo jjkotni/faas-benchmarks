@@ -157,4 +157,6 @@ def main(event):
     return output
 
 if __name__=="__main__":
-    print(main({}))
+    output = main({})
+    mtime = output['workflowEndTime']-output['workflowStartTime']-output['timeStampCost']-output['duration']
+    print("Interaction Time: {}".format(mtime))

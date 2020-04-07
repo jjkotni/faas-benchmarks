@@ -49,7 +49,7 @@ def inWorker(input_dict, output_arr):
     inputHandler(input_dict, output_arr)
 
 def squareWorker(input_arr, output_arr):
-    squareHandler(input_arr, output_arr)         
+    squareHandler(input_arr, output_arr)
 
 
 ###############################################################################
@@ -87,4 +87,6 @@ def main(event):
 
 
 if __name__=="__main__":
-    print(main({}))
+    output = main({})
+    mtime = output['workflowEndTime']-output['workflowStartTime']-output['timeStampCost']-output['duration']
+    print("Interaction Time: {}".format(mtime))

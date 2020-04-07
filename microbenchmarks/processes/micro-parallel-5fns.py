@@ -146,10 +146,10 @@ def halfWorker(input_arr, output_arr):
     halfHandler(input_arr, output_arr)
 
 def remWorker(input_arr, output_arr):
-    reminderHandler(input_arr, output_arr)  
+    reminderHandler(input_arr, output_arr)
 
 def doubleWorker(input_arr, output_arr):
-    doubleHandler(input_arr, output_arr) 
+    doubleHandler(input_arr, output_arr)
 
 def aggWorker(inc_arr, square_arr, rem_arr, half_arr, double_arr, agg_arr):
     aggHandler([inc_arr, square_arr, rem_arr, half_arr, double_arr], agg_arr)
@@ -215,4 +215,6 @@ def main(event):
     return output
 
 if __name__=="__main__":
-    print(main({}))
+    output = main({})
+    mtime = output['workflowEndTime']-output['workflowStartTime']-output['timeStampCost']-output['duration']
+    print("Interaction Time: {}".format(mtime))

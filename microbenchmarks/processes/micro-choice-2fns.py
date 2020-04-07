@@ -80,7 +80,7 @@ def incWorker(input_arr, output_arr):
     incHandler(input_arr, output_arr)
 
 def doubleWorker(input_arr, output_arr):
-    doubleHandler(input_arr, output_arr) 
+    doubleHandler(input_arr, output_arr)
 
 
 ###############################################################################
@@ -131,4 +131,6 @@ def main(event):
 
 
 if __name__=="__main__":
-    print(main({}))
+    output = main({})
+    mtime = output['workflowEndTime']-output['workflowStartTime']-output['timeStampCost']-output['duration']
+    print("Interaction Time: {}".format(mtime))
