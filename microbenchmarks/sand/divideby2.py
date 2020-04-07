@@ -2,6 +2,17 @@
 import time
 import json
 
+def timestamp(response, event, startTime, endTime):
+    stampBegin = 1000*time.time()
+    workflowStartTime = event['workflowStartTime'] if 'workflowStartTime' in event else startTime
+    prior = event['duration'] if 'duration' in event else 0
+    priorCost = event['timeStampCost'] if 'timeStampCost' in event else 0
+    response['workflowStartTime'] = workflowStartTime
+    response['workflowEndTime'] = endTime
+    response['duration'] = prior + endTime - startTime
+    response['timeStampCost'] = priorCost - (stampBegin-1000*time.time())
+    return response
+
 def handle(event, context):
     startTime = 1000*time.time()
     input = event['body']['number']
@@ -12,13 +23,8 @@ def handle(event, context):
         "body": {"number":output}
     }
 
-    priorDuration = event['duration'] if 'duration' in event else 0
-    workflowStartTime = context.get('workflowStartTime', True)
-    workflowStartTime = float(workflowStartTime) if workflowStartTime != "" else startTime
     endTime = 1000*time.time()
-    response['duration']     = priorDuration + endTime - startTime
-    response['totalRunTime'] = endTime - workflowStartTime
-    return response
+    return timestamp(response, event, startTime, endTime)
 
 # if __name__ == "__main__":
 #     response = squareHandler({"body":{"number":2}}, {})
