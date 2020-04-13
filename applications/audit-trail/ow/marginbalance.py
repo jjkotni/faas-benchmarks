@@ -1,8 +1,44 @@
+import time
+
+def timestamp(response, events, startTime, endTime, externalServicesTime):
+    stampBegin = 1000*time.time()
+    prior = 0
+    priorCost = 0
+    priorServiceTime = 0
+    workflowStartTime = startTime
+    for event in events:
+        if 'duration' in event and event['duration'] > prior:
+            prior = event['duration']
+            #Pick timestamp costs and externalServicesTime from the same event/path
+            priorCost = event['timeStampCost'] if 'timeStampCost' in event else 0
+            priorServiceTime = event['externalServicesTime'] if 'externalServicesTime' in event else 0
+        if 'workflowStartTime' in event and event['workflowStartTime'] < workflowStartTime:
+            workflowStartTime = event['workflowStartTime']
+
+    response['duration']     = prior + endTime - startTime
+    response['workflowEndTime'] = endTime
+    response['workflowStartTime'] = workflowStartTime
+    response['externalServicesTime'] = priorServiceTime + externalServicesTime
+
+    #Obscure code, doing to time.time() at the end of fn
+    response['timeStampCost'] = priorCost - (stampBegin-1000*time.time())
+    return response
+
 def main(events):
+    startTime = 1000*time.time()
+    externalServicesTime = 0
     marketData = {}
     portfolioData = {}
 
-    for event in events['value']:
+    print(events)
+    events = events['value']
+    prevStartTimes = prevEndTimes = []
+    for event in events:
+        if 'startTime' in event:
+            prevStartTimes.append(event['startTime'])
+        if 'endTime' in event:
+            prevEndTimes.append(event['endTime'])
+
         body = event['body']
         if 'marketData' in body:
             marketData = body['marketData']
@@ -23,5 +59,8 @@ def main(events):
     if marginAccountBalance >= 0.25*portfolioMarketValue:
         result = True
 
-    return {'statusCode': 200,
-            'body': {'maintenaceMarginSatisfied': result}}
+    response = {'statusCode': 200,
+                'body': {'maintenaceMarginSatisfied': result}}
+
+    endTime = 1000*time.time()
+    return timestamp(response, events, startTime, endTime, externalServicesTime)
