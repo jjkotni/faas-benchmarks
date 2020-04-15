@@ -1,0 +1,19 @@
+Python3 Kafka Implementation for microbenchmarks
+
+pip3 install kafka-python --user
+
+Utilities:
+./gen_kafka_topics.sh  = To generate kafka topics required for the experiment
+./del_kafka_topics.sh  = To delete kafka topics created during the experiment
+./list_kafka_topics.sh = To list kafka topics present in the system
+
+(Note: Set KAFKA_HOME in the above scripts to home directory of kafka)
+
+Each ot the other .sh script is the orchestrator for the micro-benchmarks.
+
+$> mkdir data
+$> ./micro-sequence-2fn.sh
+
+This will generate a file sequence-2fns.out in data directory
+
+
