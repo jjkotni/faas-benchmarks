@@ -164,7 +164,7 @@ def main(event):
     choiceWorker = choices[reminder]
 
     choice_arr = Array('d', ELEMENTS)
-    choice = Process(target=choiceWorker, args = (input_arr, choice_arr))
+    choice = Process(target=choiceWorker, args = (divide5_arr, choice_arr))
     choice.start()
     choice.join()
 
