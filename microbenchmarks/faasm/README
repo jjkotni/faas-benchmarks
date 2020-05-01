@@ -1,0 +1,17 @@
+These functions are to be added in the faasm git for them to run:
+
+$FAASM_HOME = home folder of faasm git clone
+Follow all the steps to enable python before following below steps
+
+Steps to run a file: Running example sequence_2fn.py
+
+[In Terminal 1]
+$> cp sequence_2fn.py $FAASM_HOME/func/python
+$> cd $FAASM_HOME
+$> docker-compose up --scale worker=2
+
+[In Terminal 2]
+$> cd $FAASM_HOME
+$> ./bin/cli.sh
+$> inv upload --py python sequence_2fn
+$> inv invoke --py python sequence_2fn
