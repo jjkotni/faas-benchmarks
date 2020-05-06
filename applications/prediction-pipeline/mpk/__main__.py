@@ -1,6 +1,8 @@
 import os
+import time
 import threading
 from mpkmemalloc import *
+from util import *
 
 from predict import predictHandler
 from resize import resizeHandler
@@ -12,24 +14,21 @@ renderOut  = {}
 
 def resizeWorker(event):
     ######################################################
-    tname = threading.currentThread().getName()
-    pkey_thread_mapper(tname)
-    tname = chr(ord(tname[0])+1)+tname[1:]
+    pkey_thread_mapper()
     ######################################################
 
     result = resizeHandler(event)
 
     ######################################################
     global resizeOut
-    resizeOut = result
-    pymem_reset(tname)
+    pymem_allocate_from_shmem()
+    resizeOut = copy_output(result)
+    pymem_reset()
     ######################################################
 
 def predictWorker():
     ######################################################
-    tname = threading.currentThread().getName()
-    pkey_thread_mapper(tname)
-    tname = chr(ord(tname[0])+1)+tname[1:]
+    pkey_thread_mapper()
     global resizeOut
     ######################################################
 
@@ -37,15 +36,15 @@ def predictWorker():
 
     ######################################################
     global predictOut
-    predictOut = result
-    pymem_reset(tname)
+    pymem_allocate_from_shmem()
+    predictOut = copy_output(result)
+    predictOut['memsetTime'] += clear_output(resizeOut['body'])
+    pymem_reset()
     ######################################################
 
 def renderWorker():
     ######################################################
-    tname = threading.currentThread().getName()
-    pkey_thread_mapper(tname)
-    tname = chr(ord(tname[0])+1)+tname[1:]
+    pkey_thread_mapper()
     global predictOut
     ######################################################
 
@@ -53,8 +52,9 @@ def renderWorker():
 
     ######################################################
     global renderOut
-    renderOut = result
-    pymem_reset(tname)
+    pymem_allocate_from_shmem()
+    renderOut = copy_output(result)
+    pymem_reset()
     ######################################################
 
 def main(event):
@@ -82,4 +82,6 @@ def main(event):
     return renderOut
 
 # if __name__ == "__main__":
-#     main({})
+#     out = main({})
+#     out['functionInteractions'] = out['workflowEndTime'] - out['workflowStartTime'] - out['duration'] - out['timeStampCost']
+#     print(out)

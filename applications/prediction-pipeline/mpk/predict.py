@@ -1,8 +1,10 @@
 import os
+import time
 import json
 import numpy as np
-import time
 import tensorflow as tf
+from mpkmemalloc import *
+from util import *
 
 def predictHandler(event):
     startTime = 1000*time.time()
@@ -15,12 +17,11 @@ def predictHandler(event):
     with tf.Session(graph=inp.graph):
         x = predictions.eval(feed_dict={inp: img})
 
+    pymem_allocate_from_shmem()
     response = {
         "statusCode": 200,
         "body": json.dumps({'predictions': x.tolist()})
     }
 
-    priorWorkflowDuration = event['duration'] if 'duration' in event else 0
-    #Obscure code, doing this to time.time() as late in the function as possible for end time
-    response['duration'] = priorWorkflowDuration - (startTime-1000*time.time())
-    return response
+    endTime = 1000*time.time()
+    return timestamp(response, event, startTime, endTime, 0)
