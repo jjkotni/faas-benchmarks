@@ -8,8 +8,7 @@ from util import *
 
 def main(event):
     startTime = 1000*time.time()
-    externalServicesTime = 0
     tokens = word_tokenize(event['body']['message'])
     response = {'statusCode': 200, "body":len(tokens)}
     endTime = 1000*time.time()
-    return timestamp(response, event, startTime, endTime, externalServicesTime)
+    return timestamp(response, event, startTime, endTime, 0)
