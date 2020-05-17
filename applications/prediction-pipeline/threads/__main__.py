@@ -47,5 +47,7 @@ def main(event):
 
     return renderOut
 
-if __name__ == "__main__":
-    main({})
+# if __name__ == "__main__":
+#     out = main({})
+#     out['functionInteractions'] = out['workflowEndTime'] - out['workflowStartTime'] - out['duration'] - out['timeStampCost']
+#     print(out)

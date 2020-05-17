@@ -2,6 +2,7 @@ import json
 import numpy as np
 import time
 from PIL import Image
+from util import *
 
 def resizeHandler(event):
     startTime = 1000*time.time()
@@ -18,7 +19,8 @@ def resizeHandler(event):
         }
     }
 
-    priorWorkflowDuration = event['duration'] if 'duration' in event else 0
-    #Obscure code, doing this to time.time() as late in the function as possible for end time
-    response['duration'] = priorWorkflowDuration - (startTime-1000*time.time())
-    return response
+    endTime = 1000*time.time()
+    return timestamp(response, event, startTime, endTime, 0)
+
+# if __name__ == "__main__":
+#     resizeHandler({})
