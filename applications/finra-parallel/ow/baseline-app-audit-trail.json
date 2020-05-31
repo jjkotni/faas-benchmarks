@@ -1,0 +1,484 @@
+{
+    "composition": {
+        "type": "sequence",
+        "components": [
+            {
+                "type": "parallel",
+                "components": [
+                    {
+                        "type": "action",
+                        "name": "/_/lastpx",
+                        "path": "[0][0]"
+                    },
+                    {
+                        "type": "action",
+                        "name": "/_/marketdata",
+                        "path": "[0][1]"
+                    },
+                    {
+                        "type": "action",
+                        "name": "/_/side",
+                        "path": "[0][2]"
+                    },
+                    {
+                        "type": "action",
+                        "name": "/_/volume",
+                        "path": "[0][3]"
+                    },
+                    {
+                        "type": "action",
+                        "name": "/_/trddate",
+                        "path": "[0][4]"
+                    },
+                    {
+                        "type": "action",
+                        "name": "/_/lastpx",
+                        "path": "[0][5]"
+                    },
+                    {
+                        "type": "action",
+                        "name": "/_/marketdata",
+                        "path": "[0][6]"
+                    },
+                    {
+                        "type": "action",
+                        "name": "/_/side",
+                        "path": "[0][7]"
+                    },
+                    {
+                        "type": "action",
+                        "name": "/_/volume",
+                        "path": "[0][8]"
+                    },
+                    {
+                        "type": "action",
+                        "name": "/_/trddate",
+                        "path": "[0][9]"
+                    },
+                    {
+                        "type": "action",
+                        "name": "/_/lastpx",
+                        "path": "[0][10]"
+                    },
+                    {
+                        "type": "action",
+                        "name": "/_/marketdata",
+                        "path": "[0][11]"
+                    },
+                    {
+                        "type": "action",
+                        "name": "/_/side",
+                        "path": "[0][12]"
+                    },
+                    {
+                        "type": "action",
+                        "name": "/_/volume",
+                        "path": "[0][13]"
+                    },
+                    {
+                        "type": "action",
+                        "name": "/_/trddate",
+                        "path": "[0][14]"
+                    },
+                    {
+                        "type": "action",
+                        "name": "/_/lastpx",
+                        "path": "[0][15]"
+                    },
+                    {
+                        "type": "action",
+                        "name": "/_/marketdata",
+                        "path": "[0][16]"
+                    },
+                    {
+                        "type": "action",
+                        "name": "/_/side",
+                        "path": "[0][17]"
+                    },
+                    {
+                        "type": "action",
+                        "name": "/_/volume",
+                        "path": "[0][18]"
+                    },
+                    {
+                        "type": "action",
+                        "name": "/_/trddate",
+                        "path": "[0][19]"
+                    },
+                    {
+                        "type": "action",
+                        "name": "/_/lastpx",
+                        "path": "[0][20]"
+                    },
+                    {
+                        "type": "action",
+                        "name": "/_/marketdata",
+                        "path": "[0][21]"
+                    },
+                    {
+                        "type": "action",
+                        "name": "/_/side",
+                        "path": "[0][22]"
+                    },
+                    {
+                        "type": "action",
+                        "name": "/_/volume",
+                        "path": "[0][23]"
+                    },
+                    {
+                        "type": "action",
+                        "name": "/_/trddate",
+                        "path": "[0][24]"
+                    },
+                    {
+                        "type": "action",
+                        "name": "/_/lastpx",
+                        "path": "[0][25]"
+                    },
+                    {
+                        "type": "action",
+                        "name": "/_/marketdata",
+                        "path": "[0][26]"
+                    },
+                    {
+                        "type": "action",
+                        "name": "/_/side",
+                        "path": "[0][27]"
+                    },
+                    {
+                        "type": "action",
+                        "name": "/_/volume",
+                        "path": "[0][28]"
+                    },
+                    {
+                        "type": "action",
+                        "name": "/_/trddate",
+                        "path": "[0][29]"
+                    },
+                    {
+                        "type": "action",
+                        "name": "/_/lastpx",
+                        "path": "[0][30]"
+                    },
+                    {
+                        "type": "action",
+                        "name": "/_/marketdata",
+                        "path": "[0][31]"
+                    },
+                    {
+                        "type": "action",
+                        "name": "/_/side",
+                        "path": "[0][32]"
+                    },
+                    {
+                        "type": "action",
+                        "name": "/_/volume",
+                        "path": "[0][33]"
+                    },
+                    {
+                        "type": "action",
+                        "name": "/_/trddate",
+                        "path": "[0][34]"
+                    },
+                    {
+                        "type": "action",
+                        "name": "/_/lastpx",
+                        "path": "[0][35]"
+                    },
+                    {
+                        "type": "action",
+                        "name": "/_/marketdata",
+                        "path": "[0][36]"
+                    },
+                    {
+                        "type": "action",
+                        "name": "/_/side",
+                        "path": "[0][37]"
+                    },
+                    {
+                        "type": "action",
+                        "name": "/_/volume",
+                        "path": "[0][38]"
+                    },
+                    {
+                        "type": "action",
+                        "name": "/_/trddate",
+                        "path": "[0][39]"
+                    },
+                    {
+                        "type": "action",
+                        "name": "/_/lastpx",
+                        "path": "[0][40]"
+                    },
+                    {
+                        "type": "action",
+                        "name": "/_/marketdata",
+                        "path": "[0][41]"
+                    },
+                    {
+                        "type": "action",
+                        "name": "/_/side",
+                        "path": "[0][42]"
+                    },
+                    {
+                        "type": "action",
+                        "name": "/_/volume",
+                        "path": "[0][43]"
+                    },
+                    {
+                        "type": "action",
+                        "name": "/_/trddate",
+                        "path": "[0][44]"
+                    },
+                    {
+                        "type": "action",
+                        "name": "/_/lastpx",
+                        "path": "[0][45]"
+                    },
+                    {
+                        "type": "action",
+                        "name": "/_/marketdata",
+                        "path": "[0][46]"
+                    },
+                    {
+                        "type": "action",
+                        "name": "/_/side",
+                        "path": "[0][47]"
+                    },
+                    {
+                        "type": "action",
+                        "name": "/_/volume",
+                        "path": "[0][48]"
+                    },
+                    {
+                        "type": "action",
+                        "name": "/_/trddate",
+                        "path": "[0][49]"
+                    }
+                ],
+                "path": "[0]"
+            },
+            {
+                "type": "action",
+                "name": "/_/marginbalance",
+                "path": "[1]"
+            }
+        ],
+        "path": ""
+    },
+    "ast": {
+        "type": "sequence",
+        "components": [
+            {
+                "type": "parallel",
+                "components": [
+                    {
+                        "type": "action",
+                        "name": "/_/lastpx"
+                    },
+                    {
+                        "type": "action",
+                        "name": "/_/marketdata"
+                    },
+                    {
+                        "type": "action",
+                        "name": "/_/side"
+                    },
+                    {
+                        "type": "action",
+                        "name": "/_/volume"
+                    },
+                    {
+                        "type": "action",
+                        "name": "/_/trddate"
+                    },
+                    {
+                        "type": "action",
+                        "name": "/_/lastpx"
+                    },
+                    {
+                        "type": "action",
+                        "name": "/_/marketdata"
+                    },
+                    {
+                        "type": "action",
+                        "name": "/_/side"
+                    },
+                    {
+                        "type": "action",
+                        "name": "/_/volume"
+                    },
+                    {
+                        "type": "action",
+                        "name": "/_/trddate"
+                    },
+                    {
+                        "type": "action",
+                        "name": "/_/lastpx"
+                    },
+                    {
+                        "type": "action",
+                        "name": "/_/marketdata"
+                    },
+                    {
+                        "type": "action",
+                        "name": "/_/side"
+                    },
+                    {
+                        "type": "action",
+                        "name": "/_/volume"
+                    },
+                    {
+                        "type": "action",
+                        "name": "/_/trddate"
+                    },
+                    {
+                        "type": "action",
+                        "name": "/_/lastpx"
+                    },
+                    {
+                        "type": "action",
+                        "name": "/_/marketdata"
+                    },
+                    {
+                        "type": "action",
+                        "name": "/_/side"
+                    },
+                    {
+                        "type": "action",
+                        "name": "/_/volume"
+                    },
+                    {
+                        "type": "action",
+                        "name": "/_/trddate"
+                    },
+                    {
+                        "type": "action",
+                        "name": "/_/lastpx"
+                    },
+                    {
+                        "type": "action",
+                        "name": "/_/marketdata"
+                    },
+                    {
+                        "type": "action",
+                        "name": "/_/side"
+                    },
+                    {
+                        "type": "action",
+                        "name": "/_/volume"
+                    },
+                    {
+                        "type": "action",
+                        "name": "/_/trddate"
+                    },
+                    {
+                        "type": "action",
+                        "name": "/_/lastpx"
+                    },
+                    {
+                        "type": "action",
+                        "name": "/_/marketdata"
+                    },
+                    {
+                        "type": "action",
+                        "name": "/_/side"
+                    },
+                    {
+                        "type": "action",
+                        "name": "/_/volume"
+                    },
+                    {
+                        "type": "action",
+                        "name": "/_/trddate"
+                    },
+                    {
+                        "type": "action",
+                        "name": "/_/lastpx"
+                    },
+                    {
+                        "type": "action",
+                        "name": "/_/marketdata"
+                    },
+                    {
+                        "type": "action",
+                        "name": "/_/side"
+                    },
+                    {
+                        "type": "action",
+                        "name": "/_/volume"
+                    },
+                    {
+                        "type": "action",
+                        "name": "/_/trddate"
+                    },
+                    {
+                        "type": "action",
+                        "name": "/_/lastpx"
+                    },
+                    {
+                        "type": "action",
+                        "name": "/_/marketdata"
+                    },
+                    {
+                        "type": "action",
+                        "name": "/_/side"
+                    },
+                    {
+                        "type": "action",
+                        "name": "/_/volume"
+                    },
+                    {
+                        "type": "action",
+                        "name": "/_/trddate"
+                    },
+                    {
+                        "type": "action",
+                        "name": "/_/lastpx"
+                    },
+                    {
+                        "type": "action",
+                        "name": "/_/marketdata"
+                    },
+                    {
+                        "type": "action",
+                        "name": "/_/side"
+                    },
+                    {
+                        "type": "action",
+                        "name": "/_/volume"
+                    },
+                    {
+                        "type": "action",
+                        "name": "/_/trddate"
+                    },
+                    {
+                        "type": "action",
+                        "name": "/_/lastpx"
+                    },
+                    {
+                        "type": "action",
+                        "name": "/_/marketdata"
+                    },
+                    {
+                        "type": "action",
+                        "name": "/_/side"
+                    },
+                    {
+                        "type": "action",
+                        "name": "/_/volume"
+                    },
+                    {
+                        "type": "action",
+                        "name": "/_/trddate"
+                    }
+                ]
+            },
+            {
+                "type": "action",
+                "name": "/_/marginbalance"
+            }
+        ]
+    },
+    "version": "0.12.0"
+}

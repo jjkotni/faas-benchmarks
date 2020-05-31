@@ -1,0 +1,2983 @@
+ok: got activation e62fed7c3aca4b3bafed7c3acadb3b4d
+{
+    "namespace": "guest",
+    "name": "baseline-app-audit-trail",
+    "version": "0.0.1",
+    "subject": "guest",
+    "activationId": "e62fed7c3aca4b3bafed7c3acadb3b4d",
+    "cause": "94990773e7384010990773e7383010cf",
+    "start": 1589204765190,
+    "end": 1589204780381,
+    "duration": 15191,
+    "statusCode": 0,
+    "response": {
+        "status": "success",
+        "statusCode": 0,
+        "success": true,
+        "result": {
+            "action": "/_/marginbalance",
+            "method": "action",
+            "params": {
+                "value": [
+                    {
+                        "body": {
+                            "portfolio": "1234",
+                            "valid": true
+                        },
+                        "duration": 0.241943359375,
+                        "externalServicesTime": 0,
+                        "memsetTime": 0,
+                        "statusCode": 200,
+                        "timeStampCost": 0.004638671875,
+                        "workflowEndTime": 1589204766139.2231,
+                        "workflowStartTime": 1589204766138.9812
+                    },
+                    {
+                        "body": {
+                            "marketData": {
+                                "AMZN": 2390.73,
+                                "GOOG": 1388.31,
+                                "MSFT": 184.43
+                            }
+                        },
+                        "duration": 846.100341796875,
+                        "externalServicesTime": 829.288330078125,
+                        "memsetTime": 0,
+                        "statusCode": 200,
+                        "timeStampCost": 0.00390625,
+                        "workflowEndTime": 1589204767385.877,
+                        "workflowStartTime": 1589204766539.7766
+                    },
+                    {
+                        "body": {
+                            "portfolio": "1234",
+                            "valid": true
+                        },
+                        "duration": 0.178466796875,
+                        "externalServicesTime": 0,
+                        "memsetTime": 0,
+                        "statusCode": 200,
+                        "timeStampCost": 0.004150390625,
+                        "workflowEndTime": 1589204766540.866,
+                        "workflowStartTime": 1589204766540.6875
+                    },
+                    {
+                        "body": {
+                            "portfolio": "1234",
+                            "valid": true
+                        },
+                        "duration": 0.1181640625,
+                        "externalServicesTime": 0,
+                        "memsetTime": 0,
+                        "statusCode": 200,
+                        "timeStampCost": 0.00244140625,
+                        "workflowEndTime": 1589204766523.2927,
+                        "workflowStartTime": 1589204766523.1746
+                    },
+                    {
+                        "body": {
+                            "portfolio": "1234",
+                            "valid": true
+                        },
+                        "duration": 0.23193359375,
+                        "externalServicesTime": 0,
+                        "memsetTime": 0,
+                        "statusCode": 200,
+                        "timeStampCost": 0.005615234375,
+                        "workflowEndTime": 1589204766238.0303,
+                        "workflowStartTime": 1589204766237.7983
+                    },
+                    {
+                        "body": {
+                            "portfolio": "1234",
+                            "valid": true
+                        },
+                        "duration": 0.27685546875,
+                        "externalServicesTime": 0,
+                        "memsetTime": 0,
+                        "statusCode": 200,
+                        "timeStampCost": 0.00634765625,
+                        "workflowEndTime": 1589204766451.227,
+                        "workflowStartTime": 1589204766450.9502
+                    },
+                    {
+                        "body": {
+                            "marketData": {
+                                "AMZN": 2390.73,
+                                "GOOG": 1388.31,
+                                "MSFT": 184.43
+                            }
+                        },
+                        "duration": 827.38818359375,
+                        "externalServicesTime": 807.28466796875,
+                        "memsetTime": 0,
+                        "statusCode": 200,
+                        "timeStampCost": 0.003173828125,
+                        "workflowEndTime": 1589204767256.0186,
+                        "workflowStartTime": 1589204766428.6304
+                    },
+                    {
+                        "body": {
+                            "portfolio": "1234",
+                            "valid": true
+                        },
+                        "duration": 0.1240234375,
+                        "externalServicesTime": 0,
+                        "memsetTime": 0,
+                        "statusCode": 200,
+                        "timeStampCost": 0.00244140625,
+                        "workflowEndTime": 1589204766255.345,
+                        "workflowStartTime": 1589204766255.221
+                    },
+                    {
+                        "body": {
+                            "portfolio": "1234",
+                            "valid": true
+                        },
+                        "duration": 0.197998046875,
+                        "externalServicesTime": 0,
+                        "memsetTime": 0,
+                        "statusCode": 200,
+                        "timeStampCost": 0.004150390625,
+                        "workflowEndTime": 1589204766383.9363,
+                        "workflowStartTime": 1589204766383.7383
+                    },
+                    {
+                        "body": {
+                            "portfolio": "1234",
+                            "valid": true
+                        },
+                        "duration": 0.18115234375,
+                        "externalServicesTime": 0,
+                        "memsetTime": 0,
+                        "statusCode": 200,
+                        "timeStampCost": 0.005859375,
+                        "workflowEndTime": 1589204766612.0447,
+                        "workflowStartTime": 1589204766611.8635
+                    },
+                    {
+                        "body": {
+                            "portfolio": "1234",
+                            "valid": true
+                        },
+                        "duration": 0.153564453125,
+                        "externalServicesTime": 0,
+                        "memsetTime": 0,
+                        "statusCode": 200,
+                        "timeStampCost": 0.002685546875,
+                        "workflowEndTime": 1589204766324.926,
+                        "workflowStartTime": 1589204766324.7725
+                    },
+                    {
+                        "body": {
+                            "marketData": {
+                                "AMZN": 2391.69,
+                                "GOOG": 1388.31,
+                                "MSFT": 184.46
+                            }
+                        },
+                        "duration": 858.8046875,
+                        "externalServicesTime": 841.529541015625,
+                        "memsetTime": 0,
+                        "statusCode": 200,
+                        "timeStampCost": 0.00341796875,
+                        "workflowEndTime": 1589204767069.3894,
+                        "workflowStartTime": 1589204766210.5847
+                    },
+                    {
+                        "body": {
+                            "portfolio": "1234",
+                            "valid": true
+                        },
+                        "duration": 0.16162109375,
+                        "externalServicesTime": 0,
+                        "memsetTime": 0,
+                        "statusCode": 200,
+                        "timeStampCost": 0.002685546875,
+                        "workflowEndTime": 1589204766523.5334,
+                        "workflowStartTime": 1589204766523.3718
+                    },
+                    {
+                        "body": {
+                            "portfolio": "1234",
+                            "valid": true
+                        },
+                        "duration": 0.10009765625,
+                        "externalServicesTime": 0,
+                        "memsetTime": 0,
+                        "statusCode": 200,
+                        "timeStampCost": 0.001953125,
+                        "workflowEndTime": 1589204766337.2173,
+                        "workflowStartTime": 1589204766337.1172
+                    },
+                    {
+                        "body": {
+                            "portfolio": "1234",
+                            "valid": true
+                        },
+                        "duration": 0.194091796875,
+                        "externalServicesTime": 0,
+                        "memsetTime": 0,
+                        "statusCode": 200,
+                        "timeStampCost": 0.003662109375,
+                        "workflowEndTime": 1589204766384.252,
+                        "workflowStartTime": 1589204766384.0579
+                    },
+                    {
+                        "body": {
+                            "portfolio": "1234",
+                            "valid": true
+                        },
+                        "duration": 0.158447265625,
+                        "externalServicesTime": 0,
+                        "memsetTime": 0,
+                        "statusCode": 200,
+                        "timeStampCost": 0.003662109375,
+                        "workflowEndTime": 1589204766333.6458,
+                        "workflowStartTime": 1589204766333.4873
+                    },
+                    {
+                        "body": {
+                            "marketData": {
+                                "AMZN": 2392.36,
+                                "GOOG": 1388.31,
+                                "MSFT": 184.46
+                            }
+                        },
+                        "duration": 866.65869140625,
+                        "externalServicesTime": 850.45263671875,
+                        "memsetTime": 0,
+                        "statusCode": 200,
+                        "timeStampCost": 0.003173828125,
+                        "workflowEndTime": 1589204767401.6582,
+                        "workflowStartTime": 1589204766534.9995
+                    },
+                    {
+                        "body": {
+                            "portfolio": "1234",
+                            "valid": true
+                        },
+                        "duration": 0.16357421875,
+                        "externalServicesTime": 0,
+                        "memsetTime": 0,
+                        "statusCode": 200,
+                        "timeStampCost": 0.00390625,
+                        "workflowEndTime": 1589204766219.0374,
+                        "workflowStartTime": 1589204766218.8738
+                    },
+                    {
+                        "body": {
+                            "portfolio": "1234",
+                            "valid": true
+                        },
+                        "duration": 0.1337890625,
+                        "externalServicesTime": 0,
+                        "memsetTime": 0,
+                        "statusCode": 200,
+                        "timeStampCost": 0.003173828125,
+                        "workflowEndTime": 1589204766478.88,
+                        "workflowStartTime": 1589204766478.746
+                    },
+                    {
+                        "body": {
+                            "portfolio": "1234",
+                            "valid": true
+                        },
+                        "duration": 0.197509765625,
+                        "externalServicesTime": 0,
+                        "memsetTime": 0,
+                        "statusCode": 200,
+                        "timeStampCost": 0.00390625,
+                        "workflowEndTime": 1589204766129.5828,
+                        "workflowStartTime": 1589204766129.3853
+                    },
+                    {
+                        "body": {
+                            "portfolio": "1234",
+                            "valid": true
+                        },
+                        "duration": 0.22314453125,
+                        "externalServicesTime": 0,
+                        "memsetTime": 0,
+                        "statusCode": 200,
+                        "timeStampCost": 0.004638671875,
+                        "workflowEndTime": 1589204766416.2961,
+                        "workflowStartTime": 1589204766416.073
+                    },
+                    {
+                        "body": {
+                            "marketData": {
+                                "AMZN": 2392.36,
+                                "GOOG": 1388.31,
+                                "MSFT": 184.46
+                            }
+                        },
+                        "duration": 858.994384765625,
+                        "externalServicesTime": 842.852783203125,
+                        "memsetTime": 0,
+                        "statusCode": 200,
+                        "timeStampCost": 0.00244140625,
+                        "workflowEndTime": 1589204767393.9644,
+                        "workflowStartTime": 1589204766534.97
+                    },
+                    {
+                        "body": {
+                            "portfolio": "1234",
+                            "valid": true
+                        },
+                        "duration": 0.14794921875,
+                        "externalServicesTime": 0,
+                        "memsetTime": 0,
+                        "statusCode": 200,
+                        "timeStampCost": 0.002685546875,
+                        "workflowEndTime": 1589204766219.0586,
+                        "workflowStartTime": 1589204766218.9106
+                    },
+                    {
+                        "body": {
+                            "portfolio": "1234",
+                            "valid": true
+                        },
+                        "duration": 0.158447265625,
+                        "externalServicesTime": 0,
+                        "memsetTime": 0,
+                        "statusCode": 200,
+                        "timeStampCost": 0.002685546875,
+                        "workflowEndTime": 1589204766450.7246,
+                        "workflowStartTime": 1589204766450.5662
+                    },
+                    {
+                        "body": {
+                            "portfolio": "1234",
+                            "valid": true
+                        },
+                        "duration": 0.1572265625,
+                        "externalServicesTime": 0,
+                        "memsetTime": 0,
+                        "statusCode": 200,
+                        "timeStampCost": 0.0029296875,
+                        "workflowEndTime": 1589204766383.9902,
+                        "workflowStartTime": 1589204766383.833
+                    },
+                    {
+                        "body": {
+                            "portfolio": "1234",
+                            "valid": true
+                        },
+                        "duration": 0.12744140625,
+                        "externalServicesTime": 0,
+                        "memsetTime": 0,
+                        "statusCode": 200,
+                        "timeStampCost": 0.00341796875,
+                        "workflowEndTime": 1589204766239.2915,
+                        "workflowStartTime": 1589204766239.164
+                    },
+                    {
+                        "body": {
+                            "marketData": {
+                                "AMZN": 2392.36,
+                                "GOOG": 1388.31,
+                                "MSFT": 184.46
+                            }
+                        },
+                        "duration": 881.103515625,
+                        "externalServicesTime": 862.86376953125,
+                        "memsetTime": 0,
+                        "statusCode": 200,
+                        "timeStampCost": 0.002685546875,
+                        "workflowEndTime": 1589204766958.7024,
+                        "workflowStartTime": 1589204766077.5989
+                    },
+                    {
+                        "body": {
+                            "portfolio": "1234",
+                            "valid": true
+                        },
+                        "duration": 0.133544921875,
+                        "externalServicesTime": 0,
+                        "memsetTime": 0,
+                        "statusCode": 200,
+                        "timeStampCost": 0.002685546875,
+                        "workflowEndTime": 1589204766085.9324,
+                        "workflowStartTime": 1589204766085.7988
+                    },
+                    {
+                        "body": {
+                            "portfolio": "1234",
+                            "valid": true
+                        },
+                        "duration": 0.13916015625,
+                        "externalServicesTime": 0,
+                        "memsetTime": 0,
+                        "statusCode": 200,
+                        "timeStampCost": 0.00244140625,
+                        "workflowEndTime": 1589204766237.6187,
+                        "workflowStartTime": 1589204766237.4795
+                    },
+                    {
+                        "body": {
+                            "portfolio": "1234",
+                            "valid": true
+                        },
+                        "duration": 0.209228515625,
+                        "externalServicesTime": 0,
+                        "memsetTime": 0,
+                        "statusCode": 200,
+                        "timeStampCost": 0.004150390625,
+                        "workflowEndTime": 1589204766511.347,
+                        "workflowStartTime": 1589204766511.1377
+                    },
+                    {
+                        "body": {
+                            "portfolio": "1234",
+                            "valid": true
+                        },
+                        "duration": 0.155029296875,
+                        "externalServicesTime": 0,
+                        "memsetTime": 0,
+                        "statusCode": 200,
+                        "timeStampCost": 0.0029296875,
+                        "workflowEndTime": 1589204766227.069,
+                        "workflowStartTime": 1589204766226.914
+                    },
+                    {
+                        "body": {
+                            "marketData": {
+                                "AMZN": 2392.36,
+                                "GOOG": 1388.31,
+                                "MSFT": 184.46
+                            }
+                        },
+                        "duration": 839.6064453125,
+                        "externalServicesTime": 823.076416015625,
+                        "memsetTime": 0,
+                        "statusCode": 200,
+                        "timeStampCost": 0.00390625,
+                        "workflowEndTime": 1589204766922.8552,
+                        "workflowStartTime": 1589204766083.2488
+                    },
+                    {
+                        "body": {
+                            "portfolio": "1234",
+                            "valid": true
+                        },
+                        "duration": 0.1572265625,
+                        "externalServicesTime": 0,
+                        "memsetTime": 0,
+                        "statusCode": 200,
+                        "timeStampCost": 0.003662109375,
+                        "workflowEndTime": 1589204766236.7612,
+                        "workflowStartTime": 1589204766236.604
+                    },
+                    {
+                        "body": {
+                            "portfolio": "1234",
+                            "valid": true
+                        },
+                        "duration": 0.20849609375,
+                        "externalServicesTime": 0,
+                        "memsetTime": 0,
+                        "statusCode": 200,
+                        "timeStampCost": 0.00390625,
+                        "workflowEndTime": 1589204766559.098,
+                        "workflowStartTime": 1589204766558.8894
+                    },
+                    {
+                        "body": {
+                            "portfolio": "1234",
+                            "valid": true
+                        },
+                        "duration": 0.198974609375,
+                        "externalServicesTime": 0,
+                        "memsetTime": 0,
+                        "statusCode": 200,
+                        "timeStampCost": 0.003662109375,
+                        "workflowEndTime": 1589204766238.824,
+                        "workflowStartTime": 1589204766238.625
+                    },
+                    {
+                        "body": {
+                            "portfolio": "1234",
+                            "valid": true
+                        },
+                        "duration": 0.281005859375,
+                        "externalServicesTime": 0,
+                        "memsetTime": 0,
+                        "statusCode": 200,
+                        "timeStampCost": 0.00634765625,
+                        "workflowEndTime": 1589204766519.4214,
+                        "workflowStartTime": 1589204766519.1404
+                    },
+                    {
+                        "body": {
+                            "marketData": {
+                                "AMZN": 2390.73,
+                                "GOOG": 1388.31,
+                                "MSFT": 184.44
+                            }
+                        },
+                        "duration": 854.2646484375,
+                        "externalServicesTime": 831.90673828125,
+                        "memsetTime": 0,
+                        "statusCode": 200,
+                        "timeStampCost": 0.00439453125,
+                        "workflowEndTime": 1589204767088.9907,
+                        "workflowStartTime": 1589204766234.726
+                    },
+                    {
+                        "body": {
+                            "portfolio": "1234",
+                            "valid": true
+                        },
+                        "duration": 0.17041015625,
+                        "externalServicesTime": 0,
+                        "memsetTime": 0,
+                        "statusCode": 200,
+                        "timeStampCost": 0.002685546875,
+                        "workflowEndTime": 1589204766535.074,
+                        "workflowStartTime": 1589204766534.9036
+                    },
+                    {
+                        "body": {
+                            "portfolio": "1234",
+                            "valid": true
+                        },
+                        "duration": 0.161376953125,
+                        "externalServicesTime": 0,
+                        "memsetTime": 0,
+                        "statusCode": 200,
+                        "timeStampCost": 0.003662109375,
+                        "workflowEndTime": 1589204766208.6768,
+                        "workflowStartTime": 1589204766208.5154
+                    },
+                    {
+                        "body": {
+                            "portfolio": "1234",
+                            "valid": true
+                        },
+                        "duration": 0.247802734375,
+                        "externalServicesTime": 0,
+                        "memsetTime": 0,
+                        "statusCode": 200,
+                        "timeStampCost": 0.005615234375,
+                        "workflowEndTime": 1589204766222.2952,
+                        "workflowStartTime": 1589204766222.0474
+                    },
+                    {
+                        "body": {
+                            "portfolio": "1234",
+                            "valid": true
+                        },
+                        "duration": 0.13916015625,
+                        "externalServicesTime": 0,
+                        "memsetTime": 0,
+                        "statusCode": 200,
+                        "timeStampCost": 0.003173828125,
+                        "workflowEndTime": 1589204766235.3054,
+                        "workflowStartTime": 1589204766235.1663
+                    },
+                    {
+                        "body": {
+                            "marketData": {
+                                "AMZN": 2391.69,
+                                "GOOG": 1388.31,
+                                "MSFT": 184.46
+                            }
+                        },
+                        "duration": 859.2119140625,
+                        "externalServicesTime": 843.604248046875,
+                        "memsetTime": 0,
+                        "statusCode": 200,
+                        "timeStampCost": 0.004150390625,
+                        "workflowEndTime": 1589204767348.3342,
+                        "workflowStartTime": 1589204766489.1223
+                    },
+                    {
+                        "body": {
+                            "portfolio": "1234",
+                            "valid": true
+                        },
+                        "duration": 0.167724609375,
+                        "externalServicesTime": 0,
+                        "memsetTime": 0,
+                        "statusCode": 200,
+                        "timeStampCost": 0.004150390625,
+                        "workflowEndTime": 1589204766556.2273,
+                        "workflowStartTime": 1589204766556.0596
+                    },
+                    {
+                        "body": {
+                            "portfolio": "1234",
+                            "valid": true
+                        },
+                        "duration": 0.1796875,
+                        "externalServicesTime": 0,
+                        "memsetTime": 0,
+                        "statusCode": 200,
+                        "timeStampCost": 0.002685546875,
+                        "workflowEndTime": 1589204766241.7302,
+                        "workflowStartTime": 1589204766241.5505
+                    },
+                    {
+                        "body": {
+                            "portfolio": "1234",
+                            "valid": true
+                        },
+                        "duration": 0.15478515625,
+                        "externalServicesTime": 0,
+                        "memsetTime": 0,
+                        "statusCode": 200,
+                        "timeStampCost": 0.003173828125,
+                        "workflowEndTime": 1589204766345.9,
+                        "workflowStartTime": 1589204766345.745
+                    },
+                    {
+                        "body": {
+                            "portfolio": "1234",
+                            "valid": true
+                        },
+                        "duration": 0.242919921875,
+                        "externalServicesTime": 0,
+                        "memsetTime": 0,
+                        "statusCode": 200,
+                        "timeStampCost": 0.003173828125,
+                        "workflowEndTime": 1589204766323.898,
+                        "workflowStartTime": 1589204766323.655
+                    },
+                    {
+                        "body": {
+                            "marketData": {
+                                "AMZN": 2391.69,
+                                "GOOG": 1388.31,
+                                "MSFT": 184.46
+                            }
+                        },
+                        "duration": 893.002685546875,
+                        "externalServicesTime": 873.2412109375,
+                        "memsetTime": 0,
+                        "statusCode": 200,
+                        "timeStampCost": 0.002685546875,
+                        "workflowEndTime": 1589204767277.0134,
+                        "workflowStartTime": 1589204766384.0107
+                    },
+                    {
+                        "body": {
+                            "portfolio": "1234",
+                            "valid": true
+                        },
+                        "duration": 0.16259765625,
+                        "externalServicesTime": 0,
+                        "memsetTime": 0,
+                        "statusCode": 200,
+                        "timeStampCost": 0.00341796875,
+                        "workflowEndTime": 1589204766480.89,
+                        "workflowStartTime": 1589204766480.7273
+                    },
+                    {
+                        "body": {
+                            "portfolio": "1234",
+                            "valid": true
+                        },
+                        "duration": 0.146484375,
+                        "externalServicesTime": 0,
+                        "memsetTime": 0,
+                        "statusCode": 200,
+                        "timeStampCost": 0.001953125,
+                        "workflowEndTime": 1589204770960.3472,
+                        "workflowStartTime": 1589204770960.2007
+                    },
+                    {
+                        "body": {
+                            "portfolio": "1234",
+                            "valid": true
+                        },
+                        "duration": 0.1796875,
+                        "externalServicesTime": 0,
+                        "memsetTime": 0,
+                        "statusCode": 200,
+                        "timeStampCost": 0.0029296875,
+                        "workflowEndTime": 1589204766208.371,
+                        "workflowStartTime": 1589204766208.1914
+                    },
+                    {
+                        "body": {
+                            "portfolio": "1234",
+                            "valid": true
+                        },
+                        "duration": 0.143310546875,
+                        "externalServicesTime": 0,
+                        "memsetTime": 0,
+                        "statusCode": 200,
+                        "timeStampCost": 0.0029296875,
+                        "workflowEndTime": 1589204766328.2058,
+                        "workflowStartTime": 1589204766328.0625
+                    },
+                    {
+                        "body": {
+                            "marketData": {
+                                "AMZN": 2391.82,
+                                "GOOG": 1388.31,
+                                "MSFT": 184.5
+                            }
+                        },
+                        "duration": 853.209716796875,
+                        "externalServicesTime": 834.158203125,
+                        "memsetTime": 0,
+                        "statusCode": 200,
+                        "timeStampCost": 0.0029296875,
+                        "workflowEndTime": 1589204767499.7244,
+                        "workflowStartTime": 1589204766646.5146
+                    },
+                    {
+                        "body": {
+                            "portfolio": "1234",
+                            "valid": true
+                        },
+                        "duration": 0.18017578125,
+                        "externalServicesTime": 0,
+                        "memsetTime": 0,
+                        "statusCode": 200,
+                        "timeStampCost": 0.00341796875,
+                        "workflowEndTime": 1589204766226.734,
+                        "workflowStartTime": 1589204766226.5537
+                    },
+                    {
+                        "body": {
+                            "portfolio": "1234",
+                            "valid": true
+                        },
+                        "duration": 0.1416015625,
+                        "externalServicesTime": 0,
+                        "memsetTime": 0,
+                        "statusCode": 200,
+                        "timeStampCost": 0.002685546875,
+                        "workflowEndTime": 1589204766276.672,
+                        "workflowStartTime": 1589204766276.5305
+                    },
+                    {
+                        "body": {
+                            "portfolio": "1234",
+                            "valid": true
+                        },
+                        "duration": 0.15625,
+                        "externalServicesTime": 0,
+                        "memsetTime": 0,
+                        "statusCode": 200,
+                        "timeStampCost": 0.003173828125,
+                        "workflowEndTime": 1589204766334.835,
+                        "workflowStartTime": 1589204766334.6787
+                    },
+                    {
+                        "body": {
+                            "portfolio": "1234",
+                            "valid": true
+                        },
+                        "duration": 0.14794921875,
+                        "externalServicesTime": 0,
+                        "memsetTime": 0,
+                        "statusCode": 200,
+                        "timeStampCost": 0.003173828125,
+                        "workflowEndTime": 1589204766345.8174,
+                        "workflowStartTime": 1589204766345.6694
+                    },
+                    {
+                        "body": {
+                            "marketData": {
+                                "AMZN": 2391.69,
+                                "GOOG": 1388.31,
+                                "MSFT": 184.46
+                            }
+                        },
+                        "duration": 893.84228515625,
+                        "externalServicesTime": 869.556640625,
+                        "memsetTime": 0,
+                        "statusCode": 200,
+                        "timeStampCost": 0.010498046875,
+                        "workflowEndTime": 1589204767129.3076,
+                        "workflowStartTime": 1589204766235.4653
+                    },
+                    {
+                        "body": {
+                            "portfolio": "1234",
+                            "valid": true
+                        },
+                        "duration": 0.1494140625,
+                        "externalServicesTime": 0,
+                        "memsetTime": 0,
+                        "statusCode": 200,
+                        "timeStampCost": 0.0029296875,
+                        "workflowEndTime": 1589204771644.409,
+                        "workflowStartTime": 1589204771644.2595
+                    },
+                    {
+                        "body": {
+                            "portfolio": "1234",
+                            "valid": true
+                        },
+                        "duration": 0.1552734375,
+                        "externalServicesTime": 0,
+                        "memsetTime": 0,
+                        "statusCode": 200,
+                        "timeStampCost": 0.002685546875,
+                        "workflowEndTime": 1589204766232.3647,
+                        "workflowStartTime": 1589204766232.2095
+                    },
+                    {
+                        "body": {
+                            "portfolio": "1234",
+                            "valid": true
+                        },
+                        "duration": 0.17138671875,
+                        "externalServicesTime": 0,
+                        "memsetTime": 0,
+                        "statusCode": 200,
+                        "timeStampCost": 0.003662109375,
+                        "workflowEndTime": 1589204766416.5906,
+                        "workflowStartTime": 1589204766416.4192
+                    },
+                    {
+                        "body": {
+                            "portfolio": "1234",
+                            "valid": true
+                        },
+                        "duration": 0.124267578125,
+                        "externalServicesTime": 0,
+                        "memsetTime": 0,
+                        "statusCode": 200,
+                        "timeStampCost": 0.002197265625,
+                        "workflowEndTime": 1589204766647.3792,
+                        "workflowStartTime": 1589204766647.255
+                    },
+                    {
+                        "body": {
+                            "marketData": {
+                                "AMZN": 2392.36,
+                                "GOOG": 1388.31,
+                                "MSFT": 184.46
+                            }
+                        },
+                        "duration": 852.799560546875,
+                        "externalServicesTime": 837.620849609375,
+                        "memsetTime": 0,
+                        "statusCode": 200,
+                        "timeStampCost": 0.0087890625,
+                        "workflowEndTime": 1589204767236.3013,
+                        "workflowStartTime": 1589204766383.5017
+                    },
+                    {
+                        "body": {
+                            "portfolio": "1234",
+                            "valid": true
+                        },
+                        "duration": 0.166015625,
+                        "externalServicesTime": 0,
+                        "memsetTime": 0,
+                        "statusCode": 200,
+                        "timeStampCost": 0.003173828125,
+                        "workflowEndTime": 1589204766208.4678,
+                        "workflowStartTime": 1589204766208.3018
+                    },
+                    {
+                        "body": {
+                            "portfolio": "1234",
+                            "valid": true
+                        },
+                        "duration": 0.139892578125,
+                        "externalServicesTime": 0,
+                        "memsetTime": 0,
+                        "statusCode": 200,
+                        "timeStampCost": 0.002685546875,
+                        "workflowEndTime": 1589204766533.7026,
+                        "workflowStartTime": 1589204766533.5627
+                    },
+                    {
+                        "body": {
+                            "portfolio": "1234",
+                            "valid": true
+                        },
+                        "duration": 0.15380859375,
+                        "externalServicesTime": 0,
+                        "memsetTime": 0,
+                        "statusCode": 200,
+                        "timeStampCost": 0.002197265625,
+                        "workflowEndTime": 1589204770580.346,
+                        "workflowStartTime": 1589204770580.1921
+                    },
+                    {
+                        "body": {
+                            "portfolio": "1234",
+                            "valid": true
+                        },
+                        "duration": 0.16357421875,
+                        "externalServicesTime": 0,
+                        "memsetTime": 0,
+                        "statusCode": 200,
+                        "timeStampCost": 0.00244140625,
+                        "workflowEndTime": 1589204771203.9363,
+                        "workflowStartTime": 1589204771203.7727
+                    },
+                    {
+                        "body": {
+                            "marketData": {
+                                "AMZN": 2392.36,
+                                "GOOG": 1388.31,
+                                "MSFT": 184.46
+                            }
+                        },
+                        "duration": 838.662109375,
+                        "externalServicesTime": 820.385009765625,
+                        "memsetTime": 0,
+                        "statusCode": 200,
+                        "timeStampCost": 0.004638671875,
+                        "workflowEndTime": 1589204766896.4216,
+                        "workflowStartTime": 1589204766057.7595
+                    },
+                    {
+                        "body": {
+                            "portfolio": "1234",
+                            "valid": true
+                        },
+                        "duration": 0.18798828125,
+                        "externalServicesTime": 0,
+                        "memsetTime": 0,
+                        "statusCode": 200,
+                        "timeStampCost": 0.005126953125,
+                        "workflowEndTime": 1589204766523.25,
+                        "workflowStartTime": 1589204766523.062
+                    },
+                    {
+                        "body": {
+                            "portfolio": "1234",
+                            "valid": true
+                        },
+                        "duration": 0.11181640625,
+                        "externalServicesTime": 0,
+                        "memsetTime": 0,
+                        "statusCode": 200,
+                        "timeStampCost": 0.002197265625,
+                        "workflowEndTime": 1589204766533.6707,
+                        "workflowStartTime": 1589204766533.5588
+                    },
+                    {
+                        "body": {
+                            "portfolio": "1234",
+                            "valid": true
+                        },
+                        "duration": 0.146484375,
+                        "externalServicesTime": 0,
+                        "memsetTime": 0,
+                        "statusCode": 200,
+                        "timeStampCost": 0.002685546875,
+                        "workflowEndTime": 1589204767842.7307,
+                        "workflowStartTime": 1589204767842.5842
+                    },
+                    {
+                        "body": {
+                            "portfolio": "1234",
+                            "valid": true
+                        },
+                        "duration": 0.144287109375,
+                        "externalServicesTime": 0,
+                        "memsetTime": 0,
+                        "statusCode": 200,
+                        "timeStampCost": 0.003173828125,
+                        "workflowEndTime": 1589204766536.3,
+                        "workflowStartTime": 1589204766536.1558
+                    },
+                    {
+                        "body": {
+                            "marketData": {
+                                "AMZN": 2392.36,
+                                "GOOG": 1388.31,
+                                "MSFT": 184.46
+                            }
+                        },
+                        "duration": 871.128173828125,
+                        "externalServicesTime": 853.942626953125,
+                        "memsetTime": 0,
+                        "statusCode": 200,
+                        "timeStampCost": 0.00439453125,
+                        "workflowEndTime": 1589204767000.6372,
+                        "workflowStartTime": 1589204766129.509
+                    },
+                    {
+                        "body": {
+                            "portfolio": "1234",
+                            "valid": true
+                        },
+                        "duration": 0.173095703125,
+                        "externalServicesTime": 0,
+                        "memsetTime": 0,
+                        "statusCode": 200,
+                        "timeStampCost": 0.00439453125,
+                        "workflowEndTime": 1589204766238.098,
+                        "workflowStartTime": 1589204766237.9248
+                    },
+                    {
+                        "body": {
+                            "portfolio": "1234",
+                            "valid": true
+                        },
+                        "duration": 0.1845703125,
+                        "externalServicesTime": 0,
+                        "memsetTime": 0,
+                        "statusCode": 200,
+                        "timeStampCost": 0.00244140625,
+                        "workflowEndTime": 1589204772510.9775,
+                        "workflowStartTime": 1589204772510.793
+                    },
+                    {
+                        "body": {
+                            "portfolio": "1234",
+                            "valid": true
+                        },
+                        "duration": 0.213134765625,
+                        "externalServicesTime": 0,
+                        "memsetTime": 0,
+                        "statusCode": 200,
+                        "timeStampCost": 0.00390625,
+                        "workflowEndTime": 1589204769131.0686,
+                        "workflowStartTime": 1589204769130.8555
+                    },
+                    {
+                        "body": {
+                            "portfolio": "1234",
+                            "valid": true
+                        },
+                        "duration": 0.17529296875,
+                        "externalServicesTime": 0,
+                        "memsetTime": 0,
+                        "statusCode": 200,
+                        "timeStampCost": 0.00439453125,
+                        "workflowEndTime": 1589204766648.7905,
+                        "workflowStartTime": 1589204766648.6152
+                    },
+                    {
+                        "body": {
+                            "marketData": {
+                                "AMZN": 2391.69,
+                                "GOOG": 1388.31,
+                                "MSFT": 184.46
+                            }
+                        },
+                        "duration": 880.698974609375,
+                        "externalServicesTime": 862.59619140625,
+                        "memsetTime": 0,
+                        "statusCode": 200,
+                        "timeStampCost": 0.00341796875,
+                        "workflowEndTime": 1589204767529.0974,
+                        "workflowStartTime": 1589204766648.3984
+                    },
+                    {
+                        "body": {
+                            "portfolio": "1234",
+                            "valid": true
+                        },
+                        "duration": 0.116943359375,
+                        "externalServicesTime": 0,
+                        "memsetTime": 0,
+                        "statusCode": 200,
+                        "timeStampCost": 0.002197265625,
+                        "workflowEndTime": 1589204766665.69,
+                        "workflowStartTime": 1589204766665.573
+                    },
+                    {
+                        "body": {
+                            "portfolio": "1234",
+                            "valid": true
+                        },
+                        "duration": 0.26904296875,
+                        "externalServicesTime": 0,
+                        "memsetTime": 0,
+                        "statusCode": 200,
+                        "timeStampCost": 0.004638671875,
+                        "workflowEndTime": 1589204775454.2446,
+                        "workflowStartTime": 1589204775453.9756
+                    },
+                    {
+                        "body": {
+                            "portfolio": "1234",
+                            "valid": true
+                        },
+                        "duration": 0.227294921875,
+                        "externalServicesTime": 0,
+                        "memsetTime": 0,
+                        "statusCode": 200,
+                        "timeStampCost": 0.004150390625,
+                        "workflowEndTime": 1589204768050.4282,
+                        "workflowStartTime": 1589204768050.201
+                    },
+                    {
+                        "body": {
+                            "portfolio": "1234",
+                            "valid": true
+                        },
+                        "duration": 0.2060546875,
+                        "externalServicesTime": 0,
+                        "memsetTime": 0,
+                        "statusCode": 200,
+                        "timeStampCost": 0.00439453125,
+                        "workflowEndTime": 1589204766611.389,
+                        "workflowStartTime": 1589204766611.1829
+                    },
+                    {
+                        "body": {
+                            "marketData": {
+                                "AMZN": 2392.36,
+                                "GOOG": 1388.31,
+                                "MSFT": 184.46
+                            }
+                        },
+                        "duration": 869.480712890625,
+                        "externalServicesTime": 850.718505859375,
+                        "memsetTime": 0,
+                        "statusCode": 200,
+                        "timeStampCost": 0.002685546875,
+                        "workflowEndTime": 1589204767392.516,
+                        "workflowStartTime": 1589204766523.0354
+                    },
+                    {
+                        "body": {
+                            "portfolio": "1234",
+                            "valid": true
+                        },
+                        "duration": 0.259765625,
+                        "externalServicesTime": 0,
+                        "memsetTime": 0,
+                        "statusCode": 200,
+                        "timeStampCost": 0.00390625,
+                        "workflowEndTime": 1589204772827.7615,
+                        "workflowStartTime": 1589204772827.5017
+                    },
+                    {
+                        "body": {
+                            "portfolio": "1234",
+                            "valid": true
+                        },
+                        "duration": 0.13427734375,
+                        "externalServicesTime": 0,
+                        "memsetTime": 0,
+                        "statusCode": 200,
+                        "timeStampCost": 0.002197265625,
+                        "workflowEndTime": 1589204766473.5237,
+                        "workflowStartTime": 1589204766473.3894
+                    },
+                    {
+                        "body": {
+                            "portfolio": "1234",
+                            "valid": true
+                        },
+                        "duration": 0.151611328125,
+                        "externalServicesTime": 0,
+                        "memsetTime": 0,
+                        "statusCode": 200,
+                        "timeStampCost": 0.002197265625,
+                        "workflowEndTime": 1589204769679.1982,
+                        "workflowStartTime": 1589204769679.0466
+                    },
+                    {
+                        "body": {
+                            "portfolio": "1234",
+                            "valid": true
+                        },
+                        "duration": 0.20458984375,
+                        "externalServicesTime": 0,
+                        "memsetTime": 0,
+                        "statusCode": 200,
+                        "timeStampCost": 0.0048828125,
+                        "workflowEndTime": 1589204766237.3967,
+                        "workflowStartTime": 1589204766237.1921
+                    },
+                    {
+                        "body": {
+                            "marketData": {
+                                "AMZN": 2392.36,
+                                "GOOG": 1388.31,
+                                "MSFT": 184.46
+                            }
+                        },
+                        "duration": 827.232666015625,
+                        "externalServicesTime": 811.23681640625,
+                        "memsetTime": 0,
+                        "statusCode": 200,
+                        "timeStampCost": 0.0029296875,
+                        "workflowEndTime": 1589204767311.8213,
+                        "workflowStartTime": 1589204766484.5886
+                    },
+                    {
+                        "body": {
+                            "portfolio": "1234",
+                            "valid": true
+                        },
+                        "duration": 0.15185546875,
+                        "externalServicesTime": 0,
+                        "memsetTime": 0,
+                        "statusCode": 200,
+                        "timeStampCost": 0.0029296875,
+                        "workflowEndTime": 1589204766085.5469,
+                        "workflowStartTime": 1589204766085.395
+                    },
+                    {
+                        "body": {
+                            "portfolio": "1234",
+                            "valid": true
+                        },
+                        "duration": 0.17529296875,
+                        "externalServicesTime": 0,
+                        "memsetTime": 0,
+                        "statusCode": 200,
+                        "timeStampCost": 0.00439453125,
+                        "workflowEndTime": 1589204766239.2532,
+                        "workflowStartTime": 1589204766239.078
+                    },
+                    {
+                        "body": {
+                            "portfolio": "1234",
+                            "valid": true
+                        },
+                        "duration": 0.750244140625,
+                        "externalServicesTime": 0,
+                        "memsetTime": 0,
+                        "statusCode": 200,
+                        "timeStampCost": 0.0029296875,
+                        "workflowEndTime": 1589204769540.8901,
+                        "workflowStartTime": 1589204769540.14
+                    },
+                    {
+                        "body": {
+                            "portfolio": "1234",
+                            "valid": true
+                        },
+                        "duration": 0.1572265625,
+                        "externalServicesTime": 0,
+                        "memsetTime": 0,
+                        "statusCode": 200,
+                        "timeStampCost": 0.0029296875,
+                        "workflowEndTime": 1589204766235.148,
+                        "workflowStartTime": 1589204766234.9907
+                    },
+                    {
+                        "body": {
+                            "marketData": {
+                                "AMZN": 2390.73,
+                                "GOOG": 1388.31,
+                                "MSFT": 184.43
+                            }
+                        },
+                        "duration": 841.49169921875,
+                        "externalServicesTime": 818.59423828125,
+                        "memsetTime": 0,
+                        "statusCode": 200,
+                        "timeStampCost": 0.00341796875,
+                        "workflowEndTime": 1589204767078.0364,
+                        "workflowStartTime": 1589204766236.5447
+                    },
+                    {
+                        "body": {
+                            "portfolio": "1234",
+                            "valid": true
+                        },
+                        "duration": 0.158203125,
+                        "externalServicesTime": 0,
+                        "memsetTime": 0,
+                        "statusCode": 200,
+                        "timeStampCost": 0.002685546875,
+                        "workflowEndTime": 1589204766648.371,
+                        "workflowStartTime": 1589204766648.213
+                    },
+                    {
+                        "body": {
+                            "portfolio": "1234",
+                            "valid": true
+                        },
+                        "duration": 0.1474609375,
+                        "externalServicesTime": 0,
+                        "memsetTime": 0,
+                        "statusCode": 200,
+                        "timeStampCost": 0.002197265625,
+                        "workflowEndTime": 1589204770711.8948,
+                        "workflowStartTime": 1589204770711.7473
+                    },
+                    {
+                        "body": {
+                            "portfolio": "1234",
+                            "valid": true
+                        },
+                        "duration": 0.1943359375,
+                        "externalServicesTime": 0,
+                        "memsetTime": 0,
+                        "statusCode": 200,
+                        "timeStampCost": 0.00341796875,
+                        "workflowEndTime": 1589204768428.6082,
+                        "workflowStartTime": 1589204768428.4138
+                    },
+                    {
+                        "body": {
+                            "portfolio": "1234",
+                            "valid": true
+                        },
+                        "duration": 0.197021484375,
+                        "externalServicesTime": 0,
+                        "memsetTime": 0,
+                        "statusCode": 200,
+                        "timeStampCost": 0.004150390625,
+                        "workflowEndTime": 1589204766066.6167,
+                        "workflowStartTime": 1589204766066.4197
+                    },
+                    {
+                        "body": {
+                            "marketData": {
+                                "AMZN": 2391.01,
+                                "GOOG": 1388.31,
+                                "MSFT": 184.38
+                            }
+                        },
+                        "duration": 1969.131103515625,
+                        "externalServicesTime": 1954.66455078125,
+                        "memsetTime": 0,
+                        "statusCode": 200,
+                        "timeStampCost": 0.0126953125,
+                        "workflowEndTime": 1589204778202.6453,
+                        "workflowStartTime": 1589204776233.5142
+                    },
+                    {
+                        "body": {
+                            "portfolio": "1234",
+                            "valid": true
+                        },
+                        "duration": 0.1689453125,
+                        "externalServicesTime": 0,
+                        "memsetTime": 0,
+                        "statusCode": 200,
+                        "timeStampCost": 0.005859375,
+                        "workflowEndTime": 1589204766517.9182,
+                        "workflowStartTime": 1589204766517.7493
+                    },
+                    {
+                        "body": {
+                            "portfolio": "1234",
+                            "valid": true
+                        },
+                        "duration": 0.145263671875,
+                        "externalServicesTime": 0,
+                        "memsetTime": 0,
+                        "statusCode": 200,
+                        "timeStampCost": 0.002197265625,
+                        "workflowEndTime": 1589204766647.5938,
+                        "workflowStartTime": 1589204766647.4485
+                    },
+                    {
+                        "body": {
+                            "portfolio": "1234",
+                            "valid": true
+                        },
+                        "duration": 0.177490234375,
+                        "externalServicesTime": 0,
+                        "memsetTime": 0,
+                        "statusCode": 200,
+                        "timeStampCost": 0.00341796875,
+                        "workflowEndTime": 1589204766384.2656,
+                        "workflowStartTime": 1589204766384.0881
+                    },
+                    {
+                        "body": {
+                            "portfolio": "1234",
+                            "valid": true
+                        },
+                        "duration": 0.150146484375,
+                        "externalServicesTime": 0,
+                        "memsetTime": 0,
+                        "statusCode": 200,
+                        "timeStampCost": 0.00244140625,
+                        "workflowEndTime": 1589204774196.71,
+                        "workflowStartTime": 1589204774196.5598
+                    },
+                    {
+                        "body": {
+                            "marketData": {
+                                "AMZN": 2391.69,
+                                "GOOG": 1388.31,
+                                "MSFT": 184.46
+                            }
+                        },
+                        "duration": 862.891845703125,
+                        "externalServicesTime": 844.7900390625,
+                        "memsetTime": 0,
+                        "statusCode": 200,
+                        "timeStampCost": 0.003173828125,
+                        "workflowEndTime": 1589204767514.3647,
+                        "workflowStartTime": 1589204766651.473
+                    },
+                    {
+                        "body": {
+                            "portfolio": "1234",
+                            "valid": true
+                        },
+                        "duration": 0.15087890625,
+                        "externalServicesTime": 0,
+                        "memsetTime": 0,
+                        "statusCode": 200,
+                        "timeStampCost": 0.00341796875,
+                        "workflowEndTime": 1589204766479.905,
+                        "workflowStartTime": 1589204766479.7542
+                    },
+                    {
+                        "body": {
+                            "portfolio": "1234",
+                            "valid": true
+                        },
+                        "duration": 0.159423828125,
+                        "externalServicesTime": 0,
+                        "memsetTime": 0,
+                        "statusCode": 200,
+                        "timeStampCost": 0.003173828125,
+                        "workflowEndTime": 1589204766477.684,
+                        "workflowStartTime": 1589204766477.5247
+                    },
+                    {
+                        "body": {
+                            "portfolio": "1234",
+                            "valid": true
+                        },
+                        "duration": 0.102783203125,
+                        "externalServicesTime": 0,
+                        "memsetTime": 0,
+                        "statusCode": 200,
+                        "timeStampCost": 0.00146484375,
+                        "workflowEndTime": 1589204768759.0469,
+                        "workflowStartTime": 1589204768758.944
+                    },
+                    {
+                        "body": {
+                            "portfolio": "1234",
+                            "valid": true
+                        },
+                        "duration": 0.232421875,
+                        "externalServicesTime": 0,
+                        "memsetTime": 0,
+                        "statusCode": 200,
+                        "timeStampCost": 0.00341796875,
+                        "workflowEndTime": 1589204769421.4917,
+                        "workflowStartTime": 1589204769421.2593
+                    },
+                    {
+                        "body": {
+                            "marketData": {
+                                "AMZN": 2391.69,
+                                "GOOG": 1388.31,
+                                "MSFT": 184.46
+                            }
+                        },
+                        "duration": 891.021728515625,
+                        "externalServicesTime": 876.83056640625,
+                        "memsetTime": 0,
+                        "statusCode": 200,
+                        "timeStampCost": 0.00390625,
+                        "workflowEndTime": 1589204780269.4106,
+                        "workflowStartTime": 1589204779378.389
+                    },
+                    {
+                        "body": {
+                            "portfolio": "1234",
+                            "valid": true
+                        },
+                        "duration": 0.131103515625,
+                        "externalServicesTime": 0,
+                        "memsetTime": 0,
+                        "statusCode": 200,
+                        "timeStampCost": 0.00244140625,
+                        "workflowEndTime": 1589204766239.604,
+                        "workflowStartTime": 1589204766239.473
+                    },
+                    {
+                        "body": {
+                            "portfolio": "1234",
+                            "valid": true
+                        },
+                        "duration": 0.215576171875,
+                        "externalServicesTime": 0,
+                        "memsetTime": 0,
+                        "statusCode": 200,
+                        "timeStampCost": 0.005126953125,
+                        "workflowEndTime": 1589204766237.8691,
+                        "workflowStartTime": 1589204766237.6536
+                    },
+                    {
+                        "body": {
+                            "portfolio": "1234",
+                            "valid": true
+                        },
+                        "duration": 0.227294921875,
+                        "externalServicesTime": 0,
+                        "memsetTime": 0,
+                        "statusCode": 200,
+                        "timeStampCost": 0.004150390625,
+                        "workflowEndTime": 1589204766516.6223,
+                        "workflowStartTime": 1589204766516.395
+                    },
+                    {
+                        "body": {
+                            "portfolio": "1234",
+                            "valid": true
+                        },
+                        "duration": 0.2099609375,
+                        "externalServicesTime": 0,
+                        "memsetTime": 0,
+                        "statusCode": 200,
+                        "timeStampCost": 0.00341796875,
+                        "workflowEndTime": 1589204775302.548,
+                        "workflowStartTime": 1589204775302.3381
+                    },
+                    {
+                        "body": {
+                            "marketData": {
+                                "AMZN": 2391.69,
+                                "GOOG": 1388.31,
+                                "MSFT": 184.46
+                            }
+                        },
+                        "duration": 911.300048828125,
+                        "externalServicesTime": 895.66796875,
+                        "memsetTime": 0,
+                        "statusCode": 200,
+                        "timeStampCost": 0.00341796875,
+                        "workflowEndTime": 1589204767522.8516,
+                        "workflowStartTime": 1589204766611.5515
+                    },
+                    {
+                        "body": {
+                            "portfolio": "1234",
+                            "valid": true
+                        },
+                        "duration": 0.169189453125,
+                        "externalServicesTime": 0,
+                        "memsetTime": 0,
+                        "statusCode": 200,
+                        "timeStampCost": 0.002197265625,
+                        "workflowEndTime": 1589204771210.7285,
+                        "workflowStartTime": 1589204771210.5593
+                    },
+                    {
+                        "body": {
+                            "portfolio": "1234",
+                            "valid": true
+                        },
+                        "duration": 0.212890625,
+                        "externalServicesTime": 0,
+                        "memsetTime": 0,
+                        "statusCode": 200,
+                        "timeStampCost": 0.0029296875,
+                        "workflowEndTime": 1589204771160.9258,
+                        "workflowStartTime": 1589204771160.713
+                    },
+                    {
+                        "body": {
+                            "portfolio": "1234",
+                            "valid": true
+                        },
+                        "duration": 0.11767578125,
+                        "externalServicesTime": 0,
+                        "memsetTime": 0,
+                        "statusCode": 200,
+                        "timeStampCost": 0.00244140625,
+                        "workflowEndTime": 1589204766234.5977,
+                        "workflowStartTime": 1589204766234.48
+                    },
+                    {
+                        "body": {
+                            "portfolio": "1234",
+                            "valid": true
+                        },
+                        "duration": 0.150634765625,
+                        "externalServicesTime": 0,
+                        "memsetTime": 0,
+                        "statusCode": 200,
+                        "timeStampCost": 0.0029296875,
+                        "workflowEndTime": 1589204766550.3025,
+                        "workflowStartTime": 1589204766550.1519
+                    },
+                    {
+                        "body": {
+                            "marketData": {
+                                "AMZN": 2391.69,
+                                "GOOG": 1388.31,
+                                "MSFT": 184.46
+                            }
+                        },
+                        "duration": 834.928955078125,
+                        "externalServicesTime": 815.839599609375,
+                        "memsetTime": 0,
+                        "statusCode": 200,
+                        "timeStampCost": 0.0048828125,
+                        "workflowEndTime": 1589204767285.4507,
+                        "workflowStartTime": 1589204766450.5217
+                    },
+                    {
+                        "body": {
+                            "portfolio": "1234",
+                            "valid": true
+                        },
+                        "duration": 0.165771484375,
+                        "externalServicesTime": 0,
+                        "memsetTime": 0,
+                        "statusCode": 200,
+                        "timeStampCost": 0.003173828125,
+                        "workflowEndTime": 1589204766651.0923,
+                        "workflowStartTime": 1589204766650.9265
+                    },
+                    {
+                        "body": {
+                            "portfolio": "1234",
+                            "valid": true
+                        },
+                        "duration": 0.1328125,
+                        "externalServicesTime": 0,
+                        "memsetTime": 0,
+                        "statusCode": 200,
+                        "timeStampCost": 0.001953125,
+                        "workflowEndTime": 1589204773781.1438,
+                        "workflowStartTime": 1589204773781.011
+                    },
+                    {
+                        "body": {
+                            "portfolio": "1234",
+                            "valid": true
+                        },
+                        "duration": 0.19091796875,
+                        "externalServicesTime": 0,
+                        "memsetTime": 0,
+                        "statusCode": 200,
+                        "timeStampCost": 0.003662109375,
+                        "workflowEndTime": 1589204766381.2231,
+                        "workflowStartTime": 1589204766381.0322
+                    },
+                    {
+                        "body": {
+                            "portfolio": "1234",
+                            "valid": true
+                        },
+                        "duration": 0.169677734375,
+                        "externalServicesTime": 0,
+                        "memsetTime": 0,
+                        "statusCode": 200,
+                        "timeStampCost": 0.003173828125,
+                        "workflowEndTime": 1589204766550.169,
+                        "workflowStartTime": 1589204766549.9993
+                    },
+                    {
+                        "body": {
+                            "marketData": {
+                                "AMZN": 2392,
+                                "GOOG": 1387.85,
+                                "MSFT": 184.47
+                            }
+                        },
+                        "duration": 859.542236328125,
+                        "externalServicesTime": 845.2236328125,
+                        "memsetTime": 0,
+                        "statusCode": 200,
+                        "timeStampCost": 0.00244140625,
+                        "workflowEndTime": 1589204767182.274,
+                        "workflowStartTime": 1589204766322.7317
+                    },
+                    {
+                        "body": {
+                            "portfolio": "1234",
+                            "valid": true
+                        },
+                        "duration": 0.143798828125,
+                        "externalServicesTime": 0,
+                        "memsetTime": 0,
+                        "statusCode": 200,
+                        "timeStampCost": 0.00244140625,
+                        "workflowEndTime": 1589204775012.723,
+                        "workflowStartTime": 1589204775012.579
+                    },
+                    {
+                        "body": {
+                            "portfolio": "1234",
+                            "valid": true
+                        },
+                        "duration": 0.145751953125,
+                        "externalServicesTime": 0,
+                        "memsetTime": 0,
+                        "statusCode": 200,
+                        "timeStampCost": 0.002685546875,
+                        "workflowEndTime": 1589204766611.234,
+                        "workflowStartTime": 1589204766611.0881
+                    },
+                    {
+                        "body": {
+                            "portfolio": "1234",
+                            "valid": true
+                        },
+                        "duration": 0.2490234375,
+                        "externalServicesTime": 0,
+                        "memsetTime": 0,
+                        "statusCode": 200,
+                        "timeStampCost": 0.004150390625,
+                        "workflowEndTime": 1589204775661.9368,
+                        "workflowStartTime": 1589204775661.6877
+                    },
+                    {
+                        "body": {
+                            "portfolio": "1234",
+                            "valid": true
+                        },
+                        "duration": 0.2607421875,
+                        "externalServicesTime": 0,
+                        "memsetTime": 0,
+                        "statusCode": 200,
+                        "timeStampCost": 0.004150390625,
+                        "workflowEndTime": 1589204772823.0605,
+                        "workflowStartTime": 1589204772822.7998
+                    },
+                    {
+                        "body": {
+                            "marketData": {
+                                "AMZN": 2391.82,
+                                "GOOG": 1388.31,
+                                "MSFT": 184.5
+                            }
+                        },
+                        "duration": 952.414306640625,
+                        "externalServicesTime": 931.238037109375,
+                        "memsetTime": 0,
+                        "statusCode": 200,
+                        "timeStampCost": 0.0029296875,
+                        "workflowEndTime": 1589204767404.8027,
+                        "workflowStartTime": 1589204766452.3884
+                    },
+                    {
+                        "body": {
+                            "portfolio": "1234",
+                            "valid": true
+                        },
+                        "duration": 0.167724609375,
+                        "externalServicesTime": 0,
+                        "memsetTime": 0,
+                        "statusCode": 200,
+                        "timeStampCost": 0.003173828125,
+                        "workflowEndTime": 1589204766647.532,
+                        "workflowStartTime": 1589204766647.3643
+                    },
+                    {
+                        "body": {
+                            "portfolio": "1234",
+                            "valid": true
+                        },
+                        "duration": 0.119140625,
+                        "externalServicesTime": 0,
+                        "memsetTime": 0,
+                        "statusCode": 200,
+                        "timeStampCost": 0.002197265625,
+                        "workflowEndTime": 1589204771978.3027,
+                        "workflowStartTime": 1589204771978.1836
+                    },
+                    {
+                        "body": {
+                            "portfolio": "1234",
+                            "valid": true
+                        },
+                        "duration": 0.25439453125,
+                        "externalServicesTime": 0,
+                        "memsetTime": 0,
+                        "statusCode": 200,
+                        "timeStampCost": 0.0048828125,
+                        "workflowEndTime": 1589204767972.2136,
+                        "workflowStartTime": 1589204767971.9592
+                    },
+                    {
+                        "body": {
+                            "portfolio": "1234",
+                            "valid": true
+                        },
+                        "duration": 0.190185546875,
+                        "externalServicesTime": 0,
+                        "memsetTime": 0,
+                        "statusCode": 200,
+                        "timeStampCost": 0.0029296875,
+                        "workflowEndTime": 1589204766558.7554,
+                        "workflowStartTime": 1589204766558.5652
+                    },
+                    {
+                        "body": {
+                            "marketData": {
+                                "AMZN": 2390.73,
+                                "GOOG": 1388.31,
+                                "MSFT": 184.43
+                            }
+                        },
+                        "duration": 885.321044921875,
+                        "externalServicesTime": 865.341796875,
+                        "memsetTime": 0,
+                        "statusCode": 200,
+                        "timeStampCost": 0.00341796875,
+                        "workflowEndTime": 1589204767403.1235,
+                        "workflowStartTime": 1589204766517.8025
+                    },
+                    {
+                        "body": {
+                            "portfolio": "1234",
+                            "valid": true
+                        },
+                        "duration": 0.1748046875,
+                        "externalServicesTime": 0,
+                        "memsetTime": 0,
+                        "statusCode": 200,
+                        "timeStampCost": 0.003662109375,
+                        "workflowEndTime": 1589204773670.498,
+                        "workflowStartTime": 1589204773670.3232
+                    },
+                    {
+                        "body": {
+                            "portfolio": "1234",
+                            "valid": true
+                        },
+                        "duration": 0.161376953125,
+                        "externalServicesTime": 0,
+                        "memsetTime": 0,
+                        "statusCode": 200,
+                        "timeStampCost": 0.002197265625,
+                        "workflowEndTime": 1589204774356.6362,
+                        "workflowStartTime": 1589204774356.4749
+                    },
+                    {
+                        "body": {
+                            "portfolio": "1234",
+                            "valid": true
+                        },
+                        "duration": 0.150390625,
+                        "externalServicesTime": 0,
+                        "memsetTime": 0,
+                        "statusCode": 200,
+                        "timeStampCost": 0.00244140625,
+                        "workflowEndTime": 1589204768412.0417,
+                        "workflowStartTime": 1589204768411.8914
+                    },
+                    {
+                        "body": {
+                            "portfolio": "1234",
+                            "valid": true
+                        },
+                        "duration": 0.253662109375,
+                        "externalServicesTime": 0,
+                        "memsetTime": 0,
+                        "statusCode": 200,
+                        "timeStampCost": 0.004150390625,
+                        "workflowEndTime": 1589204770222.6804,
+                        "workflowStartTime": 1589204770222.4268
+                    },
+                    {
+                        "body": {
+                            "marketData": {
+                                "AMZN": 2392.36,
+                                "GOOG": 1388.31,
+                                "MSFT": 184.46
+                            }
+                        },
+                        "duration": 968.037109375,
+                        "externalServicesTime": 945.74755859375,
+                        "memsetTime": 0,
+                        "statusCode": 200,
+                        "timeStampCost": 0.0029296875,
+                        "workflowEndTime": 1589204767518.1636,
+                        "workflowStartTime": 1589204766550.1265
+                    },
+                    {
+                        "body": {
+                            "portfolio": "1234",
+                            "valid": true
+                        },
+                        "duration": 0.1376953125,
+                        "externalServicesTime": 0,
+                        "memsetTime": 0,
+                        "statusCode": 200,
+                        "timeStampCost": 0.0029296875,
+                        "workflowEndTime": 1589204766541.837,
+                        "workflowStartTime": 1589204766541.6992
+                    },
+                    {
+                        "body": {
+                            "portfolio": "1234",
+                            "valid": true
+                        },
+                        "duration": 0.1494140625,
+                        "externalServicesTime": 0,
+                        "memsetTime": 0,
+                        "statusCode": 200,
+                        "timeStampCost": 0.00341796875,
+                        "workflowEndTime": 1589204766610.8206,
+                        "workflowStartTime": 1589204766610.6711
+                    },
+                    {
+                        "body": {
+                            "portfolio": "1234",
+                            "valid": true
+                        },
+                        "duration": 0.1376953125,
+                        "externalServicesTime": 0,
+                        "memsetTime": 0,
+                        "statusCode": 200,
+                        "timeStampCost": 0.002197265625,
+                        "workflowEndTime": 1589204766463.1838,
+                        "workflowStartTime": 1589204766463.0461
+                    },
+                    {
+                        "body": {
+                            "portfolio": "1234",
+                            "valid": true
+                        },
+                        "duration": 0.181396484375,
+                        "externalServicesTime": 0,
+                        "memsetTime": 0,
+                        "statusCode": 200,
+                        "timeStampCost": 0.004150390625,
+                        "workflowEndTime": 1589204766556.3228,
+                        "workflowStartTime": 1589204766556.1414
+                    },
+                    {
+                        "body": {
+                            "marketData": {
+                                "AMZN": 2391.82,
+                                "GOOG": 1388.31,
+                                "MSFT": 184.46
+                            }
+                        },
+                        "duration": 880.048095703125,
+                        "externalServicesTime": 859.9853515625,
+                        "memsetTime": 0,
+                        "statusCode": 200,
+                        "timeStampCost": 0.0029296875,
+                        "workflowEndTime": 1589204767369.8298,
+                        "workflowStartTime": 1589204766489.7817
+                    },
+                    {
+                        "body": {
+                            "portfolio": "1234",
+                            "valid": true
+                        },
+                        "duration": 0.21435546875,
+                        "externalServicesTime": 0,
+                        "memsetTime": 0,
+                        "statusCode": 200,
+                        "timeStampCost": 0.004150390625,
+                        "workflowEndTime": 1589204766411.0195,
+                        "workflowStartTime": 1589204766410.8052
+                    },
+                    {
+                        "body": {
+                            "portfolio": "1234",
+                            "valid": true
+                        },
+                        "duration": 0.158203125,
+                        "externalServicesTime": 0,
+                        "memsetTime": 0,
+                        "statusCode": 200,
+                        "timeStampCost": 0.003173828125,
+                        "workflowEndTime": 1589204766483.6526,
+                        "workflowStartTime": 1589204766483.4944
+                    },
+                    {
+                        "body": {
+                            "portfolio": "1234",
+                            "valid": true
+                        },
+                        "duration": 4.21435546875,
+                        "externalServicesTime": 0,
+                        "memsetTime": 0,
+                        "statusCode": 200,
+                        "timeStampCost": 0.0029296875,
+                        "workflowEndTime": 1589204774446.6118,
+                        "workflowStartTime": 1589204774442.3975
+                    },
+                    {
+                        "body": {
+                            "portfolio": "1234",
+                            "valid": true
+                        },
+                        "duration": 0.207275390625,
+                        "externalServicesTime": 0,
+                        "memsetTime": 0,
+                        "statusCode": 200,
+                        "timeStampCost": 0.002685546875,
+                        "workflowEndTime": 1589204772222.22,
+                        "workflowStartTime": 1589204772222.0127
+                    },
+                    {
+                        "body": {
+                            "marketData": {
+                                "AMZN": 2392.36,
+                                "GOOG": 1388.31,
+                                "MSFT": 184.46
+                            }
+                        },
+                        "duration": 914.85546875,
+                        "externalServicesTime": 893.808349609375,
+                        "memsetTime": 0,
+                        "statusCode": 200,
+                        "timeStampCost": 0.00244140625,
+                        "workflowEndTime": 1589204767562.4502,
+                        "workflowStartTime": 1589204766647.5947
+                    },
+                    {
+                        "body": {
+                            "portfolio": "1234",
+                            "valid": true
+                        },
+                        "duration": 0.168701171875,
+                        "externalServicesTime": 0,
+                        "memsetTime": 0,
+                        "statusCode": 200,
+                        "timeStampCost": 0.0029296875,
+                        "workflowEndTime": 1589204773802.2751,
+                        "workflowStartTime": 1589204773802.1064
+                    },
+                    {
+                        "body": {
+                            "portfolio": "1234",
+                            "valid": true
+                        },
+                        "duration": 0.278076171875,
+                        "externalServicesTime": 0,
+                        "memsetTime": 0,
+                        "statusCode": 200,
+                        "timeStampCost": 0.0048828125,
+                        "workflowEndTime": 1589204775514.3154,
+                        "workflowStartTime": 1589204775514.0374
+                    },
+                    {
+                        "body": {
+                            "portfolio": "1234",
+                            "valid": true
+                        },
+                        "duration": 0.209228515625,
+                        "externalServicesTime": 0,
+                        "memsetTime": 0,
+                        "statusCode": 200,
+                        "timeStampCost": 0.003662109375,
+                        "workflowEndTime": 1589204766239.0962,
+                        "workflowStartTime": 1589204766238.887
+                    },
+                    {
+                        "body": {
+                            "portfolio": "1234",
+                            "valid": true
+                        },
+                        "duration": 0.169677734375,
+                        "externalServicesTime": 0,
+                        "memsetTime": 0,
+                        "statusCode": 200,
+                        "timeStampCost": 0.00244140625,
+                        "workflowEndTime": 1589204769972.243,
+                        "workflowStartTime": 1589204769972.0732
+                    },
+                    {
+                        "body": {
+                            "marketData": {
+                                "AMZN": 2392.36,
+                                "GOOG": 1388.31,
+                                "MSFT": 184.46
+                            }
+                        },
+                        "duration": 950.5869140625,
+                        "externalServicesTime": 933.486083984375,
+                        "memsetTime": 0,
+                        "statusCode": 200,
+                        "timeStampCost": 0.00341796875,
+                        "workflowEndTime": 1589204767562.2144,
+                        "workflowStartTime": 1589204766611.6274
+                    },
+                    {
+                        "body": {
+                            "portfolio": "1234",
+                            "valid": true
+                        },
+                        "duration": 0.096435546875,
+                        "externalServicesTime": 0,
+                        "memsetTime": 0,
+                        "statusCode": 200,
+                        "timeStampCost": 0.001708984375,
+                        "workflowEndTime": 1589204766237.5476,
+                        "workflowStartTime": 1589204766237.4512
+                    },
+                    {
+                        "body": {
+                            "portfolio": "1234",
+                            "valid": true
+                        },
+                        "duration": 7.990478515625,
+                        "externalServicesTime": 0,
+                        "memsetTime": 0,
+                        "statusCode": 200,
+                        "timeStampCost": 0.005615234375,
+                        "workflowEndTime": 1589204770320.5276,
+                        "workflowStartTime": 1589204770312.537
+                    },
+                    {
+                        "body": {
+                            "portfolio": "1234",
+                            "valid": true
+                        },
+                        "duration": 0.13623046875,
+                        "externalServicesTime": 0,
+                        "memsetTime": 0,
+                        "statusCode": 200,
+                        "timeStampCost": 0.002197265625,
+                        "workflowEndTime": 1589204768412.323,
+                        "workflowStartTime": 1589204768412.1868
+                    },
+                    {
+                        "body": {
+                            "portfolio": "1234",
+                            "valid": true
+                        },
+                        "duration": 0.131103515625,
+                        "externalServicesTime": 0,
+                        "memsetTime": 0,
+                        "statusCode": 200,
+                        "timeStampCost": 0.002685546875,
+                        "workflowEndTime": 1589204766477.7256,
+                        "workflowStartTime": 1589204766477.5945
+                    },
+                    {
+                        "body": {
+                            "marketData": {
+                                "AMZN": 2391.69,
+                                "GOOG": 1388.31,
+                                "MSFT": 184.46
+                            }
+                        },
+                        "duration": 866.631591796875,
+                        "externalServicesTime": 847.96337890625,
+                        "memsetTime": 0,
+                        "statusCode": 200,
+                        "timeStampCost": 0.00439453125,
+                        "workflowEndTime": 1589204767402.2776,
+                        "workflowStartTime": 1589204766535.646
+                    },
+                    {
+                        "body": {
+                            "portfolio": "1234",
+                            "valid": true
+                        },
+                        "duration": 0.1748046875,
+                        "externalServicesTime": 0,
+                        "memsetTime": 0,
+                        "statusCode": 200,
+                        "timeStampCost": 0.003173828125,
+                        "workflowEndTime": 1589204775750.5054,
+                        "workflowStartTime": 1589204775750.3306
+                    },
+                    {
+                        "body": {
+                            "portfolio": "1234",
+                            "valid": true
+                        },
+                        "duration": 0.16943359375,
+                        "externalServicesTime": 0,
+                        "memsetTime": 0,
+                        "statusCode": 200,
+                        "timeStampCost": 0.00244140625,
+                        "workflowEndTime": 1589204774572.628,
+                        "workflowStartTime": 1589204774572.4585
+                    },
+                    {
+                        "body": {
+                            "portfolio": "1234",
+                            "valid": true
+                        },
+                        "duration": 0.15087890625,
+                        "externalServicesTime": 0,
+                        "memsetTime": 0,
+                        "statusCode": 200,
+                        "timeStampCost": 0.002197265625,
+                        "workflowEndTime": 1589204767829.5308,
+                        "workflowStartTime": 1589204767829.38
+                    },
+                    {
+                        "body": {
+                            "portfolio": "1234",
+                            "valid": true
+                        },
+                        "duration": 0.15283203125,
+                        "externalServicesTime": 0,
+                        "memsetTime": 0,
+                        "statusCode": 200,
+                        "timeStampCost": 0.002197265625,
+                        "workflowEndTime": 1589204770510.702,
+                        "workflowStartTime": 1589204770510.549
+                    },
+                    {
+                        "body": {
+                            "marketData": {
+                                "AMZN": 2391.69,
+                                "GOOG": 1388.31,
+                                "MSFT": 184.46
+                            }
+                        },
+                        "duration": 920.50439453125,
+                        "externalServicesTime": 903.83056640625,
+                        "memsetTime": 0,
+                        "statusCode": 200,
+                        "timeStampCost": 0.004150390625,
+                        "workflowEndTime": 1589204767408.651,
+                        "workflowStartTime": 1589204766488.1465
+                    },
+                    {
+                        "body": {
+                            "portfolio": "1234",
+                            "valid": true
+                        },
+                        "duration": 0.1708984375,
+                        "externalServicesTime": 0,
+                        "memsetTime": 0,
+                        "statusCode": 200,
+                        "timeStampCost": 0.003662109375,
+                        "workflowEndTime": 1589204766474.8467,
+                        "workflowStartTime": 1589204766474.6758
+                    },
+                    {
+                        "body": {
+                            "portfolio": "1234",
+                            "valid": true
+                        },
+                        "duration": 0.158203125,
+                        "externalServicesTime": 0,
+                        "memsetTime": 0,
+                        "statusCode": 200,
+                        "timeStampCost": 0.002685546875,
+                        "workflowEndTime": 1589204771481.2866,
+                        "workflowStartTime": 1589204771481.1284
+                    },
+                    {
+                        "body": {
+                            "portfolio": "1234",
+                            "valid": true
+                        },
+                        "duration": 0.203857421875,
+                        "externalServicesTime": 0,
+                        "memsetTime": 0,
+                        "statusCode": 200,
+                        "timeStampCost": 0.00390625,
+                        "workflowEndTime": 1589204769228.0754,
+                        "workflowStartTime": 1589204769227.8716
+                    },
+                    {
+                        "body": {
+                            "portfolio": "1234",
+                            "valid": true
+                        },
+                        "duration": 0.1904296875,
+                        "externalServicesTime": 0,
+                        "memsetTime": 0,
+                        "statusCode": 200,
+                        "timeStampCost": 0.00390625,
+                        "workflowEndTime": 1589204766552.9236,
+                        "workflowStartTime": 1589204766552.7332
+                    },
+                    {
+                        "body": {
+                            "marketData": {
+                                "AMZN": 2391.69,
+                                "GOOG": 1388.31,
+                                "MSFT": 184.46
+                            }
+                        },
+                        "duration": 948.230712890625,
+                        "externalServicesTime": 931.829833984375,
+                        "memsetTime": 0,
+                        "statusCode": 200,
+                        "timeStampCost": 0.006591796875,
+                        "workflowEndTime": 1589204774490.895,
+                        "workflowStartTime": 1589204773542.6643
+                    },
+                    {
+                        "body": {
+                            "portfolio": "1234",
+                            "valid": true
+                        },
+                        "duration": 0.29345703125,
+                        "externalServicesTime": 0,
+                        "memsetTime": 0,
+                        "statusCode": 200,
+                        "timeStampCost": 0.005859375,
+                        "workflowEndTime": 1589204773123.3267,
+                        "workflowStartTime": 1589204773123.0332
+                    },
+                    {
+                        "body": {
+                            "portfolio": "1234",
+                            "valid": true
+                        },
+                        "duration": 0.160888671875,
+                        "externalServicesTime": 0,
+                        "memsetTime": 0,
+                        "statusCode": 200,
+                        "timeStampCost": 0.002197265625,
+                        "workflowEndTime": 1589204766256.3806,
+                        "workflowStartTime": 1589204766256.2197
+                    },
+                    {
+                        "body": {
+                            "portfolio": "1234",
+                            "valid": true
+                        },
+                        "duration": 0.22412109375,
+                        "externalServicesTime": 0,
+                        "memsetTime": 0,
+                        "statusCode": 200,
+                        "timeStampCost": 0.004150390625,
+                        "workflowEndTime": 1589204773921.1475,
+                        "workflowStartTime": 1589204773920.9233
+                    },
+                    {
+                        "body": {
+                            "portfolio": "1234",
+                            "valid": true
+                        },
+                        "duration": 0.13134765625,
+                        "externalServicesTime": 0,
+                        "memsetTime": 0,
+                        "statusCode": 200,
+                        "timeStampCost": 0.001953125,
+                        "workflowEndTime": 1589204766474.8743,
+                        "workflowStartTime": 1589204766474.743
+                    },
+                    {
+                        "error": "The action did not return a dictionary."
+                    },
+                    {
+                        "body": {
+                            "portfolio": "1234",
+                            "valid": true
+                        },
+                        "duration": 0.197021484375,
+                        "externalServicesTime": 0,
+                        "memsetTime": 0,
+                        "statusCode": 200,
+                        "timeStampCost": 0.00341796875,
+                        "workflowEndTime": 1589204766484.4412,
+                        "workflowStartTime": 1589204766484.2441
+                    },
+                    {
+                        "body": {
+                            "portfolio": "1234",
+                            "valid": true
+                        },
+                        "duration": 0.1474609375,
+                        "externalServicesTime": 0,
+                        "memsetTime": 0,
+                        "statusCode": 200,
+                        "timeStampCost": 0.00244140625,
+                        "workflowEndTime": 1589204772688.971,
+                        "workflowStartTime": 1589204772688.8235
+                    },
+                    {
+                        "body": {
+                            "portfolio": "1234",
+                            "valid": true
+                        },
+                        "duration": 0.141357421875,
+                        "externalServicesTime": 0,
+                        "memsetTime": 0,
+                        "statusCode": 200,
+                        "timeStampCost": 0.00244140625,
+                        "workflowEndTime": 1589204768665.281,
+                        "workflowStartTime": 1589204768665.1396
+                    },
+                    {
+                        "body": {
+                            "portfolio": "1234",
+                            "valid": true
+                        },
+                        "duration": 0.117919921875,
+                        "externalServicesTime": 0,
+                        "memsetTime": 0,
+                        "statusCode": 200,
+                        "timeStampCost": 0.001953125,
+                        "workflowEndTime": 1589204766479.2766,
+                        "workflowStartTime": 1589204766479.1587
+                    },
+                    {
+                        "body": {
+                            "marketData": {
+                                "AMZN": 2390.73,
+                                "GOOG": 1388.31,
+                                "MSFT": 184.43
+                            }
+                        },
+                        "duration": 851.361083984375,
+                        "externalServicesTime": 832.618896484375,
+                        "memsetTime": 0,
+                        "statusCode": 200,
+                        "timeStampCost": 0.004638671875,
+                        "workflowEndTime": 1589204766985.4182,
+                        "workflowStartTime": 1589204766134.0571
+                    },
+                    {
+                        "body": {
+                            "portfolio": "1234",
+                            "valid": true
+                        },
+                        "duration": 0.174072265625,
+                        "externalServicesTime": 0,
+                        "memsetTime": 0,
+                        "statusCode": 200,
+                        "timeStampCost": 0.002685546875,
+                        "workflowEndTime": 1589204766522.1042,
+                        "workflowStartTime": 1589204766521.9302
+                    },
+                    {
+                        "body": {
+                            "portfolio": "1234",
+                            "valid": true
+                        },
+                        "duration": 0.1162109375,
+                        "externalServicesTime": 0,
+                        "memsetTime": 0,
+                        "statusCode": 200,
+                        "timeStampCost": 0.001953125,
+                        "workflowEndTime": 1589204766563.3672,
+                        "workflowStartTime": 1589204766563.251
+                    },
+                    {
+                        "body": {
+                            "portfolio": "1234",
+                            "valid": true
+                        },
+                        "duration": 0.111328125,
+                        "externalServicesTime": 0,
+                        "memsetTime": 0,
+                        "statusCode": 200,
+                        "timeStampCost": 0.002197265625,
+                        "workflowEndTime": 1589204766474.2715,
+                        "workflowStartTime": 1589204766474.1602
+                    },
+                    {
+                        "body": {
+                            "portfolio": "1234",
+                            "valid": true
+                        },
+                        "duration": 0.2265625,
+                        "externalServicesTime": 0,
+                        "memsetTime": 0,
+                        "statusCode": 200,
+                        "timeStampCost": 0.00244140625,
+                        "workflowEndTime": 1589204769319.7449,
+                        "workflowStartTime": 1589204769319.5183
+                    },
+                    {
+                        "body": {
+                            "marketData": {
+                                "AMZN": 2391.82,
+                                "GOOG": 1388.31,
+                                "MSFT": 184.5
+                            }
+                        },
+                        "duration": 852.425537109375,
+                        "externalServicesTime": 836.2197265625,
+                        "memsetTime": 0,
+                        "statusCode": 200,
+                        "timeStampCost": 0.002685546875,
+                        "workflowEndTime": 1589204767510.5332,
+                        "workflowStartTime": 1589204766658.1077
+                    },
+                    {
+                        "body": {
+                            "portfolio": "1234",
+                            "valid": true
+                        },
+                        "duration": 0.1337890625,
+                        "externalServicesTime": 0,
+                        "memsetTime": 0,
+                        "statusCode": 200,
+                        "timeStampCost": 0.002685546875,
+                        "workflowEndTime": 1589204772827.3176,
+                        "workflowStartTime": 1589204772827.1838
+                    },
+                    {
+                        "body": {
+                            "portfolio": "1234",
+                            "valid": true
+                        },
+                        "duration": 0.14306640625,
+                        "externalServicesTime": 0,
+                        "memsetTime": 0,
+                        "statusCode": 200,
+                        "timeStampCost": 0.002685546875,
+                        "workflowEndTime": 1589204766538.359,
+                        "workflowStartTime": 1589204766538.2158
+                    },
+                    {
+                        "body": {
+                            "portfolio": "1234",
+                            "valid": true
+                        },
+                        "duration": 5.463134765625,
+                        "externalServicesTime": 0,
+                        "memsetTime": 0,
+                        "statusCode": 200,
+                        "timeStampCost": 0.004638671875,
+                        "workflowEndTime": 1589204774446.66,
+                        "workflowStartTime": 1589204774441.1968
+                    },
+                    {
+                        "body": {
+                            "portfolio": "1234",
+                            "valid": true
+                        },
+                        "duration": 0.2099609375,
+                        "externalServicesTime": 0,
+                        "memsetTime": 0,
+                        "statusCode": 200,
+                        "timeStampCost": 0.00439453125,
+                        "workflowEndTime": 1589204766556.164,
+                        "workflowStartTime": 1589204766555.954
+                    },
+                    {
+                        "body": {
+                            "marketData": {
+                                "AMZN": 2392.36,
+                                "GOOG": 1388.31,
+                                "MSFT": 184.46
+                            }
+                        },
+                        "duration": 863.408935546875,
+                        "externalServicesTime": 844.6494140625,
+                        "memsetTime": 0,
+                        "statusCode": 200,
+                        "timeStampCost": 0.0029296875,
+                        "workflowEndTime": 1589204767333.353,
+                        "workflowStartTime": 1589204766469.944
+                    },
+                    {
+                        "body": {
+                            "portfolio": "1234",
+                            "valid": true
+                        },
+                        "duration": 0.208984375,
+                        "externalServicesTime": 0,
+                        "memsetTime": 0,
+                        "statusCode": 200,
+                        "timeStampCost": 0.00390625,
+                        "workflowEndTime": 1589204766235.0132,
+                        "workflowStartTime": 1589204766234.8042
+                    },
+                    {
+                        "body": {
+                            "portfolio": "1234",
+                            "valid": true
+                        },
+                        "duration": 0.227294921875,
+                        "externalServicesTime": 0,
+                        "memsetTime": 0,
+                        "statusCode": 200,
+                        "timeStampCost": 0.0048828125,
+                        "workflowEndTime": 1589204766238.5283,
+                        "workflowStartTime": 1589204766238.301
+                    },
+                    {
+                        "body": {
+                            "portfolio": "1234",
+                            "valid": true
+                        },
+                        "duration": 0.199462890625,
+                        "externalServicesTime": 0,
+                        "memsetTime": 0,
+                        "statusCode": 200,
+                        "timeStampCost": 0.003662109375,
+                        "workflowEndTime": 1589204772370.7654,
+                        "workflowStartTime": 1589204772370.566
+                    },
+                    {
+                        "body": {
+                            "portfolio": "1234",
+                            "valid": true
+                        },
+                        "duration": 0.160888671875,
+                        "externalServicesTime": 0,
+                        "memsetTime": 0,
+                        "statusCode": 200,
+                        "timeStampCost": 0.002197265625,
+                        "workflowEndTime": 1589204769841.0254,
+                        "workflowStartTime": 1589204769840.8645
+                    },
+                    {
+                        "body": {
+                            "marketData": {
+                                "AMZN": 2391.69,
+                                "GOOG": 1388.31,
+                                "MSFT": 184.46
+                            }
+                        },
+                        "duration": 849.51708984375,
+                        "externalServicesTime": 827.35986328125,
+                        "memsetTime": 0,
+                        "statusCode": 200,
+                        "timeStampCost": 0.003662109375,
+                        "workflowEndTime": 1589204767300.204,
+                        "workflowStartTime": 1589204766450.687
+                    },
+                    {
+                        "body": {
+                            "portfolio": "1234",
+                            "valid": true
+                        },
+                        "duration": 0.134765625,
+                        "externalServicesTime": 0,
+                        "memsetTime": 0,
+                        "statusCode": 200,
+                        "timeStampCost": 0.00244140625,
+                        "workflowEndTime": 1589204766523.2637,
+                        "workflowStartTime": 1589204766523.129
+                    },
+                    {
+                        "body": {
+                            "portfolio": "1234",
+                            "valid": true
+                        },
+                        "duration": 0.147216796875,
+                        "externalServicesTime": 0,
+                        "memsetTime": 0,
+                        "statusCode": 200,
+                        "timeStampCost": 0.00244140625,
+                        "workflowEndTime": 1589204776124.315,
+                        "workflowStartTime": 1589204776124.1677
+                    },
+                    {
+                        "body": {
+                            "portfolio": "1234",
+                            "valid": true
+                        },
+                        "duration": 0.13671875,
+                        "externalServicesTime": 0,
+                        "memsetTime": 0,
+                        "statusCode": 200,
+                        "timeStampCost": 0.00244140625,
+                        "workflowEndTime": 1589204768780.971,
+                        "workflowStartTime": 1589204768780.8342
+                    },
+                    {
+                        "body": {
+                            "portfolio": "1234",
+                            "valid": true
+                        },
+                        "duration": 0.248779296875,
+                        "externalServicesTime": 0,
+                        "memsetTime": 0,
+                        "statusCode": 200,
+                        "timeStampCost": 0.003662109375,
+                        "workflowEndTime": 1589204773711.8604,
+                        "workflowStartTime": 1589204773711.6116
+                    },
+                    {
+                        "body": {
+                            "marketData": {
+                                "AMZN": 2391.69,
+                                "GOOG": 1388.31,
+                                "MSFT": 184.46
+                            }
+                        },
+                        "duration": 900.666259765625,
+                        "externalServicesTime": 881.264404296875,
+                        "memsetTime": 0,
+                        "statusCode": 200,
+                        "timeStampCost": 0.00634765625,
+                        "workflowEndTime": 1589204767511.8523,
+                        "workflowStartTime": 1589204766611.186
+                    },
+                    {
+                        "body": {
+                            "portfolio": "1234",
+                            "valid": true
+                        },
+                        "duration": 0.140380859375,
+                        "externalServicesTime": 0,
+                        "memsetTime": 0,
+                        "statusCode": 200,
+                        "timeStampCost": 0.003173828125,
+                        "workflowEndTime": 1589204766535.314,
+                        "workflowStartTime": 1589204766535.1736
+                    },
+                    {
+                        "body": {
+                            "portfolio": "1234",
+                            "valid": true
+                        },
+                        "duration": 0.138427734375,
+                        "externalServicesTime": 0,
+                        "memsetTime": 0,
+                        "statusCode": 200,
+                        "timeStampCost": 0.002197265625,
+                        "workflowEndTime": 1589204771857.235,
+                        "workflowStartTime": 1589204771857.0967
+                    },
+                    {
+                        "body": {
+                            "portfolio": "1234",
+                            "valid": true
+                        },
+                        "duration": 0.1982421875,
+                        "externalServicesTime": 0,
+                        "memsetTime": 0,
+                        "statusCode": 200,
+                        "timeStampCost": 0.004638671875,
+                        "workflowEndTime": 1589204766238.6929,
+                        "workflowStartTime": 1589204766238.4946
+                    }
+                ]
+            },
+            "state": {
+                "$composer": {
+                    "openwhisk": {
+                        "ignore_certs": true
+                    },
+                    "redis": {
+                        "uri": "redis://guest:openwhisk@172.17.0.1:6379/"
+                    },
+                    "resuming": true,
+                    "session": "e62fed7c3aca4b3bafed7c3acadb3b4d",
+                    "stack": [],
+                    "state": 404
+                }
+            }
+        }
+    },
+    "logs": [
+        "2020-05-11T13:46:05.196293779Z stdout: Entering composition",
+        "2020-05-11T13:46:05.196342366Z stdout: Entering composition[0]",
+        "2020-05-11T13:46:05.196507474Z stdout: barrierId: 0dff7a8d-1449-4da4-b9a8-ef6f954c0c0d, spawning: 200",
+        "2020-05-11T13:46:05.645076595Z stdout: barrierId: 0dff7a8d-1449-4da4-b9a8-ef6f954c0c0d, spawned position: 14 with activationId: 7ff0f7f0723d4bcfb0f7f0723d3bcf9b",
+        "2020-05-11T13:46:05.646081002Z stdout: barrierId: 0dff7a8d-1449-4da4-b9a8-ef6f954c0c0d, spawned position: 199 with activationId: c57bc4c1b15c49cabbc4c1b15cc9caab",
+        "2020-05-11T13:46:05.64672695Z  stdout: barrierId: 0dff7a8d-1449-4da4-b9a8-ef6f954c0c0d, spawned position: 43 with activationId: ab7f7f6a14cd4783bf7f6a14cd1783c5",
+        "2020-05-11T13:46:05.647243882Z stdout: barrierId: 0dff7a8d-1449-4da4-b9a8-ef6f954c0c0d, spawned position: 35 with activationId: 333f14268b9f4e0abf14268b9f1e0a3a",
+        "2020-05-11T13:46:05.647818743Z stdout: barrierId: 0dff7a8d-1449-4da4-b9a8-ef6f954c0c0d, spawned position: 72 with activationId: 93a06e23a42e48f9a06e23a42ec8f988",
+        "2020-05-11T13:46:05.648298898Z stdout: barrierId: 0dff7a8d-1449-4da4-b9a8-ef6f954c0c0d, spawned position: 25 with activationId: 0a83b195f08b42cb83b195f08ba2cb42",
+        "2020-05-11T13:46:05.648909141Z stdout: barrierId: 0dff7a8d-1449-4da4-b9a8-ef6f954c0c0d, spawned position: 17 with activationId: 02b7329436d747cbb7329436d747cb89",
+        "2020-05-11T13:46:05.649593099Z stdout: barrierId: 0dff7a8d-1449-4da4-b9a8-ef6f954c0c0d, spawned position: 3 with activationId: b43ce77a12ff4cd7bce77a12ff2cd746",
+        "2020-05-11T13:46:05.650342688Z stdout: barrierId: 0dff7a8d-1449-4da4-b9a8-ef6f954c0c0d, spawned position: 29 with activationId: 659c66326d6b4c019c66326d6b4c01d5",
+        "2020-05-11T13:46:05.650897506Z stdout: barrierId: 0dff7a8d-1449-4da4-b9a8-ef6f954c0c0d, spawned position: 45 with activationId: 517ace97d1544aebbace97d154eaebd6",
+        "2020-05-11T13:46:05.65141133Z  stdout: barrierId: 0dff7a8d-1449-4da4-b9a8-ef6f954c0c0d, spawned position: 59 with activationId: f2f20d811c114cc9b20d811c113cc9e2",
+        "2020-05-11T13:46:05.652056296Z stdout: barrierId: 0dff7a8d-1449-4da4-b9a8-ef6f954c0c0d, spawned position: 10 with activationId: 7b197270b86c457c997270b86ca57ca1",
+        "2020-05-11T13:46:05.653712882Z stdout: barrierId: 0dff7a8d-1449-4da4-b9a8-ef6f954c0c0d, spawned position: 32 with activationId: 3b42955c09e7494b82955c09e7794bde",
+        "2020-05-11T13:46:05.654182765Z stdout: barrierId: 0dff7a8d-1449-4da4-b9a8-ef6f954c0c0d, spawned position: 27 with activationId: de3172273a0741f7b172273a0711f748",
+        "2020-05-11T13:46:05.654616831Z stdout: barrierId: 0dff7a8d-1449-4da4-b9a8-ef6f954c0c0d, spawned position: 57 with activationId: c379ca955a8f4e9cb9ca955a8ffe9c87",
+        "2020-05-11T13:46:05.655129399Z stdout: barrierId: 0dff7a8d-1449-4da4-b9a8-ef6f954c0c0d, spawned position: 16 with activationId: 280b6f90125a44f78b6f90125ae4f74a",
+        "2020-05-11T13:46:05.655580668Z stdout: barrierId: 0dff7a8d-1449-4da4-b9a8-ef6f954c0c0d, spawned position: 7 with activationId: 22497cdd946e4b09897cdd946edb09cc",
+        "2020-05-11T13:46:05.665749352Z stdout: barrierId: 0dff7a8d-1449-4da4-b9a8-ef6f954c0c0d, spawned position: 31 with activationId: e17222d59b22442bb222d59b22e42bee",
+        "2020-05-11T13:46:05.666398493Z stdout: barrierId: 0dff7a8d-1449-4da4-b9a8-ef6f954c0c0d, spawned position: 21 with activationId: 85ddd70602644ff79dd7060264eff7d5",
+        "2020-05-11T13:46:05.666964298Z stdout: barrierId: 0dff7a8d-1449-4da4-b9a8-ef6f954c0c0d, spawned position: 11 with activationId: 30415aa718374d9b815aa71837ad9bd6",
+        "2020-05-11T13:46:05.667544478Z stdout: barrierId: 0dff7a8d-1449-4da4-b9a8-ef6f954c0c0d, spawned position: 37 with activationId: 6feab0fb9593483aaab0fb9593a83a8c",
+        "2020-05-11T13:46:05.669589786Z stdout: barrierId: 0dff7a8d-1449-4da4-b9a8-ef6f954c0c0d, spawned position: 6 with activationId: 54ce00119d8042d88e00119d80c2d8e8",
+        "2020-05-11T13:46:05.670352117Z stdout: barrierId: 0dff7a8d-1449-4da4-b9a8-ef6f954c0c0d, spawned position: 49 with activationId: 702f41149f62430faf41149f62b30fa0",
+        "2020-05-11T13:46:05.671596249Z stdout: barrierId: 0dff7a8d-1449-4da4-b9a8-ef6f954c0c0d, spawned position: 62 with activationId: 6bdff294e38d41099ff294e38d91090b",
+        "2020-05-11T13:46:05.672387386Z stdout: barrierId: 0dff7a8d-1449-4da4-b9a8-ef6f954c0c0d, spawned position: 36 with activationId: 4ddb06c40a47499a9b06c40a47899aee",
+        "2020-05-11T13:46:05.673151966Z stdout: barrierId: 0dff7a8d-1449-4da4-b9a8-ef6f954c0c0d, spawned position: 20 with activationId: 87616e7c7c1844dfa16e7c7c1814df64",
+        "2020-05-11T13:46:05.676144633Z stdout: barrierId: 0dff7a8d-1449-4da4-b9a8-ef6f954c0c0d, spawned position: 23 with activationId: 277a6e8d72754ae3ba6e8d72756ae375",
+        "2020-05-11T13:46:05.681671687Z stdout: barrierId: 0dff7a8d-1449-4da4-b9a8-ef6f954c0c0d, spawned position: 8 with activationId: d828dba9f1174144a8dba9f117d144f2",
+        "2020-05-11T13:46:05.681687789Z stdout: barrierId: 0dff7a8d-1449-4da4-b9a8-ef6f954c0c0d, spawned position: 38 with activationId: 8389e7547170483c89e7547170983c46",
+        "2020-05-11T13:46:05.682626228Z stdout: barrierId: 0dff7a8d-1449-4da4-b9a8-ef6f954c0c0d, spawned position: 58 with activationId: 6e8ae579ec3c4e3d8ae579ec3cce3d1e",
+        "2020-05-11T13:46:05.683062401Z stdout: barrierId: 0dff7a8d-1449-4da4-b9a8-ef6f954c0c0d, spawned position: 39 with activationId: 3a372d32022b4651b72d32022b2651d7",
+        "2020-05-11T13:46:05.683555922Z stdout: barrierId: 0dff7a8d-1449-4da4-b9a8-ef6f954c0c0d, spawned position: 66 with activationId: 189cc40d8fb74c0c9cc40d8fb78c0c9d",
+        "2020-05-11T13:46:05.684251161Z stdout: barrierId: 0dff7a8d-1449-4da4-b9a8-ef6f954c0c0d, spawned position: 15 with activationId: 2842680b95b74cb682680b95b77cb6b4",
+        "2020-05-11T13:46:05.684754077Z stdout: barrierId: 0dff7a8d-1449-4da4-b9a8-ef6f954c0c0d, spawned position: 48 with activationId: 8b345d6907ef4173b45d6907ef8173ba",
+        "2020-05-11T13:46:05.685239143Z stdout: barrierId: 0dff7a8d-1449-4da4-b9a8-ef6f954c0c0d, spawned position: 88 with activationId: 2bdca1b2f08040639ca1b2f080a0632a",
+        "2020-05-11T13:46:05.685730168Z stdout: barrierId: 0dff7a8d-1449-4da4-b9a8-ef6f954c0c0d, spawned position: 44 with activationId: eb7efa5935674b69befa5935674b693b",
+        "2020-05-11T13:46:05.686230626Z stdout: barrierId: 0dff7a8d-1449-4da4-b9a8-ef6f954c0c0d, spawned position: 30 with activationId: cdad125566ca4ab3ad125566cabab339",
+        "2020-05-11T13:46:05.686746363Z stdout: barrierId: 0dff7a8d-1449-4da4-b9a8-ef6f954c0c0d, spawned position: 19 with activationId: 653316040f6345a9b316040f6325a9c9",
+        "2020-05-11T13:46:05.688876651Z stdout: barrierId: 0dff7a8d-1449-4da4-b9a8-ef6f954c0c0d, spawned position: 26 with activationId: e22ee380643f474baee380643ff74b84",
+        "2020-05-11T13:46:05.68941107Z  stdout: barrierId: 0dff7a8d-1449-4da4-b9a8-ef6f954c0c0d, spawned position: 50 with activationId: c853f65da97c464293f65da97c664269",
+        "2020-05-11T13:46:05.690215567Z stdout: barrierId: 0dff7a8d-1449-4da4-b9a8-ef6f954c0c0d, spawned position: 55 with activationId: 0523847c0af64241a3847c0af6624151",
+        "2020-05-11T13:46:05.69081778Z  stdout: barrierId: 0dff7a8d-1449-4da4-b9a8-ef6f954c0c0d, spawned position: 70 with activationId: 28b48c02f8aa486cb48c02f8aa086c88",
+        "2020-05-11T13:46:05.691271251Z stdout: barrierId: 0dff7a8d-1449-4da4-b9a8-ef6f954c0c0d, spawned position: 71 with activationId: f7dcf3f9be6f40989cf3f9be6f9098cf",
+        "2020-05-11T13:46:05.691844036Z stdout: barrierId: 0dff7a8d-1449-4da4-b9a8-ef6f954c0c0d, spawned position: 63 with activationId: 936c3ae01d9a4a21ac3ae01d9a5a213e",
+        "2020-05-11T13:46:05.692511692Z stdout: barrierId: 0dff7a8d-1449-4da4-b9a8-ef6f954c0c0d, spawned position: 95 with activationId: 17f42f65b5df4d8fb42f65b5dfcd8f70",
+        "2020-05-11T13:46:05.693093072Z stdout: barrierId: 0dff7a8d-1449-4da4-b9a8-ef6f954c0c0d, spawned position: 33 with activationId: 3acd703b6b4d491a8d703b6b4dc91a68",
+        "2020-05-11T13:46:05.693579556Z stdout: barrierId: 0dff7a8d-1449-4da4-b9a8-ef6f954c0c0d, spawned position: 47 with activationId: abcae41b59df441b8ae41b59df541bfb",
+        "2020-05-11T13:46:05.693982073Z stdout: barrierId: 0dff7a8d-1449-4da4-b9a8-ef6f954c0c0d, spawned position: 74 with activationId: 0d183d04db554335983d04db55233508",
+        "2020-05-11T13:46:05.694540316Z stdout: barrierId: 0dff7a8d-1449-4da4-b9a8-ef6f954c0c0d, spawned position: 34 with activationId: 1da1eb0404664a24a1eb0404663a2440",
+        "2020-05-11T13:46:05.695047573Z stdout: barrierId: 0dff7a8d-1449-4da4-b9a8-ef6f954c0c0d, spawned position: 28 with activationId: 5aed031930d84bd8ad031930d8bbd8f3",
+        "2020-05-11T13:46:05.6954987Z   stdout: barrierId: 0dff7a8d-1449-4da4-b9a8-ef6f954c0c0d, spawned position: 22 with activationId: d26a2194f45b4f5daa2194f45bdf5d90",
+        "2020-05-11T13:46:05.696414859Z stdout: barrierId: 0dff7a8d-1449-4da4-b9a8-ef6f954c0c0d, spawned position: 86 with activationId: 4ab8de682e6e4eafb8de682e6e5eaf1a",
+        "2020-05-11T13:46:05.696879416Z stdout: barrierId: 0dff7a8d-1449-4da4-b9a8-ef6f954c0c0d, spawned position: 46 with activationId: 6d9e36ded7454a4a9e36ded7453a4a4e",
+        "2020-05-11T13:46:05.697689105Z stdout: barrierId: 0dff7a8d-1449-4da4-b9a8-ef6f954c0c0d, spawned position: 1 with activationId: 5b755a68cf9b4781b55a68cf9b378147",
+        "2020-05-11T13:46:05.699551594Z stdout: barrierId: 0dff7a8d-1449-4da4-b9a8-ef6f954c0c0d, spawned position: 61 with activationId: 72bc3efb195d45cfbc3efb195d65cfba",
+        "2020-05-11T13:46:05.700045637Z stdout: barrierId: 0dff7a8d-1449-4da4-b9a8-ef6f954c0c0d, spawned position: 4 with activationId: 5f559aab31074b13959aab31070b139a",
+        "2020-05-11T13:46:05.700521088Z stdout: barrierId: 0dff7a8d-1449-4da4-b9a8-ef6f954c0c0d, spawned position: 69 with activationId: 9994876c84644c3c94876c84645c3ca9",
+        "2020-05-11T13:46:05.700985424Z stdout: barrierId: 0dff7a8d-1449-4da4-b9a8-ef6f954c0c0d, spawned position: 89 with activationId: fb777c0623264d80b77c0623269d803d",
+        "2020-05-11T13:46:05.703408336Z stdout: barrierId: 0dff7a8d-1449-4da4-b9a8-ef6f954c0c0d, spawned position: 87 with activationId: 43e14822a81b4be6a14822a81b6be646",
+        "2020-05-11T13:46:05.70392447Z  stdout: barrierId: 0dff7a8d-1449-4da4-b9a8-ef6f954c0c0d, spawned position: 52 with activationId: 6e81afca1aff450c81afca1aff450c0c",
+        "2020-05-11T13:46:05.704526133Z stdout: barrierId: 0dff7a8d-1449-4da4-b9a8-ef6f954c0c0d, spawned position: 82 with activationId: 313c3a0a7f7c490ebc3a0a7f7c290e6e",
+        "2020-05-11T13:46:05.705115075Z stdout: barrierId: 0dff7a8d-1449-4da4-b9a8-ef6f954c0c0d, spawned position: 67 with activationId: f06175f2758240b3a175f27582b0b3e3",
+        "2020-05-11T13:46:05.705664449Z stdout: barrierId: 0dff7a8d-1449-4da4-b9a8-ef6f954c0c0d, spawned position: 65 with activationId: 80bb6090f0594441bb6090f059f44181",
+        "2020-05-11T13:46:05.706154177Z stdout: barrierId: 0dff7a8d-1449-4da4-b9a8-ef6f954c0c0d, spawned position: 53 with activationId: 5bf17a08b31045f8b17a08b310d5f8fc",
+        "2020-05-11T13:46:05.709445367Z stdout: barrierId: 0dff7a8d-1449-4da4-b9a8-ef6f954c0c0d, spawned position: 121 with activationId: 16e9cc2b170c4ae5a9cc2b170ccae5fc",
+        "2020-05-11T13:46:05.711643524Z stdout: barrierId: 0dff7a8d-1449-4da4-b9a8-ef6f954c0c0d, spawned position: 90 with activationId: 013e9914097f4bc0be9914097f3bc003",
+        "2020-05-11T13:46:05.712073615Z stdout: barrierId: 0dff7a8d-1449-4da4-b9a8-ef6f954c0c0d, spawned position: 76 with activationId: 961a657ed85f4abc9a657ed85fdabcde",
+        "2020-05-11T13:46:05.712420619Z stdout: barrierId: 0dff7a8d-1449-4da4-b9a8-ef6f954c0c0d, spawned position: 12 with activationId: 5154b9d22d6f480494b9d22d6fb80440",
+        "2020-05-11T13:46:05.712774674Z stdout: barrierId: 0dff7a8d-1449-4da4-b9a8-ef6f954c0c0d, spawned position: 84 with activationId: 6ed9420982a74b0699420982a71b063f",
+        "2020-05-11T13:46:05.713131089Z stdout: barrierId: 0dff7a8d-1449-4da4-b9a8-ef6f954c0c0d, spawned position: 56 with activationId: 897fc44cdd1a4cdcbfc44cdd1a9cdcc1",
+        "2020-05-11T13:46:05.713473062Z stdout: barrierId: 0dff7a8d-1449-4da4-b9a8-ef6f954c0c0d, spawned position: 109 with activationId: 142b5452569542c0ab54525695d2c073",
+        "2020-05-11T13:46:05.713819155Z stdout: barrierId: 0dff7a8d-1449-4da4-b9a8-ef6f954c0c0d, spawned position: 2 with activationId: 09ed83148af84aa5ad83148af8eaa59f",
+        "2020-05-11T13:46:05.714168219Z stdout: barrierId: 0dff7a8d-1449-4da4-b9a8-ef6f954c0c0d, spawned position: 94 with activationId: dc10e2a8aa28463390e2a8aa28c633a2",
+        "2020-05-11T13:46:05.71554927Z  stdout: barrierId: 0dff7a8d-1449-4da4-b9a8-ef6f954c0c0d, spawned position: 91 with activationId: e79b781072654cab9b781072652cab27",
+        "2020-05-11T13:46:05.716114071Z stdout: barrierId: 0dff7a8d-1449-4da4-b9a8-ef6f954c0c0d, spawned position: 13 with activationId: 39f6a788a3634c5cb6a788a3634c5cb3",
+        "2020-05-11T13:46:05.716849767Z stdout: barrierId: 0dff7a8d-1449-4da4-b9a8-ef6f954c0c0d, spawned position: 0 with activationId: 4a10b2a2b4e54e4d90b2a2b4e57e4d55",
+        "2020-05-11T13:46:05.717325736Z stdout: barrierId: 0dff7a8d-1449-4da4-b9a8-ef6f954c0c0d, spawned position: 92 with activationId: 519e267adefb4d3b9e267adefb9d3b60",
+        "2020-05-11T13:46:05.717775761Z stdout: barrierId: 0dff7a8d-1449-4da4-b9a8-ef6f954c0c0d, spawned position: 114 with activationId: a7d6d6550e1a4ee596d6550e1aaee5ce",
+        "2020-05-11T13:46:05.718204967Z stdout: barrierId: 0dff7a8d-1449-4da4-b9a8-ef6f954c0c0d, spawned position: 54 with activationId: 96da16b97fa649cb9a16b97fa6c9cb4f",
+        "2020-05-11T13:46:05.718602215Z stdout: barrierId: 0dff7a8d-1449-4da4-b9a8-ef6f954c0c0d, spawned position: 81 with activationId: 1dcc12f5aa374a8e8c12f5aa37da8eb6",
+        "2020-05-11T13:46:05.719029368Z stdout: barrierId: 0dff7a8d-1449-4da4-b9a8-ef6f954c0c0d, spawned position: 98 with activationId: 7ba6dde6676a4b38a6dde6676aeb3871",
+        "2020-05-11T13:46:05.719423953Z stdout: barrierId: 0dff7a8d-1449-4da4-b9a8-ef6f954c0c0d, spawned position: 9 with activationId: 361ccf32163049cc9ccf32163009cc32",
+        "2020-05-11T13:46:05.719866421Z stdout: barrierId: 0dff7a8d-1449-4da4-b9a8-ef6f954c0c0d, spawned position: 113 with activationId: 51603f078494449ca03f078494d49c0e",
+        "2020-05-11T13:46:05.720286608Z stdout: barrierId: 0dff7a8d-1449-4da4-b9a8-ef6f954c0c0d, spawned position: 99 with activationId: 2eed1b4707614c86ad1b4707610c86ec",
+        "2020-05-11T13:46:05.720917696Z stdout: barrierId: 0dff7a8d-1449-4da4-b9a8-ef6f954c0c0d, spawned position: 183 with activationId: 0a704805b51e4c43b04805b51eac4354",
+        "2020-05-11T13:46:05.721456098Z stdout: barrierId: 0dff7a8d-1449-4da4-b9a8-ef6f954c0c0d, spawned position: 24 with activationId: 0719f57388d94a4299f57388d9aa42ca",
+        "2020-05-11T13:46:05.721851293Z stdout: barrierId: 0dff7a8d-1449-4da4-b9a8-ef6f954c0c0d, spawned position: 172 with activationId: e5808cf5931b4afc808cf5931b2afc7a",
+        "2020-05-11T13:46:05.722196651Z stdout: barrierId: 0dff7a8d-1449-4da4-b9a8-ef6f954c0c0d, spawned position: 193 with activationId: 530c01dbcb7449c88c01dbcb74d9c892",
+        "2020-05-11T13:46:05.722558788Z stdout: barrierId: 0dff7a8d-1449-4da4-b9a8-ef6f954c0c0d, spawned position: 102 with activationId: c54b03b844d240828b03b844d2a082eb",
+        "2020-05-11T13:46:05.722919834Z stdout: barrierId: 0dff7a8d-1449-4da4-b9a8-ef6f954c0c0d, spawned position: 117 with activationId: 17be1156f7c74c30be1156f7c7ac3015",
+        "2020-05-11T13:46:05.725180312Z stdout: barrierId: 0dff7a8d-1449-4da4-b9a8-ef6f954c0c0d, spawned position: 164 with activationId: 9070077c670241e8b0077c6702d1e8de",
+        "2020-05-11T13:46:05.72558871Z  stdout: barrierId: 0dff7a8d-1449-4da4-b9a8-ef6f954c0c0d, spawned position: 135 with activationId: e4e5d2ebecb042cca5d2ebecb022ccde",
+        "2020-05-11T13:46:05.725990235Z stdout: barrierId: 0dff7a8d-1449-4da4-b9a8-ef6f954c0c0d, spawned position: 143 with activationId: 90b76fad18294ac4b76fad18299ac457",
+        "2020-05-11T13:46:05.726367646Z stdout: barrierId: 0dff7a8d-1449-4da4-b9a8-ef6f954c0c0d, spawned position: 110 with activationId: a1766a942b2b4a43b66a942b2b0a4358",
+        "2020-05-11T13:46:05.726734914Z stdout: barrierId: 0dff7a8d-1449-4da4-b9a8-ef6f954c0c0d, spawned position: 134 with activationId: 0c98d4f288ff4acf98d4f288ffcacf50",
+        "2020-05-11T13:46:05.727105955Z stdout: barrierId: 0dff7a8d-1449-4da4-b9a8-ef6f954c0c0d, spawned position: 131 with activationId: b1102eee843440a9902eee843420a989",
+        "2020-05-11T13:46:05.727471064Z stdout: barrierId: 0dff7a8d-1449-4da4-b9a8-ef6f954c0c0d, spawned position: 195 with activationId: 29e37f22e6b64c94a37f22e6b6ac94d7",
+        "2020-05-11T13:46:05.727910024Z stdout: barrierId: 0dff7a8d-1449-4da4-b9a8-ef6f954c0c0d, spawned position: 144 with activationId: 3519f1882ef644f099f1882ef644f06f",
+        "2020-05-11T13:46:05.72825581Z  stdout: barrierId: 0dff7a8d-1449-4da4-b9a8-ef6f954c0c0d, spawned position: 100 with activationId: 078a86a9604049e48a86a9604089e4e0",
+        "2020-05-11T13:46:05.728590739Z stdout: barrierId: 0dff7a8d-1449-4da4-b9a8-ef6f954c0c0d, spawned position: 111 with activationId: 57d63ba9111f4011963ba9111f501178",
+        "2020-05-11T13:46:05.728911115Z stdout: barrierId: 0dff7a8d-1449-4da4-b9a8-ef6f954c0c0d, spawned position: 170 with activationId: 7130f05f432d4fbdb0f05f432d6fbd39",
+        "2020-05-11T13:46:05.729245192Z stdout: barrierId: 0dff7a8d-1449-4da4-b9a8-ef6f954c0c0d, spawned position: 60 with activationId: 6a8951caee2645e78951caee2695e753",
+        "2020-05-11T13:46:05.729580215Z stdout: barrierId: 0dff7a8d-1449-4da4-b9a8-ef6f954c0c0d, spawned position: 186 with activationId: c53fcb2120434692bfcb212043269262",
+        "2020-05-11T13:46:05.72990895Z  stdout: barrierId: 0dff7a8d-1449-4da4-b9a8-ef6f954c0c0d, spawned position: 80 with activationId: 205dfb23dee54a639dfb23dee51a63bc",
+        "2020-05-11T13:46:05.730232206Z stdout: barrierId: 0dff7a8d-1449-4da4-b9a8-ef6f954c0c0d, spawned position: 196 with activationId: 1cc75e8ee2914916875e8ee291291693",
+        "2020-05-11T13:46:05.730580982Z stdout: barrierId: 0dff7a8d-1449-4da4-b9a8-ef6f954c0c0d, spawned position: 159 with activationId: 500be737d36549348be737d365a9346f",
+        "2020-05-11T13:46:05.730902433Z stdout: barrierId: 0dff7a8d-1449-4da4-b9a8-ef6f954c0c0d, spawned position: 129 with activationId: fec66a29f33d416f866a29f33d616fc6",
+        "2020-05-11T13:46:05.731259811Z stdout: barrierId: 0dff7a8d-1449-4da4-b9a8-ef6f954c0c0d, spawned position: 77 with activationId: 94a1c2b4ec414822a1c2b4ec415822b3",
+        "2020-05-11T13:46:05.731580249Z stdout: barrierId: 0dff7a8d-1449-4da4-b9a8-ef6f954c0c0d, spawned position: 150 with activationId: 8360790581a04152a0790581a0715236",
+        "2020-05-11T13:46:05.732419507Z stdout: barrierId: 0dff7a8d-1449-4da4-b9a8-ef6f954c0c0d, spawned position: 188 with activationId: 62e894231b2e48a6a894231b2e08a6df",
+        "2020-05-11T13:46:05.732780264Z stdout: barrierId: 0dff7a8d-1449-4da4-b9a8-ef6f954c0c0d, spawned position: 126 with activationId: 274c4b3d56ac45bb8c4b3d56ac75bb89",
+        "2020-05-11T13:46:05.733122118Z stdout: barrierId: 0dff7a8d-1449-4da4-b9a8-ef6f954c0c0d, spawned position: 151 with activationId: 6542c2b4cc984f5282c2b4cc989f52c6",
+        "2020-05-11T13:46:05.733465422Z stdout: barrierId: 0dff7a8d-1449-4da4-b9a8-ef6f954c0c0d, spawned position: 64 with activationId: 5c754b37498c4250b54b37498c425098",
+        "2020-05-11T13:46:05.733815625Z stdout: barrierId: 0dff7a8d-1449-4da4-b9a8-ef6f954c0c0d, spawned position: 175 with activationId: 9775bf6aeebb4f7ab5bf6aeebb2f7aae",
+        "2020-05-11T13:46:05.736245596Z stdout: barrierId: 0dff7a8d-1449-4da4-b9a8-ef6f954c0c0d, spawned position: 173 with activationId: 0b9a9b154db74e959a9b154db74e950c",
+        "2020-05-11T13:46:05.736640393Z stdout: barrierId: 0dff7a8d-1449-4da4-b9a8-ef6f954c0c0d, spawned position: 78 with activationId: 0a5f082c9638402b9f082c9638302b06",
+        "2020-05-11T13:46:05.737000656Z stdout: barrierId: 0dff7a8d-1449-4da4-b9a8-ef6f954c0c0d, spawned position: 152 with activationId: 8d28baad10d14892a8baad10d118927c",
+        "2020-05-11T13:46:05.737370273Z stdout: barrierId: 0dff7a8d-1449-4da4-b9a8-ef6f954c0c0d, spawned position: 68 with activationId: 54e8779533184194a87795331821946d",
+        "2020-05-11T13:46:05.737711896Z stdout: barrierId: 0dff7a8d-1449-4da4-b9a8-ef6f954c0c0d, spawned position: 176 with activationId: d2250bbf15a74701a50bbf15a7670101",
+        "2020-05-11T13:46:05.740476677Z stdout: barrierId: 0dff7a8d-1449-4da4-b9a8-ef6f954c0c0d, spawned position: 123 with activationId: 40824969ca164777824969ca16b77795",
+        "2020-05-11T13:46:05.74089794Z  stdout: barrierId: 0dff7a8d-1449-4da4-b9a8-ef6f954c0c0d, spawned position: 93 with activationId: 3dc083ce164c4ffc8083ce164c2ffcaa",
+        "2020-05-11T13:46:05.74126563Z  stdout: barrierId: 0dff7a8d-1449-4da4-b9a8-ef6f954c0c0d, spawned position: 177 with activationId: f24bb25e0e0e45b48bb25e0e0ea5b420",
+        "2020-05-11T13:46:05.741730637Z stdout: barrierId: 0dff7a8d-1449-4da4-b9a8-ef6f954c0c0d, spawned position: 148 with activationId: 9c464425593044698644255930046998",
+        "2020-05-11T13:46:05.742095925Z stdout: barrierId: 0dff7a8d-1449-4da4-b9a8-ef6f954c0c0d, spawned position: 101 with activationId: bb4802a1b40c43c28802a1b40c03c292",
+        "2020-05-11T13:46:05.742418878Z stdout: barrierId: 0dff7a8d-1449-4da4-b9a8-ef6f954c0c0d, spawned position: 40 with activationId: 73f3086896d340f0b3086896d3a0f03f",
+        "2020-05-11T13:46:05.744094459Z stdout: barrierId: 0dff7a8d-1449-4da4-b9a8-ef6f954c0c0d, spawned position: 139 with activationId: 48bbf2ab47b74049bbf2ab47b7d049cf",
+        "2020-05-11T13:46:05.744512571Z stdout: barrierId: 0dff7a8d-1449-4da4-b9a8-ef6f954c0c0d, spawned position: 160 with activationId: 754d2acfb95f4ebc8d2acfb95f4ebc2f",
+        "2020-05-11T13:46:05.744882764Z stdout: barrierId: 0dff7a8d-1449-4da4-b9a8-ef6f954c0c0d, spawned position: 105 with activationId: 17390a615cf14e63b90a615cf1de63da",
+        "2020-05-11T13:46:05.745260097Z stdout: barrierId: 0dff7a8d-1449-4da4-b9a8-ef6f954c0c0d, spawned position: 179 with activationId: 26d2c16b123348d692c16b1233e8d691",
+        "2020-05-11T13:46:05.745621148Z stdout: barrierId: 0dff7a8d-1449-4da4-b9a8-ef6f954c0c0d, spawned position: 112 with activationId: 9e4ba1f14aaa410f8ba1f14aaac10f5d",
+        "2020-05-11T13:46:05.74618639Z  stdout: barrierId: 0dff7a8d-1449-4da4-b9a8-ef6f954c0c0d, spawned position: 197 with activationId: 29befdb07f5b4986befdb07f5b69861b",
+        "2020-05-11T13:46:05.746550287Z stdout: barrierId: 0dff7a8d-1449-4da4-b9a8-ef6f954c0c0d, spawned position: 107 with activationId: ac42f4d86c3a458282f4d86c3a958208",
+        "2020-05-11T13:46:05.746964354Z stdout: barrierId: 0dff7a8d-1449-4da4-b9a8-ef6f954c0c0d, spawned position: 165 with activationId: a196a292e89340ee96a292e893e0ee43",
+        "2020-05-11T13:46:05.747314614Z stdout: barrierId: 0dff7a8d-1449-4da4-b9a8-ef6f954c0c0d, spawned position: 168 with activationId: 050f712fb9e44d758f712fb9e46d75af",
+        "2020-05-11T13:46:05.747723914Z stdout: barrierId: 0dff7a8d-1449-4da4-b9a8-ef6f954c0c0d, spawned position: 145 with activationId: 1b39a6ddfc824653b9a6ddfc825653e5",
+        "2020-05-11T13:46:05.748153201Z stdout: barrierId: 0dff7a8d-1449-4da4-b9a8-ef6f954c0c0d, spawned position: 161 with activationId: af8ac1b7011142728ac1b7011162729f",
+        "2020-05-11T13:46:05.748655525Z stdout: barrierId: 0dff7a8d-1449-4da4-b9a8-ef6f954c0c0d, spawned position: 120 with activationId: d62154bbd5b94f21a154bbd5b9ef2176",
+        "2020-05-11T13:46:05.760642959Z stdout: barrierId: 0dff7a8d-1449-4da4-b9a8-ef6f954c0c0d, spawned position: 191 with activationId: 11d781163bf140399781163bf13039bd",
+        "2020-05-11T13:46:05.765854715Z stdout: barrierId: 0dff7a8d-1449-4da4-b9a8-ef6f954c0c0d, spawned position: 158 with activationId: a1e7495cda8b43b6a7495cda8b73b67c",
+        "2020-05-11T13:46:05.766356435Z stdout: barrierId: 0dff7a8d-1449-4da4-b9a8-ef6f954c0c0d, spawned position: 155 with activationId: 647298a294404e40b298a294400e405f",
+        "2020-05-11T13:46:05.76683302Z  stdout: barrierId: 0dff7a8d-1449-4da4-b9a8-ef6f954c0c0d, spawned position: 83 with activationId: 76936320f34d4dc8936320f34d5dc8b6",
+        "2020-05-11T13:46:05.767314941Z stdout: barrierId: 0dff7a8d-1449-4da4-b9a8-ef6f954c0c0d, spawned position: 5 with activationId: 0d7f9b18a43645a3bf9b18a43605a35a",
+        "2020-05-11T13:46:05.76777984Z  stdout: barrierId: 0dff7a8d-1449-4da4-b9a8-ef6f954c0c0d, spawned position: 97 with activationId: 2736e21b173e4a36b6e21b173e1a36bf",
+        "2020-05-11T13:46:05.768305278Z stdout: barrierId: 0dff7a8d-1449-4da4-b9a8-ef6f954c0c0d, spawned position: 18 with activationId: 797ac62255474783bac6225547c783c8",
+        "2020-05-11T13:46:05.768795141Z stdout: barrierId: 0dff7a8d-1449-4da4-b9a8-ef6f954c0c0d, spawned position: 41 with activationId: f194f3a87f0d401794f3a87f0d5017b9",
+        "2020-05-11T13:46:05.769283403Z stdout: barrierId: 0dff7a8d-1449-4da4-b9a8-ef6f954c0c0d, spawned position: 127 with activationId: eb41ba28a2074c5b81ba28a2070c5b71",
+        "2020-05-11T13:46:05.769740366Z stdout: barrierId: 0dff7a8d-1449-4da4-b9a8-ef6f954c0c0d, spawned position: 138 with activationId: 57620b5d19344f35a20b5d1934ff3534",
+        "2020-05-11T13:46:05.770138067Z stdout: barrierId: 0dff7a8d-1449-4da4-b9a8-ef6f954c0c0d, spawned position: 190 with activationId: 4d9ce0cb507a47579ce0cb507a7757c2",
+        "2020-05-11T13:46:05.770551771Z stdout: barrierId: 0dff7a8d-1449-4da4-b9a8-ef6f954c0c0d, spawned position: 132 with activationId: 1b3806763b9f4e20b806763b9f9e200b",
+        "2020-05-11T13:46:05.771084094Z stdout: barrierId: 0dff7a8d-1449-4da4-b9a8-ef6f954c0c0d, spawned position: 141 with activationId: a07bd8a31e1a4258bbd8a31e1a92586c",
+        "2020-05-11T13:46:05.771603432Z stdout: barrierId: 0dff7a8d-1449-4da4-b9a8-ef6f954c0c0d, spawned position: 182 with activationId: b928807c03ab4f9ba8807c03abff9b05",
+        "2020-05-11T13:46:05.772128881Z stdout: barrierId: 0dff7a8d-1449-4da4-b9a8-ef6f954c0c0d, spawned position: 169 with activationId: 7d4072bec46c44ec8072bec46c24ec4d",
+        "2020-05-11T13:46:05.772586632Z stdout: barrierId: 0dff7a8d-1449-4da4-b9a8-ef6f954c0c0d, spawned position: 149 with activationId: 3976704b96504277b6704b96503277b9",
+        "2020-05-11T13:46:05.773018737Z stdout: barrierId: 0dff7a8d-1449-4da4-b9a8-ef6f954c0c0d, spawned position: 115 with activationId: 4330c727dbc64947b0c727dbc689471d",
+        "2020-05-11T13:46:05.773486169Z stdout: barrierId: 0dff7a8d-1449-4da4-b9a8-ef6f954c0c0d, spawned position: 130 with activationId: 3932964f09074e52b2964f09078e52ca",
+        "2020-05-11T13:46:05.773996401Z stdout: barrierId: 0dff7a8d-1449-4da4-b9a8-ef6f954c0c0d, spawned position: 174 with activationId: fcc74cdf9de44818874cdf9de4781869",
+        "2020-05-11T13:46:05.774491818Z stdout: barrierId: 0dff7a8d-1449-4da4-b9a8-ef6f954c0c0d, spawned position: 162 with activationId: 325d384b29ee49479d384b29eef947bd",
+        "2020-05-11T13:46:05.7749943Z   stdout: barrierId: 0dff7a8d-1449-4da4-b9a8-ef6f954c0c0d, spawned position: 163 with activationId: 4e682d39ef7241fba82d39ef7211fb49",
+        "2020-05-11T13:46:05.775481085Z stdout: barrierId: 0dff7a8d-1449-4da4-b9a8-ef6f954c0c0d, spawned position: 166 with activationId: 972321488827489ba321488827c89b95",
+        "2020-05-11T13:46:05.775988395Z stdout: barrierId: 0dff7a8d-1449-4da4-b9a8-ef6f954c0c0d, spawned position: 106 with activationId: 8ce78a3577ce4b1ea78a3577cecb1e11",
+        "2020-05-11T13:46:05.776501473Z stdout: barrierId: 0dff7a8d-1449-4da4-b9a8-ef6f954c0c0d, spawned position: 192 with activationId: 8c0a7bcff1924c248a7bcff192ec2451",
+        "2020-05-11T13:46:05.777008959Z stdout: barrierId: 0dff7a8d-1449-4da4-b9a8-ef6f954c0c0d, spawned position: 180 with activationId: e7dabb9a669d4f6a9abb9a669d7f6a5b",
+        "2020-05-11T13:46:05.777503995Z stdout: barrierId: 0dff7a8d-1449-4da4-b9a8-ef6f954c0c0d, spawned position: 146 with activationId: de892207de1f464d892207de1f664d47",
+        "2020-05-11T13:46:05.777995986Z stdout: barrierId: 0dff7a8d-1449-4da4-b9a8-ef6f954c0c0d, spawned position: 185 with activationId: 2ba8d2353bfa46e4a8d2353bfa16e42e",
+        "2020-05-11T13:46:05.778563921Z stdout: barrierId: 0dff7a8d-1449-4da4-b9a8-ef6f954c0c0d, spawned position: 167 with activationId: 0c0f7e6b728140ad8f7e6b7281a0ad5b",
+        "2020-05-11T13:46:05.779127632Z stdout: barrierId: 0dff7a8d-1449-4da4-b9a8-ef6f954c0c0d, spawned position: 104 with activationId: 17497019c31440f9897019c314b0f940",
+        "2020-05-11T13:46:05.779923413Z stdout: barrierId: 0dff7a8d-1449-4da4-b9a8-ef6f954c0c0d, spawned position: 137 with activationId: 1126b12f00fa49bda6b12f00fae9bd09",
+        "2020-05-11T13:46:05.780554503Z stdout: barrierId: 0dff7a8d-1449-4da4-b9a8-ef6f954c0c0d, spawned position: 85 with activationId: 97bac3ae92b140f5bac3ae92b1e0f529",
+        "2020-05-11T13:46:05.781164307Z stdout: barrierId: 0dff7a8d-1449-4da4-b9a8-ef6f954c0c0d, spawned position: 153 with activationId: 06eb03d65c4d4f68ab03d65c4d2f68d9",
+        "2020-05-11T13:46:05.781776351Z stdout: barrierId: 0dff7a8d-1449-4da4-b9a8-ef6f954c0c0d, spawned position: 194 with activationId: e37c6fff3b394f7dbc6fff3b39cf7d0e",
+        "2020-05-11T13:46:05.782321354Z stdout: barrierId: 0dff7a8d-1449-4da4-b9a8-ef6f954c0c0d, spawned position: 133 with activationId: fb101ab2de454174901ab2de45a174da",
+        "2020-05-11T13:46:05.78280214Z  stdout: barrierId: 0dff7a8d-1449-4da4-b9a8-ef6f954c0c0d, spawned position: 79 with activationId: 1752f480f30c4fa292f480f30ccfa26a",
+        "2020-05-11T13:46:05.783224141Z stdout: barrierId: 0dff7a8d-1449-4da4-b9a8-ef6f954c0c0d, spawned position: 178 with activationId: 7e9aa8e5480241e99aa8e54802a1e96b",
+        "2020-05-11T13:46:05.785159797Z stdout: barrierId: 0dff7a8d-1449-4da4-b9a8-ef6f954c0c0d, spawned position: 51 with activationId: 2851fca92f924a1b91fca92f920a1bd9",
+        "2020-05-11T13:46:05.78549108Z  stdout: barrierId: 0dff7a8d-1449-4da4-b9a8-ef6f954c0c0d, spawned position: 96 with activationId: f1324f139b6741b2b24f139b6751b248",
+        "2020-05-11T13:46:05.785835281Z stdout: barrierId: 0dff7a8d-1449-4da4-b9a8-ef6f954c0c0d, spawned position: 184 with activationId: e900779fe93645a680779fe93635a62c",
+        "2020-05-11T13:46:05.786154517Z stdout: barrierId: 0dff7a8d-1449-4da4-b9a8-ef6f954c0c0d, spawned position: 181 with activationId: 0214f266f0b14f9694f266f0b10f9684",
+        "2020-05-11T13:46:05.786479925Z stdout: barrierId: 0dff7a8d-1449-4da4-b9a8-ef6f954c0c0d, spawned position: 108 with activationId: 76329f913c554774b29f913c550774bb",
+        "2020-05-11T13:46:05.786801468Z stdout: barrierId: 0dff7a8d-1449-4da4-b9a8-ef6f954c0c0d, spawned position: 187 with activationId: d13305ea6c314740b305ea6c31d74050",
+        "2020-05-11T13:46:05.787131166Z stdout: barrierId: 0dff7a8d-1449-4da4-b9a8-ef6f954c0c0d, spawned position: 140 with activationId: 955613da290144ed9613da290194edc6",
+        "2020-05-11T13:46:05.78751811Z  stdout: barrierId: 0dff7a8d-1449-4da4-b9a8-ef6f954c0c0d, spawned position: 136 with activationId: 431897673b1a48cd9897673b1a78cd9a",
+        "2020-05-11T13:46:05.788021452Z stdout: barrierId: 0dff7a8d-1449-4da4-b9a8-ef6f954c0c0d, spawned position: 154 with activationId: 3051620d79064cb791620d79066cb757",
+        "2020-05-11T13:46:05.788501101Z stdout: barrierId: 0dff7a8d-1449-4da4-b9a8-ef6f954c0c0d, spawned position: 156 with activationId: 33aa12c40af34acbaa12c40af3cacbcf",
+        "2020-05-11T13:46:05.788967263Z stdout: barrierId: 0dff7a8d-1449-4da4-b9a8-ef6f954c0c0d, spawned position: 116 with activationId: ab72b3ccffc64536b2b3ccffc66536ac",
+        "2020-05-11T13:46:05.789458244Z stdout: barrierId: 0dff7a8d-1449-4da4-b9a8-ef6f954c0c0d, spawned position: 198 with activationId: 493b168f93aa4f16bb168f93aacf16a3",
+        "2020-05-11T13:46:05.789942236Z stdout: barrierId: 0dff7a8d-1449-4da4-b9a8-ef6f954c0c0d, spawned position: 189 with activationId: aecc0d3cdde245108c0d3cdde255104f",
+        "2020-05-11T13:46:05.79047311Z  stdout: barrierId: 0dff7a8d-1449-4da4-b9a8-ef6f954c0c0d, spawned position: 73 with activationId: 6fbbb53b4f314364bbb53b4f31136460",
+        "2020-05-11T13:46:05.790981187Z stdout: barrierId: 0dff7a8d-1449-4da4-b9a8-ef6f954c0c0d, spawned position: 118 with activationId: f52446a8594a4670a446a8594a0670ed",
+        "2020-05-11T13:46:05.791462177Z stdout: barrierId: 0dff7a8d-1449-4da4-b9a8-ef6f954c0c0d, spawned position: 124 with activationId: 968c516296c844578c516296c8d4577f",
+        "2020-05-11T13:46:05.79195245Z  stdout: barrierId: 0dff7a8d-1449-4da4-b9a8-ef6f954c0c0d, spawned position: 142 with activationId: e51e150ad0a84bb79e150ad0a81bb75b",
+        "2020-05-11T13:46:05.79235837Z  stdout: barrierId: 0dff7a8d-1449-4da4-b9a8-ef6f954c0c0d, spawned position: 42 with activationId: a10d2efe800d49668d2efe800d19665f",
+        "2020-05-11T13:46:05.792716524Z stdout: barrierId: 0dff7a8d-1449-4da4-b9a8-ef6f954c0c0d, spawned position: 122 with activationId: b618b114fdb248ae98b114fdb2d8aee5",
+        "2020-05-11T13:46:05.793086047Z stdout: barrierId: 0dff7a8d-1449-4da4-b9a8-ef6f954c0c0d, spawned position: 75 with activationId: 94681330152a4340a81330152a234028",
+        "2020-05-11T13:46:05.793446658Z stdout: barrierId: 0dff7a8d-1449-4da4-b9a8-ef6f954c0c0d, spawned position: 119 with activationId: 910663955f9945988663955f99e598e1",
+        "2020-05-11T13:46:05.793868058Z stdout: barrierId: 0dff7a8d-1449-4da4-b9a8-ef6f954c0c0d, spawned position: 171 with activationId: 36e444e1fa1e4409a444e1fa1ee409bd",
+        "2020-05-11T13:46:05.79440466Z  stdout: barrierId: 0dff7a8d-1449-4da4-b9a8-ef6f954c0c0d, spawned position: 147 with activationId: 821a01b1be204d4a9a01b1be207d4a4f",
+        "2020-05-11T13:46:05.794962078Z stdout: barrierId: 0dff7a8d-1449-4da4-b9a8-ef6f954c0c0d, spawned position: 125 with activationId: 07dcb234720b4b289cb234720b0b288e",
+        "2020-05-11T13:46:05.795565873Z stdout: barrierId: 0dff7a8d-1449-4da4-b9a8-ef6f954c0c0d, spawned position: 103 with activationId: 96a77b87ff004314a77b87ff00b31492",
+        "2020-05-11T13:46:05.796216914Z stdout: barrierId: 0dff7a8d-1449-4da4-b9a8-ef6f954c0c0d, spawned position: 157 with activationId: 11abcf34ee784413abcf34ee781413d5",
+        "2020-05-11T13:46:05.809437388Z stdout: barrierId: 0dff7a8d-1449-4da4-b9a8-ef6f954c0c0d, spawned position: 128 with activationId: 7ef32db2277e4fa0b32db2277e5fa0cc",
+        "2020-05-11T13:46:05.809460393Z stdout: barrierId: 0dff7a8d-1449-4da4-b9a8-ef6f954c0c0d, waiting with timeout: 1794s",
+        "2020-05-11T13:46:20.370738374Z stdout: barrierId: 0dff7a8d-1449-4da4-b9a8-ef6f954c0c0d, done waiting",
+        "2020-05-11T13:46:20.378574342Z stdout: Entering composition[1]"
+    ],
+    "annotations": [
+        {
+            "key": "causedBy",
+            "value": "sequence"
+        },
+        {
+            "key": "path",
+            "value": "guest/baseline-app-audit-trail"
+        },
+        {
+            "key": "kind",
+            "value": "nodejs:10"
+        },
+        {
+            "key": "timeout",
+            "value": false
+        },
+        {
+            "key": "limits",
+            "value": {
+                "concurrency": 1,
+                "logs": 10,
+                "memory": 256,
+                "timeout": 1800000
+            }
+        }
+    ],
+    "publish": false
+}
